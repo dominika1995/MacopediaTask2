@@ -1,0 +1,49 @@
+.work {
+  .work__title__top {
+    margin-top: 5%;
+    font-family: Kaushan Script;
+    text-align: center;
+    font-size: 2em;
+  }
+  .work__title__middle {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  div {
+    text-align: center;
+    .work_rectangle {
+      padding-bottom: 3%;
+      padding-top: 1%;
+    }
+  }
+  .work__text {
+    color: $color-grey-light;
+    font-size: 1em;
+  }
+  .work__picture {
+    margin-top: 3%;
+    div {
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      img {
+        width: 100%;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+      }
+    }
+  }
+  .work__picture__bottom {
+    margin-top: 3%;
+    div {
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      img {
+        width: 100%;
+        //margin: -521.5px 0 0 0;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+      }
+    }
+  }
+}
