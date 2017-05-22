@@ -76,7 +76,38 @@
           {
             width: 350px;
             height: 435px;
-            margin-left: 25%;
+            margin-left: 26.5%;
+          }
+        }
+        .meet__team__img:after{
+          content: " ";
+          position: absolute;
+          width: 351px;
+          height: 434px;
+          background: linear-gradient($color-red, $color-yellow);
+          margin-left: -350px;
+          margin-top: -435px;
+          opacity: 0;
+          @media only screen and (max-width: $md)
+          {
+            width: 290px;
+            height: 362px;
+            margin-left: -290px;
+            margin-top: -350px;
+          }
+          @media only screen and (max-width: $sm)
+          {
+            width: 229px;
+            height: 280px;
+            margin-left: -230px;
+            margin-top: -280px;
+          }
+          @media only screen and (max-width: $xs)
+          {
+            width: 350px;
+            height: 435px;
+            margin-left: -350px;
+            margin-top: -435px;
           }
         }
         .meet__team__img:hover {
@@ -88,6 +119,21 @@
             {
               margin-bottom: 30px;
             }
+          }
+        }
+        .meet__team__img:hover:after{
+          margin-top: -445.5px;
+          transition: .5s ease;
+          opacity: 0.8;
+          @media only screen and (max-width: $md)
+          {
+            margin-top: -370px;
+          }
+          @media only screen and (max-width: $sm){
+            margin-top: -297px;
+          }
+          @media only screen and (max-width: $xs){
+            margin-top: -450px;
           }
         }
        /* .meet__team__img:hover:after{
@@ -111,6 +157,23 @@
         font-style: italic;
         font-size: 1em;
       }
+    }
+    .meet__team__img__small{
+      width: 8%;
+      display: inline;
+      img {
+        z-index: 50;
+        position: relative;
+        display: inline;
+        margin-top: -200px;
+        width: 8%;
+      }
+    }
+    .meet__team__img__small--1{
+
+    }
+    .meet__team__img__small--2{
+
     }
   }
 }

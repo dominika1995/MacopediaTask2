@@ -91,7 +91,41 @@
   .meet .meet__team div div .meet__team__img:before {
     width: 350px;
     height: 435px;
-    margin-left: 25%;
+    margin-left: 26.5%;
+  }
+}
+.meet .meet__team div div .meet__team__img:after {
+  content: " ";
+  position: absolute;
+  width: 351px;
+  height: 434px;
+  background: linear-gradient(#f38181, #fce38a);
+  margin-left: -350px;
+  margin-top: -435px;
+  opacity: 0;
+}
+@media only screen and (max-width: 1200px) {
+  .meet .meet__team div div .meet__team__img:after {
+    width: 290px;
+    height: 362px;
+    margin-left: -290px;
+    margin-top: -350px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .meet .meet__team div div .meet__team__img:after {
+    width: 229px;
+    height: 280px;
+    margin-left: -230px;
+    margin-top: -280px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .meet .meet__team div div .meet__team__img:after {
+    width: 350px;
+    height: 435px;
+    margin-left: -350px;
+    margin-top: -435px;
   }
 }
 .meet .meet__team div div .meet__team__img:hover img {
@@ -104,6 +138,26 @@
     margin-bottom: 30px;
   }
 }
+.meet .meet__team div div .meet__team__img:hover:after {
+  margin-top: -445.5px;
+  transition: .5s ease;
+  opacity: 0.8;
+}
+@media only screen and (max-width: 1200px) {
+  .meet .meet__team div div .meet__team__img:hover:after {
+    margin-top: -370px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .meet .meet__team div div .meet__team__img:hover:after {
+    margin-top: -297px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .meet .meet__team div div .meet__team__img:hover:after {
+    margin-top: -450px;
+  }
+}
 .meet .meet__team div .meet__team__name {
   font-weight: bold;
   padding-top: 3%;
@@ -114,6 +168,17 @@
   padding-top: 3%;
   font-style: italic;
   font-size: 1em;
+}
+.meet .meet__team .meet__team__img__small {
+  width: 8%;
+  display: inline;
+}
+.meet .meet__team .meet__team__img__small img {
+  z-index: 50;
+  position: relative;
+  display: inline;
+  margin-top: -200px;
+  width: 8%;
 }
 
 .logos {
