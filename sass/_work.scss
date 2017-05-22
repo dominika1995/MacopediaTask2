@@ -26,24 +26,178 @@
     div {
       margin: 0 0 0 0;
       padding: 0 0 0 0;
+      position: relative;
       img {
         width: 100%;
         margin: 0 0 0 0;
         padding: 0 0 0 0;
+        vertical-align: top;
+      }
+      img:hover{
+
+      }
+
+    }
+    .work__picture__overlay{
+      .work__picture__small{
+        z-index: 50;
+        position: relative;
+        margin-top: -200px;
+        width: 8%;
+        opacity: 0;
+        @media only screen and (max-width: $md)
+        {
+          margin-top: -150px;
+        }
+        @media only screen and (max-width: $sm)
+        {
+          margin-top: -120px;
+        }
+        @media only screen and (max-width: $xs)
+        {
+          margin-top: -200px;
+        }
+      }
+      .work__picture__small__three{
+        margin-top: -400px;
+        @media only screen and (max-width: $md)
+        {
+          margin-top: -280px;
+        }
+        @media only screen and (max-width: $sm)
+        {
+          margin-top: -200px;
+        }
+        @media only screen and (max-width: $xs)
+        {
+          margin-top: -300px;
+        }
+      }
+      .work__picture__text__bold{
+        z-index: 51;
+        position: absolute;
+        opacity: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.9em;
+        margin-top: -170px;
+        text-align: center;
+        margin-left: 30%;
+        color: white;
+        @media only screen and (max-width: $md)
+        {
+          margin-top: -140px;
+        }
+        @media only screen and (max-width: $sm)
+        {
+          margin-left: 15%;
+          margin-top: -100px;
+        }
+        @media only screen and (max-width: $xs)
+        {
+          margin-top: -180px;
+          margin-left: 30%;
+        }
+      }
+      .work__picture__text__bold__three{
+        margin-top: -340px;
+        @media only screen and (max-width: $md)
+        {
+          margin-top: -250px;
+        }
+        @media only screen and (max-width: $sm)
+        {
+          margin-left: 15%;
+        }
+        @media only screen and (max-width: $sm)
+        {
+          margin-top: -180px;
+        }
+        @media only screen and (max-width: $xs)
+        {
+          margin-top: -270px;
+          margin-left: 30%;
+        }
+      }
+      .work__picture__text__small{
+        z-index: 52;
+        position: absolute;
+        opacity: 0;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        font-size: 0.8em;
+        margin-top: -150px;
+        color: white;
+        margin-left: 34%;
+        @media only screen and (max-width: $md)
+        {
+          margin-top: -120px;
+        }
+        @media only screen and (max-width: $sm)
+        {
+          margin-left: 19%;
+          margin-top: -80px;
+        }
+        @media only screen and (max-width: $xs)
+        {
+          margin-top: -150px;
+          margin-left: 35%;
+        }
+      }
+      .work__picture__text__small__three{
+        margin-top: -300px;
+        @media only screen and (max-width: $md)
+        {
+          margin-top: -230px;
+        }
+        @media only screen and (max-width: $sm)
+        {
+          margin-left: 19%;
+        }
+        @media only screen and (max-width: $sm)
+        {
+          margin-top: -160px;
+        }
+        @media only screen and (max-width: $xs)
+        {
+          margin-top: -250px;
+          margin-left: 35%;
+        }
       }
     }
-  }
-  .work__picture__bottom {
-    margin-top: 3%;
-    div {
-      margin: 0 0 0 0;
-      padding: 0 0 0 0;
-      img {
-        width: 100%;
-        //margin: -521.5px 0 0 0;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
+    .work__picture__overlay:after{
+      content: '\A';
+      position: absolute;
+      width: 100%; height:97%;
+      top:0; left:0;
+      background: linear-gradient($color-red, $color-yellow);
+      opacity: 0;
+      transition: all 1s;
+      -webkit-transition: all 1s;
+    }
+    .work__picture__overlay:hover:after {
+      opacity: 0.8;
+    }
+    .work__picture__overlay:hover {
+      .work__picture__small {
+        opacity: 0.8;
+      }
+      .work__picture__text__bold{
+        opacity: 0.8;
+      }
+      .work__picture__text__small{
+        opacity: 0.8;
       }
     }
+    .work__picture__bottom{
+      margin-top: -20px;
+      @media only screen and (max-width: $xs){
+        margin-top: -20px;
+        margin-bottom: -20px;
+      }
+    }
+    .work__picture__bottom:after{
+      height: 94%;
+    }
   }
+
 }
