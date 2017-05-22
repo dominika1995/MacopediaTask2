@@ -38,4 +38,7 @@
   .navbar__img{
     content:url("../img/MoGo.png");
   }
+  @media(max-width:$xs) {
+    background-color: $color-blue;
+  }
 }

@@ -28,6 +28,11 @@
   .about__gallery{
     margin-top: 5%;
     margin-bottom: 10%;
+    div{
+      @media(max-width:$xs){
+        margin-bottom: 5%;
+      }
+    }
     .img{
       background-repeat:no-repeat;
       background-size:cover;

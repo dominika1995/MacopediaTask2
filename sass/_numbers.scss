@@ -8,6 +8,13 @@
         border-left: 1px solid white;
         margin-left: 18.75%;
       }
+      @media(max-width:$xs){
+        width:20%;
+        &:nth-child(1){
+            border-left: 1px solid white;
+            margin:0;
+          }
+      }
     span{
       display:block;
       margin: 0 auto;
@@ -19,6 +26,15 @@
       font-family: 'Montserrat', sans-serif;
       margin-top: 30%;
       font-size: 50px;
+      @media(max-width:$md){
+        font-size: 40px;
+      }
+      @media(max-width:$sm){
+        font-size: 40px;
+      }
+      @media(max-width:$xs){
+        font-size: 40px;
+      }
     }
   }
 }
