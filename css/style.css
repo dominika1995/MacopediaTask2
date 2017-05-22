@@ -1,3 +1,412 @@
+.meet .meet__title__top {
+  font-family: Kaushan Script;
+  text-align: center;
+  font-size: 2em;
+}
+.meet .meet__title__middle {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+.meet div {
+  text-align: center;
+}
+.meet div .meet__rectangle {
+  padding-bottom: 3%;
+  padding-top: 1%;
+}
+.meet div .meet__text {
+  color: #d9d9d9;
+  font-size: 1em;
+}
+@media only screen and (max-width: 992px) {
+  .meet div .meet__text {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .meet div .meet__text {
+    font-size: 1em;
+  }
+}
+.meet .meet__team {
+  padding-top: 3%;
+}
+.meet .meet__team div div {
+  /* .meet__team__img:hover:after{
+     content: "tekst ";
+     display: block;
+     background: linear-gradient($color-red, $color-yellow);
+     height: 434.13px;
+     width: 351px;
+     margin-top:-459px;
+     z-index: 5;
+   }*/
+}
+.meet .meet__team div div .meet__team__img img {
+  width: 90%;
+  left: 30px;
+  margin-top: -459px;
+}
+@media only screen and (max-width: 1200px) {
+  .meet .meet__team div div .meet__team__img img {
+    margin-top: -370px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .meet .meet__team div div .meet__team__img img {
+    margin-top: -305px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .meet .meet__team div div .meet__team__img img {
+    width: 350px;
+    margin-top: -455px;
+  }
+}
+.meet .meet__team div div .meet__team__img:before {
+  content: " ";
+  display: block;
+  width: 351px;
+  height: 434px;
+  background-color: #95e1d3;
+  margin-left: 20px;
+}
+@media only screen and (max-width: 1200px) {
+  .meet .meet__team div div .meet__team__img:before {
+    width: 285px;
+    height: 355px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .meet .meet__team div div .meet__team__img:before {
+    width: 225px;
+    height: 280px;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .meet .meet__team div div .meet__team__img:before {
+    width: 350px;
+    height: 435px;
+    margin-left: 26.5%;
+  }
+}
+.meet .meet__team div div .meet__team__img:after {
+  content: " ";
+  position: absolute;
+  width: 351px;
+  height: 434px;
+  background: linear-gradient(#f38181, #fce38a);
+  margin-left: -350px;
+  margin-top: -435px;
+  opacity: 0;
+}
+@media only screen and (max-width: 1200px) {
+  .meet .meet__team div div .meet__team__img:after {
+    width: 290px;
+    height: 362px;
+    margin-left: -290px;
+    margin-top: -350px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .meet .meet__team div div .meet__team__img:after {
+    width: 229px;
+    height: 280px;
+    margin-left: -230px;
+    margin-top: -280px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .meet .meet__team div div .meet__team__img:after {
+    width: 350px;
+    height: 435px;
+    margin-left: -350px;
+    margin-top: -435px;
+  }
+}
+.meet .meet__team div div .meet__team__img:hover img {
+  margin-left: -20px;
+  margin-bottom: 20px;
+  transition: .5s ease;
+}
+@media only screen and (max-width: 1200px) {
+  .meet .meet__team div div .meet__team__img:hover img {
+    margin-bottom: 30px;
+  }
+}
+.meet .meet__team div div .meet__team__img:hover:after {
+  margin-top: -445.5px;
+  transition: .5s ease;
+  opacity: 0.8;
+}
+@media only screen and (max-width: 1200px) {
+  .meet .meet__team div div .meet__team__img:hover:after {
+    margin-top: -370px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .meet .meet__team div div .meet__team__img:hover:after {
+    margin-top: -297px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .meet .meet__team div div .meet__team__img:hover:after {
+    margin-top: -450px;
+  }
+}
+.meet .meet__team div .meet__team__name {
+  font-weight: bold;
+  padding-top: 3%;
+  font-size: 1.1em;
+}
+.meet .meet__team div .meet__team__work {
+  color: #e5e5e5;
+  padding-top: 3%;
+  font-style: italic;
+  font-size: 1em;
+}
+.meet .meet__team .meet__team__img__small {
+  width: 8%;
+  display: inline;
+}
+.meet .meet__team .meet__team__img__small img {
+  z-index: 50;
+  position: relative;
+  display: inline;
+  margin-top: -200px;
+  width: 8%;
+}
 
+.logos {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 100px;
+}
+.logos img {
+  width: 60%;
+}
+
+.work .work__title__top {
+  margin-top: 5%;
+  font-family: Kaushan Script;
+  text-align: center;
+  font-size: 2em;
+}
+.work .work__title__middle {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+.work div {
+  text-align: center;
+}
+.work div .work_rectangle {
+  padding-bottom: 3%;
+  padding-top: 1%;
+}
+.work .work__text {
+  color: #d9d9d9;
+  font-size: 1em;
+}
+.work .work__picture {
+  margin-top: 3%;
+}
+.work .work__picture div {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  position: relative;
+}
+.work .work__picture div img {
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  vertical-align: top;
+}
+.work .work__picture .work__picture__overlay .work__picture__small {
+  z-index: 50;
+  position: relative;
+  margin-top: -200px;
+  width: 8%;
+  opacity: 0;
+}
+@media only screen and (max-width: 1200px) {
+  .work .work__picture .work__picture__overlay .work__picture__small {
+    margin-top: -150px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .work .work__picture .work__picture__overlay .work__picture__small {
+    margin-top: -120px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .work .work__picture .work__picture__overlay .work__picture__small {
+    margin-top: -200px;
+  }
+}
+.work .work__picture .work__picture__overlay .work__picture__small__three {
+  margin-top: -400px;
+}
+@media only screen and (max-width: 1200px) {
+  .work .work__picture .work__picture__overlay .work__picture__small__three {
+    margin-top: -280px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .work .work__picture .work__picture__overlay .work__picture__small__three {
+    margin-top: -200px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .work .work__picture .work__picture__overlay .work__picture__small__three {
+    margin-top: -300px;
+  }
+}
+.work .work__picture .work__picture__overlay .work__picture__text__bold {
+  z-index: 51;
+  position: absolute;
+  opacity: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em;
+  margin-top: -170px;
+  text-align: center;
+  margin-left: 30%;
+  color: white;
+}
+@media only screen and (max-width: 1200px) {
+  .work .work__picture .work__picture__overlay .work__picture__text__bold {
+    margin-top: -140px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .work .work__picture .work__picture__overlay .work__picture__text__bold {
+    margin-left: 15%;
+    margin-top: -100px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .work .work__picture .work__picture__overlay .work__picture__text__bold {
+    margin-top: -180px;
+    margin-left: 30%;
+  }
+}
+.work .work__picture .work__picture__overlay .work__picture__text__bold__three {
+  margin-top: -340px;
+}
+@media only screen and (max-width: 1200px) {
+  .work .work__picture .work__picture__overlay .work__picture__text__bold__three {
+    margin-top: -250px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .work .work__picture .work__picture__overlay .work__picture__text__bold__three {
+    margin-left: 15%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .work .work__picture .work__picture__overlay .work__picture__text__bold__three {
+    margin-top: -180px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .work .work__picture .work__picture__overlay .work__picture__text__bold__three {
+    margin-top: -270px;
+    margin-left: 30%;
+  }
+}
+.work .work__picture .work__picture__overlay .work__picture__text__small {
+  z-index: 52;
+  position: absolute;
+  opacity: 0;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 0.8em;
+  margin-top: -150px;
+  color: white;
+  margin-left: 34%;
+}
+@media only screen and (max-width: 1200px) {
+  .work .work__picture .work__picture__overlay .work__picture__text__small {
+    margin-top: -120px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .work .work__picture .work__picture__overlay .work__picture__text__small {
+    margin-left: 19%;
+    margin-top: -80px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .work .work__picture .work__picture__overlay .work__picture__text__small {
+    margin-top: -150px;
+    margin-left: 35%;
+  }
+}
+.work .work__picture .work__picture__overlay .work__picture__text__small__three {
+  margin-top: -300px;
+}
+@media only screen and (max-width: 1200px) {
+  .work .work__picture .work__picture__overlay .work__picture__text__small__three {
+    margin-top: -230px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .work .work__picture .work__picture__overlay .work__picture__text__small__three {
+    margin-left: 19%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .work .work__picture .work__picture__overlay .work__picture__text__small__three {
+    margin-top: -160px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .work .work__picture .work__picture__overlay .work__picture__text__small__three {
+    margin-top: -250px;
+    margin-left: 35%;
+  }
+}
+.work .work__picture .work__picture__overlay:after {
+  content: '\A';
+  position: absolute;
+  width: 100%;
+  height: 97%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(#f38181, #fce38a);
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+.work .work__picture .work__picture__overlay:hover:after {
+  opacity: 0.8;
+}
+.work .work__picture .work__picture__overlay:hover .work__picture__small {
+  opacity: 0.8;
+}
+.work .work__picture .work__picture__overlay:hover .work__picture__text__bold {
+  opacity: 0.8;
+}
+.work .work__picture .work__picture__overlay:hover .work__picture__text__small {
+  opacity: 0.8;
+}
+.work .work__picture .work__picture__bottom {
+  margin-top: -20px;
+}
+@media only screen and (max-width: 768px) {
+  .work .work__picture .work__picture__bottom {
+    margin-top: -20px;
+    margin-bottom: -20px;
+  }
+}
+.work .work__picture .work__picture__bottom:after {
+  height: 94%;
+}
 
 /*# sourceMappingURL=style.css.map */
