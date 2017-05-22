@@ -1,0 +1,41 @@
+.nav{
+  li{
+    a{
+      color: white !important;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      &:hover {
+        color:$color-yellow !important;
+        border-bottom: 4px solid $color-yellow;
+
+      }
+    }
+  }
+  .navbar__pic--cart{
+    content:url("../img/pictograms/banner_shopping-cart.png");
+  }
+  .navbar__pic--glass{
+    content:url("../img/pictograms/banner_magnifying-glass.png");
+  }
+}
+@media(min-width:$xs) {
+    .navbar {
+        padding: 20px 0;
+        background-color: transparent;
+        border: none;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out,background-color .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out,background-color .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out,background-color .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+        background-color: $color-blue;
+    }
+}
+.navbar{
+  .navbar__img{
+    content:url("../img/MoGo.png");
+  }
+}

@@ -1,0 +1,151 @@
+#about{
+  .about__info--first{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 20px;
+    color: black;
+    margin-top: 5%;
+  }
+  .about__info--second{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    margin-top: 0;
+    color: black;
+  }
+  .about__info__bar{
+    display:inline-block;
+    border: 2px solid $color-red;
+    width: 50px;
+    margin-top: 1.5%;
+  }
+  .about__info--text{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1.5%;
+    width:60%;
+  }
+  .about__gallery{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    .img{
+      background-repeat:no-repeat;
+      background-size:cover;
+      width:70%;
+      height:230px;
+      margin-bottom: 15%;
+      img.about__gallery__img--bg{
+        z-index: 3;
+        width: 70%;
+        height: 100%;
+        margin:0;
+        &:hover{
+          margin-top: -3%;
+          margin-left: -7%;
+          -webkit-transition: all 0.7s ease-out;
+          -moz-transition: all 0.7s ease-out;
+          -ms-transition: all 0.7s ease-out;
+          -o-transition: all 0.7s ease-out;
+          transition: all 0.7s ease-out;
+        }
+      }
+      img.about__gallery__img--pic--1{
+        z-index: 100;
+        margin:auto;
+        position: relative;
+        border: 3px black solid;
+      }
+      .about__gallery__text{
+        z-index: 100;
+        margin-top:-100%;
+        margin-left: 50%;
+        position:absolute;
+        color:white;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        text-transform: uppercase;
+        border: 3px black solid;
+      }
+      @media(max-width:768px){
+            margin: auto !important;
+            margin-bottom: 20%;
+      }
+      &:before {
+        position: absolute;
+        content: " ";
+        display: block;
+        width: 66%;
+        height: 100%;
+        background-color: $color-blue;
+        z-index: -100;
+        @media(max-width:1580px){
+              width: 65%;
+        }
+        @media(max-width:1280px){
+              width: 64%;
+        }
+        @media(max-width:1160px){
+              width: 63%;
+        }
+        @media(max-width:940px){
+              width: 62%;
+        }
+        @media(max-width:$xs){
+              width: 67%;
+        }
+        @media(max-width:700px){
+              width: 66.5%;
+        }
+        @media(max-width:600px){
+              width: 66%;
+        }
+        @media(max-width:500px){
+              width: 65%;
+        }
+        @media(max-width:420px){
+              width: 64%;
+        }
+      }
+
+    }
+    .about__gallery--first{
+      margin-left: 45%;
+      margin-bottom: auto;
+      img.about__gallery__img--bg{
+        content:url("../img/aboutus_pic1.png");
+        width: 100%;
+        &:hover ~img.about__gallery__img--pic--1 {
+          display:inline;
+          margin-left: -10%;
+          -webkit-transition: all 0.7s ease-out;
+          -moz-transition: all 0.7s ease-out;
+          -ms-transition: all 0.7s ease-out;
+          -o-transition: all 0.7s ease-out;
+          transition: all 0.7s ease-out;
+        }
+      }
+      img.about__gallery__img--pic--1{
+        content:url("../img/pictograms/aboutus_pic1_icon.png");
+      }
+
+    }
+
+    .about__gallery--second{
+      margin:auto;
+      img.about__gallery__img--bg{
+        content:url("../img/aboutus_pic2.png");
+        width: 100%;
+      }
+    }
+    .about__gallery--third{
+      margin-left: -15%;
+      margin-bottom: auto;
+      img.about__gallery__img--bg{
+        content:url("../img/aboutus_pic3.png");
+        width: 100%;
+      }
+    }
+  }
+
+}
