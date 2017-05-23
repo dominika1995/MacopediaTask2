@@ -409,11 +409,10 @@
   height: 94%;
 }
 
-
 #banner {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(#f48c82, #fce28a);
+  background: linear-gradient(RGB(244, 140, 130), RGB(252, 226, 138));
 }
 #banner img {
   content: url("../img/banner_bg.png");
@@ -750,4 +749,5 @@
     font-size: 40px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
