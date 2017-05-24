@@ -1,0 +1,124 @@
+.foot{
+  background-color: $color-grey;
+  &__1 {
+    &--logo {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 3.5em;
+      padding-top: 10%;
+      color: $color-grey-light;
+      margin-left: -4%;
+    }
+    &--text {
+      color: $color-grey-light;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1em;
+      margin-left: -4%;
+    }
+    &--line{
+      margin-left: -5%;
+    }
+    &--users {
+      padding-top: 7%;
+      &--number {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 1.3em;
+      }
+      &--user {
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+    &--site {
+      padding-top: 2%;
+      &--text {
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        color: $color-grey-light;
+        padding-right: 5%;
+      }
+      img{
+        padding-right: 2%;
+      }
+    }
+    form {
+      input[type=text] {
+        width: 50%;
+        margin-left: -5%;
+        padding: 10px 5px 10px 5px;
+        display: inline-block;
+        border: 1px solid $color-grey-middle;
+        box-sizing: border-box;
+        margin-top: 5%;
+      }
+
+      input[type=submit] {
+        width: 40%;
+        background-color: $color-blue;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        padding: 10px 20px;
+        margin: 0;
+        border: none;
+        cursor: pointer;
+        margin-top: 5%;
+        margin-left: -1.2%;
+      }
+    }
+  }
+  &__2 {
+      &--title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3em;
+        padding-top: 15%;
+        font-weight: bold;
+        //margin-left: 5%;
+      }
+    &--row {
+      margin-top: 5%;
+      &--text {
+        &--long {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.8em;
+        }
+        &--data {
+          font-family: 'Roboto', sans-serif;
+          font-size: 0.6em;
+          font-style: italic;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+  &__3 {
+    &--title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3em;
+      padding-top: 15%;
+      font-weight: bold;
+    }
+    &--insta {
+      margin-left: 5%;
+      .row {
+        margin-bottom: 2%;
+      }
+    }
+    &--text {
+      padding-top: 2%;
+      font-style: italic;
+    }
+    &--line{
+      margin-left: -5%;
+    }
+    &--foot{
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      margin-top: 2%;
+      margin-bottom: 2%;
+      &--color{
+        color: $color-red;
+      }
+    }
+  }
+}
