@@ -182,14 +182,16 @@
 }
 
 .logos {
+  margin-top: 3%;
   background-color: #f8f8f8;
+  padding-top: 3%;
+  padding-bottom: 3%;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-top: 100px;
 }
-.logos img {
-  width: 60%;
+@media only screen and (max-width: 768px) {
+  .logos div .logos__row div img {
+    margin-bottom: 50px;
+  }
 }
 
 .work .work__title__top {

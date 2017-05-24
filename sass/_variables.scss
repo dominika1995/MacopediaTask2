@@ -11,3 +11,7 @@ $gradient-top: RGB(244,140,130);
 $md:1200px;
 $sm:992px;
 $xs:768px;
+
+$md-screen: "only screen and (max-width : 1200px)";
+$sm-screen: "only screen and (max-width : 992px)";
+$xs-screen: "only screen and (max-width : 768px)";
