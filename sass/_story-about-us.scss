@@ -120,15 +120,7 @@
       img.about__gallery__img--bg{
         content:url("../img/aboutus_pic1.png");
         width: 100%;
-        &:hover ~img.about__gallery__img--pic--1 {
-          display:inline;
-          margin-left: -10%;
-          -webkit-transition: all 0.7s ease-out;
-          -moz-transition: all 0.7s ease-out;
-          -ms-transition: all 0.7s ease-out;
-          -o-transition: all 0.7s ease-out;
-          transition: all 0.7s ease-out;
-        }
+
       }
       img.about__gallery__img--pic--1{
         content:url("../img/pictograms/aboutus_pic1_icon.png");
