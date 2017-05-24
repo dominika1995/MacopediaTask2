@@ -1,0 +1,107 @@
+.blog{
+  &__title{
+    padding-top: 5%;
+    text-align: center;
+    &--top{
+      font-family: Kaushan Script;
+      font-size: 2em;
+    }
+    &--middle{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    &--rectangle{
+      padding-bottom: 3%;
+      padding-top: 1%;
+    }
+  }
+  &__img{
+    &--margin--1{
+      //padding-left: 3%;
+      margin-left: -1.5%;
+      margin-right: 0.5%;
+      @media #{$sm-screen}{
+        margin-left: 0%;
+      }
+      @media #{$md-screen}
+      {
+        margin-left: -0.4%;
+        margin-right: 0.1%;
+      }
+    }
+    &--margin--2{
+      margin-right: 0.5%;
+      @media #{$md-screen}{
+        margin-right: 0.1%;
+      }
+    }
+    &--margin--3{
+      //margin-left: -5%;
+    }
+    &--top{
+      padding-top: 4%;
+      font-family: 'Montserrat', sans-serif;
+      margin-left: -4%;
+      font-weight: 600;
+    }
+    &--middle{
+      padding-top: 2%;
+      color: $color-grey-dark;
+      padding-left: -2%;
+      margin-left: -4%;
+    }
+    &--line{
+      margin-left: -4%;
+    }
+    &--pictograms{
+      padding-top: 2%;
+      opacity: 0.8;
+      span{
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+    }
+  &--img{
+    img {
+      @media #{$md-screen}{
+        width: 90%;
+      }
+    }
+    figcaption{
+      background-color: $color-blue;
+      position: absolute;
+      top:40%;
+      left:-3%;
+      right: 84%;
+      text-align: center;
+      color: white;
+      @media #{$md-screen}
+      {
+        top:30%;
+      }
+      @media #{$sm-screen}
+      {
+        top:50%;
+      }
+    }
+    &--1{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding-top: 2%;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+    &--2{
+      font-family: 'Roboto', sans-serif;
+      font-style: italic;
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+  }
+    @media #{$sm-screen}{
+      margin-left: 20%;
+    }
+  }
+}

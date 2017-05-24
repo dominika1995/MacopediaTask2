@@ -971,4 +971,111 @@
   }
 }
 
+.blog__title {
+  padding-top: 5%;
+  text-align: center;
+}
+.blog__title--top {
+  font-family: Kaushan Script;
+  font-size: 2em;
+}
+.blog__title--middle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.blog__title--rectangle {
+  padding-bottom: 3%;
+  padding-top: 1%;
+}
+.blog__img--margin--1 {
+  margin-left: -1.5%;
+  margin-right: 0.5%;
+}
+@media only screen and (max-width: 992px) {
+  .blog__img--margin--1 {
+    margin-left: 0%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .blog__img--margin--1 {
+    margin-left: -0.4%;
+    margin-right: 0.1%;
+  }
+}
+.blog__img--margin--2 {
+  margin-right: 0.5%;
+}
+@media only screen and (max-width: 1200px) {
+  .blog__img--margin--2 {
+    margin-right: 0.1%;
+  }
+}
+.blog__img--top {
+  padding-top: 4%;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: -4%;
+  font-weight: 600;
+}
+.blog__img--middle {
+  padding-top: 2%;
+  color: #999999;
+  padding-left: -2%;
+  margin-left: -4%;
+}
+.blog__img--line {
+  margin-left: -4%;
+}
+.blog__img--pictograms {
+  padding-top: 2%;
+  opacity: 0.8;
+}
+.blog__img--pictograms span {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+@media only screen and (max-width: 1200px) {
+  .blog__img--img img {
+    width: 90%;
+  }
+}
+.blog__img--img figcaption {
+  background-color: #95e1d3;
+  position: absolute;
+  top: 40%;
+  left: -3%;
+  right: 84%;
+  text-align: center;
+  color: white;
+}
+@media only screen and (max-width: 1200px) {
+  .blog__img--img figcaption {
+    top: 30%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .blog__img--img figcaption {
+    top: 50%;
+  }
+}
+.blog__img--img--1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 2%;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.blog__img--img--2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+@media only screen and (max-width: 992px) {
+  .blog__img {
+    margin-left: 20%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
