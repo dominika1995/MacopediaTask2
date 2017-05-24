@@ -1,3 +1,124 @@
+.meet {
+  /*.meet__team {
+    padding-top: 3%;
+    div {
+      div {
+        .meet__team__img {
+          img {
+            width: 90%;
+            left: 30px;
+            margin-top:-459px;
+            @media only screen and (max-width: $md)
+            {
+              margin-top:-370px;
+            }
+            @media only screen and (max-width: $sm)
+            {
+              margin-top:-305px;
+            }
+            @media only screen and (max-width: $xs)
+            {
+              width: 350px;
+              margin-top:-455px;
+            }
+          }
+        }
+        .meet__team__img:before{
+          content: " ";
+          display: block;
+          width: 351px;
+          height: 434px;
+          background-color: $color-blue;
+          margin-left: 20px;
+          @media only screen and (max-width: $md)
+          {
+            width: 285px;
+            height: 355px;
+            margin-top: 10px;
+          }
+          @media only screen and (max-width: $sm)
+          {
+            width: 225px;
+            height: 280px;
+            margin-top: 10px;
+            margin-left: 15px;
+          }
+          @media only screen and (max-width: $xs)
+          {
+            width: 350px;
+            height: 435px;
+            margin-left: 26.5%;
+          }
+        }
+        .meet__team__img:after{
+          content: " ";
+          position: absolute;
+          width: 351px;
+          height: 434px;
+          background: linear-gradient($color-red, $color-yellow);
+          margin-left: -350px;
+          margin-top: -435px;
+          opacity: 0;
+          @media only screen and (max-width: $md)
+          {
+            width: 290px;
+            height: 362px;
+            margin-left: -290px;
+            margin-top: -350px;
+          }
+          @media only screen and (max-width: $sm)
+          {
+            width: 229px;
+            height: 280px;
+            margin-left: -230px;
+            margin-top: -280px;
+          }
+          @media only screen and (max-width: $xs)
+          {
+            width: 350px;
+            height: 435px;
+            margin-left: -350px;
+            margin-top: -435px;
+          }
+        }
+        .meet__team__img:hover {
+          img {
+            margin-left: -20px;
+            margin-bottom: 20px;
+            transition: .5s ease;
+            @media only screen and (max-width: $md)
+            {
+              margin-bottom: 30px;
+
+            }
+          }
+        }
+        .meet__team__img:hover:after{
+          margin-top: -445.5px;
+          transition: .5s ease;
+          opacity: 0.8;
+          @media only screen and (max-width: $md)
+          {
+            margin-top: -370px;
+          }
+          @media only screen and (max-width: $sm){
+            margin-top: -297px;
+          }
+          @media only screen and (max-width: $xs){
+            margin-top: -450px;
+          }
+        }
+       /* .meet__team__img:hover:after{
+          content: "tekst ";
+          display: block;
+          background: linear-gradient($color-red, $color-yellow);
+          height: 434.13px;
+          width: 351px;
+          margin-top:-459px;
+          z-index: 5;
+        }
+      }*/
+}
 .meet .meet__title__top {
   font-family: Kaushan Script;
   text-align: center;
@@ -29,151 +150,171 @@
     font-size: 1em;
   }
 }
-.meet .meet__team {
-  padding-top: 3%;
+.meet div div .meet__team {
+        /*&--one--pictogram,
+        &--one--pictogram{
+          margin: 0;
+          opacity: 0;
+
+          &--1 {
+            //-webkit-transform: translateY(-100%);
+            //transform: translateY(-100%);
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: $color-red;
+
+          }
+          &--2 {
+            //-webkit-transform: translateY(-100%);
+            //transform: translateY(-100%);
+            padding-bottom: 10px;
+            padding-top: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            background-color: $color-yellow;
+
+          }
+        }
+
+
+        &--one:hover:before,
+        &--one.hover:before {
+          top: 0px;
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+          opacity: 0.8;
+
+          &--pictogram:hover,
+          &--pictogram.hover {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+        &--one:hover:after,
+        &--one.hover:after {
+          top: 20px;
+          bottom: -20px;
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+          opacity: 1;
+          height: 100%;
+        }
+        &--one:hover img,
+        &--one.hover img{
+          margin-left: -20px;
+          padding-bottom: -20px;
+          transition: .5s ease;
+        }
+        &--one--pictogram:hover,
+        &--one--pictogram.hover {
+          -webkit-transition-delay: 0.5s;
+          transition-delay: 0.1s;
+          margin-left: 0px;
+          padding-bottom: 0px;
+          transition: .5s ease;
+        }*/
+        /* width: 100%;
+         &--back{
+           background-color: $color-blue;
+           width: 100%;
+           height: 100%;
+         }
+         &--img{
+           opacity: 0;
+
+         }
+         &--top{
+
+         }
+       }
+     }*/
 }
-.meet .meet__team div div {
-  /* .meet__team__img:hover:after{
-     content: "tekst ";
-     display: block;
-     background: linear-gradient($color-red, $color-yellow);
-     height: 434.13px;
-     width: 351px;
-     margin-top:-459px;
-     z-index: 5;
-   }*/
-}
-.meet .meet__team div div .meet__team__img img {
+.meet div div .meet__team--one {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 20px 20px 20px 20px;
+  min-width: 230px;
+  max-width: 380px;
   width: 90%;
-  left: 30px;
-  margin-top: -459px;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+  display: table;
 }
-@media only screen and (max-width: 1200px) {
-  .meet .meet__team div div .meet__team__img img {
-    margin-top: -370px;
-  }
+.meet div div .meet__team--one * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
-@media only screen and (max-width: 992px) {
-  .meet .meet__team div div .meet__team__img img {
-    margin-top: -305px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .meet .meet__team div div .meet__team__img img {
-    width: 350px;
-    margin-top: -455px;
-  }
-}
-.meet .meet__team div div .meet__team__img:before {
-  content: " ";
-  display: block;
-  width: 351px;
-  height: 434px;
-  background-color: #95e1d3;
-  margin-left: 20px;
-}
-@media only screen and (max-width: 1200px) {
-  .meet .meet__team div div .meet__team__img:before {
-    width: 285px;
-    height: 355px;
-    margin-top: 10px;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .meet .meet__team div div .meet__team__img:before {
-    width: 225px;
-    height: 280px;
-    margin-top: 10px;
-    margin-left: 15px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .meet .meet__team div div .meet__team__img:before {
-    width: 350px;
-    height: 435px;
-    margin-left: 26.5%;
-  }
-}
-.meet .meet__team div div .meet__team__img:after {
-  content: " ";
+.meet div div .meet__team--one:before {
   position: absolute;
-  width: 351px;
-  height: 434px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 5%;
+  top: 100%;
+  content: '';
   background: linear-gradient(#f38181, #fce38a);
-  margin-left: -350px;
-  margin-top: -435px;
-  opacity: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
-@media only screen and (max-width: 1200px) {
-  .meet .meet__team div div .meet__team__img:after {
-    width: 290px;
-    height: 362px;
-    margin-left: -290px;
-    margin-top: -350px;
-  }
+.meet div div .meet__team--one:after {
+  position: absolute;
+  top: 0px;
+  bottom: -20px;
+  left: 0px;
+  right: 0;
+  top: 100%;
+  content: '';
+  background: #95e1d3;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+  z-index: -100;
 }
-@media only screen and (max-width: 992px) {
-  .meet .meet__team div div .meet__team__img:after {
-    width: 229px;
-    height: 280px;
-    margin-left: -230px;
-    margin-top: -280px;
-  }
+.meet div div .meet__team--one img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
 }
-@media only screen and (max-width: 768px) {
-  .meet .meet__team div div .meet__team__img:after {
-    width: 350px;
-    height: 435px;
-    margin-left: -350px;
-    margin-top: -435px;
-  }
+.meet div div .meet__team--one figcaption {
+  position: absolute;
+  display: inline-block;
+  top: 45%;
+  bottom: 40%;
+  left: 0%;
+  right: 0;
+  z-index: 1;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 0px;
 }
-.meet .meet__team div div .meet__team__img:hover img {
-  margin-left: -20px;
-  margin-bottom: 20px;
-  transition: .5s ease;
-}
-@media only screen and (max-width: 1200px) {
-  .meet .meet__team div div .meet__team__img:hover img {
-    margin-bottom: 30px;
-  }
-}
-.meet .meet__team div div .meet__team__img:hover:after {
-  margin-top: -445.5px;
-  transition: .5s ease;
-  opacity: 0.8;
-}
-@media only screen and (max-width: 1200px) {
-  .meet .meet__team div div .meet__team__img:hover:after {
-    margin-top: -370px;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .meet .meet__team div div .meet__team__img:hover:after {
-    margin-top: -297px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .meet .meet__team div div .meet__team__img:hover:after {
-    margin-top: -450px;
-  }
-}
-.meet .meet__team div .meet__team__name {
+.meet .meet__team__name {
   font-weight: bold;
   padding-top: 3%;
   font-size: 1.1em;
 }
-.meet .meet__team div .meet__team__work {
+.meet .meet__team__work {
   color: #e5e5e5;
   padding-top: 3%;
   font-style: italic;
   font-size: 1em;
 }
-.meet .meet__team .meet__team__img__small {
+
+.meet__team__img__small {
   width: 8%;
   display: inline;
 }
-.meet .meet__team .meet__team__img__small img {
+.meet__team__img__small img {
   z-index: 50;
   position: relative;
   display: inline;
@@ -749,6 +890,84 @@
 @media (max-width: 768px) {
   #numbers .numbers__div span.numbers__div__count {
     font-size: 40px;
+  }
+}
+
+.say {
+  position: relative;
+  overflow: hidden;
+  background-color: #f8f8f8;
+  height: 100%;
+  width: 100%;
+}
+.say--back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+.say__title {
+  padding-top: 5%;
+  text-align: center;
+  z-index: 3;
+}
+.say__title--top {
+  font-family: Kaushan Script;
+  font-size: 2em;
+}
+.say__title--middle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.say__title--rectangle {
+  padding-bottom: 3%;
+  padding-top: 1%;
+}
+.say__client {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.say__client--name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 5%;
+}
+.say__client--job {
+  font-family: 'Roboto',sans-serif;
+  font-style: italic;
+  font-size: 1em;
+  padding-bottom: 1%;
+  padding-left: 5%;
+}
+.say__client--text {
+  color: #999999;
+  padding-top: 1%;
+  padding-left: 5%;
+}
+.say__client div img {
+  padding-left: 5%;
+  margin-top: 5%;
+}
+.say__client--img {
+  text-align: left;
+}
+.say__client--img img {
+  width: 100%;
+  padding-right: 5%;
+}
+@media only screen and (max-width: 992px) {
+  .say__client--img img {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .say__client--img img {
+    width: 60%;
   }
 }
 

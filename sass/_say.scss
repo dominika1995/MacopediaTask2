@@ -1,0 +1,78 @@
+.say {
+  position:relative;
+  overflow: hidden;
+  background-color: $color-grey;
+  height: 100%;
+  width: 100%;
+   &--back{
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     opacity: 0.2;
+    }
+  &__title {
+    padding-top: 5%;
+    text-align: center;
+    z-index: 3;
+    &--top {
+      font-family: Kaushan Script;
+      font-size: 2em;
+    }
+    &--middle {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    &--rectangle {
+      padding-bottom: 3%;
+      padding-top: 1%;
+    }
+  }
+  &__client{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    &--name{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1em;
+      padding-top: 1%;
+      padding-bottom: 1%;
+      padding-left: 5%;
+    }
+    &--job{
+      font-family:'Roboto',sans-serif;
+      font-style: italic;
+      font-size: 1em;
+      padding-bottom: 1%;
+      padding-left: 5%;
+    }
+    &--text{
+      color: $color-grey-dark;
+      padding-top: 1%;
+      padding-left: 5%;
+    }
+    div{
+      img{
+        padding-left: 5%;
+        margin-top: 5%;
+      }
+    }
+    &--img{
+      text-align: left;
+      img{
+        width: 100%;
+        padding-right: 5%;
+        @media #{$sm-screen}{
+          width: 40%;
+        }
+        @media #{$xs-screen}{
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+
+
