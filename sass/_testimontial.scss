@@ -1,0 +1,67 @@
+.testimontial{
+  padding-top: 4%;
+  padding-bottom: 5%;
+  &__slider{
+    &--left{
+      text-align: center;
+      margin-top: 5%;
+      @media #{$xs-screen}
+      {
+        margin-top: 25%;
+      }
+    }
+    &--right{
+      text-align: center;
+      margin-top: 3%;
+      @media #{$xs-screen}
+      {
+        margin-top: 0%;
+      }
+    }
+    &--page{
+      padding-top: 1%;
+      @media #{$xs-screen}
+      {
+        padding-left:35%
+      }
+      &--img{
+        img {
+          width: 60%;
+          @media #{$md-screen}
+          {
+            width: 80%;
+          }
+          @media #{$xs-screen}
+          {
+            width: 50%;
+            text-align: center;
+          }
+        }
+      }
+      &--text{
+        color: $color-grey-dark;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        width: 70%;
+        @media #{$xs-screen}
+        {
+          width: 90%;
+          margin-top: 50px;
+          padding-left: -30%;
+          margin-left: -20%;
+        }
+      }
+      &--name{
+        padding-top: 3%;
+        @media #{$xs-screen}
+        {
+          margin-left: -20%;
+        }
+        &--name{
+          font-family: 'Kaushan Script', cursive;
+        }
+      }
+    }
+
+  }
+}

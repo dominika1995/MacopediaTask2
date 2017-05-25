@@ -17,6 +17,10 @@
     }
     &--line{
       margin-left: -5%;
+      @media #{$md-screen}
+      {
+        width: 100%;
+      }
     }
     &--users {
       padding-top: 7%;
@@ -35,10 +39,14 @@
         font-family: 'Roboto', sans-serif;
         font-style: italic;
         color: $color-grey-light;
-        padding-right: 5%;
+        padding-right: 4%;
       }
       img{
-        padding-right: 2%;
+        padding-right: 1.5%;
+        @media #{$sm-screen}
+        {
+          padding-right: 4%;
+        }
       }
     }
     form {
@@ -98,7 +106,11 @@
       font-weight: bold;
     }
     &--insta {
-      margin-left: 5%;
+      text-align: center;
+      @media #{$md-screen}
+      {
+        margin-left: 5%;
+      }
       .row {
         margin-bottom: 2%;
       }
@@ -106,6 +118,9 @@
     &--text {
       padding-top: 2%;
       font-style: italic;
+      @media #{$md-screen}{
+        text-align: center;
+      }
     }
     &--line{
       margin-left: -5%;
