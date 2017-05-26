@@ -819,15 +819,19 @@
   text-transform: uppercase;
   font-weight: bold;
 }
-#services .services__gallery__block .xs-bar {
-  display: inline-block;
-  border: 2px solid #e5e5e5;
-  width: 90%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+@media (min-width: 1500px) {
+  #services .services__gallery__block {
+    width: 30%;
+    margin-left: 1.5%;
+  }
 }
 #services .services__gallery__block__pic img {
   width: 150%;
+}
+@media (min-width: 1500px) {
+  #services .services__gallery__block__pic img {
+    width: 100%;
+  }
 }
 @media (max-width: 1100px) {
   #services .services__gallery__block__pic img {
@@ -869,6 +873,100 @@
   border: 1px solid #e5e5e5;
   width: 90%;
   margin-left: 5%;
+}
+
+#design {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+#design img.design__bg {
+  content: url("../img/feature_bg.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+}
+#design .design__intro {
+  height: 100%;
+}
+#design .design__intro__text--first {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 20px;
+  color: black;
+  margin-top: 5%;
+}
+#design .design__intro__text--second {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  margin-top: 0;
+  color: black;
+}
+#design .design__intro__bar {
+  display: inline-block;
+  border: 2px solid #f38181;
+  width: 50px;
+  margin-top: 1.5%;
+  margin-bottom: 5%;
+}
+#design .design__intro__image {
+  height: 100%;
+}
+#design .design__intro__image .tablet {
+  height: 100%;
+}
+#design .design__intro__image .tablet img {
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+#design .design__phone__img img {
+  z-index: 10;
+  margin-left: 57%;
+  margin-top: -20%;
+}
+@media (max-width: 1400px) {
+  #design .design__phone__img img {
+    margin-left: 60%;
+    margin-top: -30%;
+  }
+}
+@media (max-width: 1200px) {
+  #design .design__phone__img img {
+    margin-left: 58%;
+    margin-top: -32%;
+  }
+}
+@media (max-width: 1100px) {
+  #design .design__phone__img img {
+    margin-left: 60%;
+    margin-top: -35%;
+  }
+}
+@media (max-width: 1000px) {
+  #design .design__phone__img img {
+    margin-left: 60%;
+    margin-top: -40%;
+  }
+}
+@media (max-width: 850px) {
+  #design .design__phone__img img {
+    margin-left: 62%;
+    margin-top: -50%;
+  }
+}
+@media (max-width: 700px) {
+  #design .design__phone__img img {
+    margin-left: 65%;
+    margin-top: -55%;
+    width: 40%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
