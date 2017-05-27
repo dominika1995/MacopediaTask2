@@ -1,26 +1,115 @@
 .work {
-  .work__title__top {
+  &--top {
     margin-top: 5%;
     font-family: Kaushan Script;
     text-align: center;
     font-size: 2em;
   }
-  .work__title__middle {
+  &--middle {
     text-align: center;
     font-size: 2em;
     font-weight: bold;
   }
-  div {
+  &__center {
     text-align: center;
-    .work_rectangle {
+    &--rectangle {
       padding-bottom: 3%;
       padding-top: 1%;
     }
+    &--text {
+      color: $color-grey-light;
+      font-size: 1em;
+    }
   }
-  .work__text {
-    color: $color-grey-light;
-    font-size: 1em;
+
+/*  &__picture{
+    font-family: 'Montserrat', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 8px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+    background: #000;
+
+    img{
+      max-width: 100%;
+      backface-visibility: hidden;
+      vertical-align: top;
+    }
+    :before,
+    :after{
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      content: '';
+      background-color: #fff;
+      z-index: 1;
+      opacity: 0;
+    }
+    :before{
+      width: 0;
+      height: 1px;
+    }
+
+    :after {
+      height: 0;
+      width: 1px;
+    }
+    figcaption{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 15px 20px;
+    }
+    :hover img,
+    .hover img {
+      zoom: 1;
+      filter: alpha(opacity=20);
+      -webkit-opacity: 0.2;
+      opacity: 0.2;
+    }
+
+    :hover:before,
+    .hover:before,
+    :hover:after,
+    .hover:after {
+      opacity: 1;
+      -webkit-transition-delay: 0.25s;
+      transition-delay: 0.25s;
+    }
+
+    :hover:before,
+    .hover:before {
+      width: 40px;
+    }
+
+    :hover:after,
+    .hover:after {
+      height: 40px;
+    }
+  *,
+  :before,
+  :after{
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    -webkit-box-sizing: border-box;   //usunac to albo -->
+    box-sizing: border-box;
   }
+  }
+  .work__picture *
+  .work__picture:before,
+  .work__picture:after{
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    -webkit-box-sizing: border-box;   //usunac to albo -->
+    box-sizing: border-box;
+  }*/
+
   .work__picture {
     margin-top: 3%;
     div {

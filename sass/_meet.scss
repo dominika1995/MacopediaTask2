@@ -16,172 +16,243 @@
       padding-top: 1%;
     }
     .meet__text {
-      color:$color-grey-light;
+      color: $color-grey-light;
       font-size: 1em;
-      @media only screen and (max-width: $sm)
-      {
+      margin-bottom: 5%;
+      @media only screen and (max-width: $sm) {
         font-size: 0.8em;
       }
-      @media only screen and (max-width: $xs)
-      {
+      @media only screen and (max-width: $xs) {
         font-size: 1em;
       }
     }
   }
   div {
     div {
+      padding-top: 3%;
       .meet__team {
-
-        &--one{
-          position: relative;
-          display: inline-block;
-          overflow: hidden;
-          margin: 20px 20px 20px 20px;
-          min-width: 230px;
-          max-width: 380px;
-          width: 90%;
-          color: #ffffff;
-          font-size: 16px;
-          text-align: left;
-          display:table;
-        }
-        &--one * {
-          -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-          -webkit-transition: all 0.25s ease;
-          transition: all 0.25s ease;
-        }
-        &--one:before {
-          position: absolute;
-          top: 0px;
-          bottom: 0px;
-          left: 0px;
-          right:5%;
-          top: 100%;
-          content: '';
-          background: linear-gradient($color-red, $color-yellow);
-          -webkit-transition: all 0.25s ease;
-          transition: all 0.25s ease;
-          -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
-        }
-        &--one:after {
-          position: absolute;
-          top: 0px;
-          bottom: -20px;
-          left: 0px;
-          right:0;
-          top: 100%;
-          content: '';
-          background: $color-blue;
-          -webkit-transition: all 0.25s ease;
-          transition: all 0.25s ease;
-          -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
-          z-index: -100;
-        }
-        &--one img {
-          vertical-align: top;
-          max-width: 100%;
-          backface-visibility: hidden;
-        }
-        &--one figcaption {
-          position: absolute;
-          display: inline-block;
-          top: 45%;
-          bottom: 40%;
-          left: 0%;
-          right: 0;
-          z-index: 1;
-          align-items: center;
-          flex-direction: row;
-          justify-content: center;
-          margin-left: 0px;
-        }
-        /*&--one--pictogram,
-        &--one--pictogram{
-          margin: 0;
-          opacity: 0;
-
+        &--people {
+          background-size: cover;
+          background-position: center;
+          width: 360px;
+          height: 450px;
+          opacity: 1;
+          z-index: 50;
+          @media #{$md-screen}
+          {
+            width: 300px;
+            height: 400px;
+          }
+          @media #{$sm-screen}
+          {
+            width: 200px;
+            height: 300px;
+          }
+          @media #{$xs-screen}
+          {
+            width: 360px;
+            height: 450px;
+          }
           &--1 {
-            //-webkit-transform: translateY(-100%);
-            //transform: translateY(-100%);
-            padding-bottom: 10px;
-            padding-top: 10px;
-            padding-left: 15px;
-            padding-right: 15px;
-            background-color: $color-red;
-
+            background: url('../img/meet_img_1.png');
           }
           &--2 {
-            //-webkit-transform: translateY(-100%);
-            //transform: translateY(-100%);
-            padding-bottom: 10px;
-            padding-top: 10px;
-            padding-left: 15px;
-            padding-right: 15px;
-            background-color: $color-yellow;
-
+            background: url('../img/meet_img_2.png');
+          }
+          &--3 {
+            background: url('../img/meet_img_3.png');
           }
         }
 
-
-        &--one:hover:before,
-        &--one.hover:before {
-          top: 0px;
-          -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-          opacity: 0.8;
-
-          &--pictogram:hover,
-          &--pictogram.hover {
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-            opacity: 1;
-          }
-        }
-        &--one:hover:after,
-        &--one.hover:after {
-          top: 20px;
-          bottom: -20px;
-          -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+        &--back {
+          width: 360px;
+          height: 450px;
           opacity: 1;
-          height: 100%;
+          z-index: -400;
+          position: absolute;
+          background-color: $color-blue;
+          @media #{$md-screen}
+          {
+            width: 300px;
+            height: 400px;
+          }
+          @media #{$sm-screen}
+          {
+            width: 200px;
+            height: 300px;
+          }
+          @media #{$xs-screen}
+          {
+            width: 360px;
+            height: 450px;
+          }
         }
-        &--one:hover img,
-        &--one.hover img{
+        &--top {
+          width: 360px;
+          height: 450px;
+          opacity: 0;
+          z-index: 400;
+          position: absolute;
+          background: linear-gradient($color-red, $color-yellow);
+          .row {
+            display: inline;
+            .meet__team__img__small--1 {
+              background-color: $color-red;
+              margin-top: 45%;
+              padding: 10px 15px 10px 15px;
+              margin-left: 0px;
+              margin-right: -2px;
+              @media #{$sm-screen}{
+                padding: 5px 10px 5px 10px;
+              }
+            }
+            .meet__team__img__small--2 {
+              background-color: $color-yellow;
+              margin-top: 45%;
+              padding: 12px 15px 12px 15px;
+              margin-left: -2px;
+              margin-right: -2px;
+              @media #{$sm-screen}{
+                padding: 7px 10px 7px 10px;
+              }
+            }
+            .meet__team__img__small--3 {
+              background-color: $color-yellow;
+              margin-top: 45%;
+              padding: 10px 15px 10px 15px;
+              margin-left: -2px;
+              margin-right: -2px;
+              @media #{$sm-screen}{
+                padding: 5px 10px 5px 10px;
+              }
+            }
+          }
+          @media #{$md-screen}
+          {
+            width: 300px;
+            height: 400px;
+          }
+          @media #{$sm-screen}
+          {
+            width: 200px;
+            height: 300px;
+          }
+          @media #{$xs-screen}
+          {
+            width: 360px;
+            height: 450px;
+          }
+        }
+        &--top:hover {
+          opacity: 0.8;
+          margin-top: -20px;
           margin-left: -20px;
-          padding-bottom: -20px;
-          transition: .5s ease;
         }
-        &--one--pictogram:hover,
-        &--one--pictogram.hover {
-          -webkit-transition-delay: 0.5s;
-          transition-delay: 0.1s;
-          margin-left: 0px;
-          padding-bottom: 0px;
-          transition: .5s ease;
-        }*/
-        //background-image: url("../img/meet_img_1.png");
-        /* width: 100%;
-         &--back{
-           background-color: $color-blue;
-           width: 100%;
-           height: 100%;
-         }
-         &--img{
-           opacity: 0;
-
-         }
-         &--top{
-
-         }
-       }
-     }*/
+        &--top:hover + .meet__team--people {
+          margin-top: -20px;
+          margin-left: -20px;
+        }
       }
     }
+
   }
+  &__name{
+    padding-top: 5%;
+    &--name{
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-left: 100%;
+
+    }
+    &--work{
+      color:$color-grey-middle;
+      font-style: italic;
+      font-size: 1em;
+      margin-left: 110%;
+    }
+  }
+}
+    /*&--one--pictogram,
+    &--one--pictogram{
+      margin: 0;
+      opacity: 0;
+
+      &--1 {
+        //-webkit-transform: translateY(-100%);
+        //transform: translateY(-100%);
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: $color-red;
+
+      }
+      &--2 {
+        //-webkit-transform: translateY(-100%);
+        //transform: translateY(-100%);
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: $color-yellow;
+
+      }
+    }
+
+
+    &--one:hover:before,
+    &--one.hover:before {
+      top: 0px;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+      opacity: 0.8;
+
+      &--pictogram:hover,
+      &--pictogram.hover {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    &--one:hover:after,
+    &--one.hover:after {
+      top: 20px;
+      bottom: -20px;
+      -webkit-transition-delay: 0s;
+      transition-delay: 0s;
+      opacity: 1;
+      height: 100%;
+    }
+    &--one:hover img,
+    &--one.hover img{
+      margin-left: -20px;
+      padding-bottom: -20px;
+      transition: .5s ease;
+    }
+    &--one--pictogram:hover,
+    &--one--pictogram.hover {
+      -webkit-transition-delay: 0.5s;
+      transition-delay: 0.1s;
+      margin-left: 0px;
+      padding-bottom: 0px;
+      transition: .5s ease;
+    }*/
+    //background-image: url("../img/meet_img_1.png");
+    /* width: 100%;
+     &--back{
+       background-color: $color-blue;
+       width: 100%;
+       height: 100%;
+     }
+     &--img{
+       opacity: 0;
+
+     }
+     &--top{
+
+     }
+   }
+ }*/
 
   /*.meet__team {
     padding-top: 3%;
@@ -302,7 +373,7 @@
           z-index: 5;
         }
       }*/
-      .meet__team__name{
+ /*     .meet__team__name{
         font-weight: bold;
         padding-top: 3%;
         font-size: 1.1em;
@@ -313,8 +384,8 @@
         font-style: italic;
         font-size: 1em;
       }
-    }
-    .meet__team__img__small{
+    }*/
+ /*   .meet__team__img__small{
       width: 8%;
       display: inline;
       img {
@@ -332,4 +403,4 @@
 
     }
 
-
+*/
