@@ -969,4 +969,123 @@
   }
 }
 
+#service {
+  margin-bottom: 5%;
+}
+#service .service__info--first {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 20px;
+  color: black;
+  margin-top: 5%;
+}
+#service .service__info--second {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  margin-top: 0;
+  color: black;
+}
+#service .service__info__bar {
+  display: inline-block;
+  border: 2px solid #f38181;
+  width: 50px;
+  margin-top: 1.5%;
+}
+#service .service__info--text {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 1.5%;
+  width: 60%;
+}
+#service .service__details {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#service .service__details__photo img {
+  position: absolute;
+  display: block;
+  right: 10px;
+  margin-left: 10px;
+  margin-bottom: 5%;
+}
+@media only screen and (max-width: 992px) {
+  #service .service__details__photo img {
+    position: relative;
+    margin: 0 auto;
+    right: 0;
+    margin-bottom: 2%;
+  }
+}
+#service .service__details__accordion .panel-group .panel {
+  border: 0 none;
+  border-radius: 0;
+  box-shadow: none;
+  max-width: 570px;
+}
+@media only screen and (max-width: 992px) {
+  #service .service__details__accordion .panel-group .panel {
+    margin: 0 auto;
+  }
+}
+#service .service__details__accordion .panel-default > .panel-heading {
+  padding: 0;
+  border-radius: 0;
+  background-color: white;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+}
+#service .service__details__accordion .panel-title {
+  height: 69px;
+}
+#service .service__details__accordion .panel-title > a {
+  display: block;
+  padding: 15px;
+  position: relative;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+}
+#service .service__details__accordion .panel-title > a:focus, #service .service__details__accordion .panel-title > a:hover {
+  text-decoration: none;
+  outline: none;
+}
+#service .service__details__accordion .panel-title > a:after {
+  content: "\2303";
+  font-family: FontAwesome;
+  color: #999999;
+  position: absolute;
+  right: 15px;
+  top: 27px;
+  font-size: 48px;
+}
+#service .service__details__accordion .panel-title > a.collapsed:after {
+  content: "\2304";
+  font-family: FontAwesome;
+  color: #999999;
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  font-size: 48px;
+}
+#service .service__details__accordion .panel-title > a img {
+  margin-right: 3%;
+}
+#service .service__details__accordion .panel-body {
+  background: #fff;
+  color: #888;
+  font-size: 13px;
+  line-height: 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  max-height: 200px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+#service .service__details__accordion .panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top: 0 none;
+}
+
 /*# sourceMappingURL=style.css.map */
