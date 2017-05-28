@@ -38,11 +38,12 @@ module.exports = function (grunt) {
       css: {
         files: '**/*.scss',
         tasks: ['sass', 'cssmin']
-      },
-      js: {
-        files: '**/*.js',
-        tasks: ['uglify']
       }
+      //,
+      //js: {
+      //  files: '**/*.js',
+      //  tasks: ['uglify']
+      //}
     }
   });
   // Load Grunt plugins
