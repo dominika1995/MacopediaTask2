@@ -458,8 +458,8 @@
   margin-bottom: 10%;
 }
 #banner .banner__info__button:hover {
-  border-color: #95e1d3;
-  color: #95e1d3;
+  background: RGB(244, 140, 130);
+  border: 2px solid RGB(244, 140, 130);
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
@@ -1148,6 +1148,74 @@
 }
 #service .service__details__accordion .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top: 0 none;
+}
+
+#carousel1 {
+  background-color: #e5e5e5;
+  margin-bottom: 5%;
+}
+#carousel1 .carousel-inner .item .carousel__slide {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 5%;
+}
+#carousel1 .carousel-inner .item .carousel__slide--img {
+  padding-right: 10%;
+}
+#carousel1 .carousel-inner .item .carousel__slide--img img {
+  display: block;
+  padding: 15px;
+  border: 3px solid #95e1d3;
+  margin-right: 5%;
+}
+#carousel1 .carousel-inner .item .carousel__slide div .carousel__slide {
+  padding-left: 15%;
+}
+#carousel1 .carousel-inner .item .carousel__slide div .carousel__slide--text {
+  color: #999999;
+  font-size: 16px;
+}
+#carousel1 .carousel-inner .item .carousel__slide div .carousel__slide--name span {
+  font-size: 16px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control.left img {
+  display: block;
+  margin-top: 50%;
+  margin-left: 80%;
+}
+@media only screen and (max-width: 768px) {
+  .carousel-control.left img {
+    margin-top: 100%;
+  }
+}
+
+.carousel-control.right {
+  background-image: none;
+}
+.carousel-control.right img {
+  display: block;
+  margin-top: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .carousel-control.right img {
+    margin-top: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .carousel-control {
+    margin-top: 40%;
+  }
+}
+@media (max-width: 1300px) {
+  .carousel-control {
+    margin-top: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
