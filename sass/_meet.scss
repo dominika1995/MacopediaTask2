@@ -1,8 +1,10 @@
 .meet {
+  text-align: center;
   .meet__title__top {
     font-family: Kaushan Script;
     text-align: center;
     font-size: 2em;
+    padding-top: 3%;
   }
   .meet__title__middle {
     text-align: center;
@@ -28,12 +30,15 @@
     }
   }
   div {
-    div {
+    .col-xs-12 {
       padding-top: 3%;
+      @media #{$xs-screen}
+      {
+        padding-left: 20%;
+        padding-top: 5%;
+      }
       .meet__team {
         &--people {
-          background-size: cover;
-          background-position: center;
           width: 360px;
           height: 450px;
           opacity: 1;
@@ -55,12 +60,15 @@
           }
           &--1 {
             background: url('../img/meet_img_1.png');
+            background-size:cover;
           }
           &--2 {
             background: url('../img/meet_img_2.png');
+            background-size:cover;
           }
           &--3 {
             background: url('../img/meet_img_3.png');
+            background-size:cover;
           }
         }
 
@@ -94,9 +102,7 @@
           z-index: 400;
           position: absolute;
           background: linear-gradient($color-red, $color-yellow);
-          .row {
-            display: inline;
-            .meet__team__img__small--1 {
+            &--1 {
               background-color: $color-red;
               margin-top: 45%;
               padding: 10px 15px 10px 15px;
@@ -106,7 +112,7 @@
                 padding: 5px 10px 5px 10px;
               }
             }
-            .meet__team__img__small--2 {
+            &--2 {
               background-color: $color-yellow;
               margin-top: 45%;
               padding: 12px 15px 12px 15px;
@@ -116,7 +122,7 @@
                 padding: 7px 10px 7px 10px;
               }
             }
-            .meet__team__img__small--3 {
+            &--3 {
               background-color: $color-yellow;
               margin-top: 45%;
               padding: 10px 15px 10px 15px;
@@ -125,7 +131,7 @@
               @media #{$sm-screen}{
                 padding: 5px 10px 5px 10px;
               }
-            }
+
           }
           @media #{$md-screen}
           {
@@ -147,260 +153,56 @@
           opacity: 0.8;
           margin-top: -20px;
           margin-left: -20px;
+          margin-bottom: 20px;
         }
         &--top:hover + .meet__team--people {
+          margin-bottom: 20px;
           margin-top: -20px;
           margin-left: -20px;
         }
       }
     }
-
   }
   &__name{
-    padding-top: 5%;
-    &--name{
-      font-weight: bold;
-      font-size: 1.1em;
-      margin-left: 100%;
-
-    }
-    &--work{
-      color:$color-grey-middle;
-      font-style: italic;
-      font-size: 1em;
-      margin-left: 110%;
-    }
-  }
-}
-    /*&--one--pictogram,
-    &--one--pictogram{
-      margin: 0;
+    text-align: center;
+    position: relative;
+    @media #{$xs-screen}
+    {
       opacity: 0;
-
-      &--1 {
-        //-webkit-transform: translateY(-100%);
-        //transform: translateY(-100%);
-        padding-bottom: 10px;
-        padding-top: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
-        background-color: $color-red;
-
-      }
-      &--2 {
-        //-webkit-transform: translateY(-100%);
-        //transform: translateY(-100%);
-        padding-bottom: 10px;
-        padding-top: 10px;
-        padding-left: 15px;
-        padding-right: 15px;
-        background-color: $color-yellow;
-
-      }
+      position: absolute;
     }
-
-
-    &--one:hover:before,
-    &--one.hover:before {
-      top: 0px;
-      -webkit-transition-delay: 0s;
-      transition-delay: 0s;
-      opacity: 0.8;
-
-      &--pictogram:hover,
-      &--pictogram.hover {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-    &--one:hover:after,
-    &--one.hover:after {
-      top: 20px;
-      bottom: -20px;
-      -webkit-transition-delay: 0s;
-      transition-delay: 0s;
-      opacity: 1;
-      height: 100%;
-    }
-    &--one:hover img,
-    &--one.hover img{
-      margin-left: -20px;
-      padding-bottom: -20px;
-      transition: .5s ease;
-    }
-    &--one--pictogram:hover,
-    &--one--pictogram.hover {
-      -webkit-transition-delay: 0.5s;
-      transition-delay: 0.1s;
-      margin-left: 0px;
-      padding-bottom: 0px;
-      transition: .5s ease;
-    }*/
-    //background-image: url("../img/meet_img_1.png");
-    /* width: 100%;
-     &--back{
-       background-color: $color-blue;
-       width: 100%;
-       height: 100%;
-     }
-     &--img{
-       opacity: 0;
-
-     }
-     &--top{
-
-     }
-   }
- }*/
-
-  /*.meet__team {
-    padding-top: 3%;
     div {
-      div {
-        .meet__team__img {
-          img {
-            width: 90%;
-            left: 30px;
-            margin-top:-459px;
-            @media only screen and (max-width: $md)
-            {
-              margin-top:-370px;
-            }
-            @media only screen and (max-width: $sm)
-            {
-              margin-top:-305px;
-            }
-            @media only screen and (max-width: $xs)
-            {
-              width: 350px;
-              margin-top:-455px;
-            }
-          }
-        }
-        .meet__team__img:before{
-          content: " ";
-          display: block;
-          width: 351px;
-          height: 434px;
-          background-color: $color-blue;
-          margin-left: 20px;
-          @media only screen and (max-width: $md)
-          {
-            width: 285px;
-            height: 355px;
-            margin-top: 10px;
-          }
-          @media only screen and (max-width: $sm)
-          {
-            width: 225px;
-            height: 280px;
-            margin-top: 10px;
-            margin-left: 15px;
-          }
-          @media only screen and (max-width: $xs)
-          {
-            width: 350px;
-            height: 435px;
-            margin-left: 26.5%;
-          }
-        }
-        .meet__team__img:after{
-          content: " ";
-          position: absolute;
-          width: 351px;
-          height: 434px;
-          background: linear-gradient($color-red, $color-yellow);
-          margin-left: -350px;
-          margin-top: -435px;
-          opacity: 0;
-          @media only screen and (max-width: $md)
-          {
-            width: 290px;
-            height: 362px;
-            margin-left: -290px;
-            margin-top: -350px;
-          }
-          @media only screen and (max-width: $sm)
-          {
-            width: 229px;
-            height: 280px;
-            margin-left: -230px;
-            margin-top: -280px;
-          }
-          @media only screen and (max-width: $xs)
-          {
-            width: 350px;
-            height: 435px;
-            margin-left: -350px;
-            margin-top: -435px;
-          }
-        }
-        .meet__team__img:hover {
-          img {
-            margin-left: -20px;
-            margin-bottom: 20px;
-            transition: .5s ease;
-            @media only screen and (max-width: $md)
-            {
-              margin-bottom: 30px;
+      padding-top: 5%;
 
-            }
-          }
-        }
-        .meet__team__img:hover:after{
-          margin-top: -445.5px;
-          transition: .5s ease;
-          opacity: 0.8;
-          @media only screen and (max-width: $md)
-          {
-            margin-top: -370px;
-          }
-          @media only screen and (max-width: $sm){
-            margin-top: -297px;
-          }
-          @media only screen and (max-width: $xs){
-            margin-top: -450px;
-          }
-        }
-       /* .meet__team__img:hover:after{
-          content: "tekst ";
-          display: block;
-          background: linear-gradient($color-red, $color-yellow);
-          height: 434.13px;
-          width: 351px;
-          margin-top:-459px;
-          z-index: 5;
-        }
-      }*/
- /*     .meet__team__name{
+      .meet__name--name {
         font-weight: bold;
-        padding-top: 3%;
         font-size: 1.1em;
+
       }
-      .meet__team__work{
-        color:$color-grey-middle;
-        padding-top: 3%;
+      .meet__name--work {
+        color: $color-grey-middle;
         font-style: italic;
         font-size: 1em;
       }
-    }*/
- /*   .meet__team__img__small{
-      width: 8%;
-      display: inline;
-      img {
-        z-index: 50;
+    }
+    &--xs{
+      @media #{$xs-screen}{
         position: relative;
-        display: inline;
-        margin-top: -200px;
-        width: 8%;
+        opacity: 1;
+        margin-left: -55%;
+      &--name{
+        font-weight: bold;
+        font-size: 1.1em;
+
       }
+      &--work{
+        color: $color-grey-middle;
+        font-style: italic;
+        font-size: 1em;
+      }
+      }
+      opacity: 0;
+      position: absolute;
     }
-    .meet__team__img__small--1{
-
-    }
-    .meet__team__img__small--2{
-
-    }
-
-*/
+  }
+}
