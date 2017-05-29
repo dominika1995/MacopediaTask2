@@ -1,174 +1,496 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
-    <meta name="viewport" content="width=device-width. initial-scale=1">
-    <title>Macopedia - TASK 2</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+  <meta name="viewport" content="width=device-width. initial-scale=1">
+  <title>Macopedia - TASK 2</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
-    <script src="js/respond.min.js"></script>
-    <!-- font-family: 'Kaushan Script', cursive; -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+  <script src="js/respond.min.js"></script>
+  <!-- font-family: 'Kaushan Script', cursive; -->
 </head>
+
 <body>
-<body id="page-top">
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
+
+  <body id="page-top">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
         <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top"><img class="navbar__img"/></a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+          <a class="navbar-brand page-scroll" href="#page-top"><img class="navbar__img" /></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav pull-right">
-                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                <li class="hidden active">
-                    <a class="page-scroll" href="#page-top"></a>
-                </li>
-                <li class="">
-                    <a class="page-scroll" href="#about">About</a>
-                </li>
-                <li class="">
-                    <a class="page-scroll" href="#service">Service</a>
-                </li>
-                <li class="">
-                    <a class="page-scroll" href="#work">Work</a>
-                </li>
-                <li class="">
-                    <a class="page-scroll" href="#blog">Blog</a>
-                </li>
-                <li class="">
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li>
-                <li class="">
-                    <a class="page-scroll" href="#O"><img class="navbar__pic--cart"/></a>
-                </li>
-                <li class="">
-                    <a class="page-scroll" href="#O"><img class="navbar__pic--glass"/></a>
-                </li>
-            </ul>
+          <ul class="nav navbar-nav pull-right">
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden active">
+              <a class="page-scroll" href="#page-top"></a>
+            </li>
+            <li class="">
+              <a class="page-scroll" href="#about">About</a>
+            </li>
+            <li class="">
+              <a class="page-scroll" href="#services">Service</a>
+            </li>
+            <li class="">
+              <a class="page-scroll" href="#work">Work</a>
+            </li>
+            <li class="">
+              <a class="page-scroll" href="#blog">Blog</a>
+            </li>
+            <li class="">
+              <a class="page-scroll" href="#contact">Contact</a>
+            </li>
+            <li class="">
+              <a class="page-scroll" href="#O"><img class="navbar__pic--cart" /></a>
+            </li>
+            <li class="">
+              <a class="page-scroll" href="#O"><img class="navbar__pic--glass" /></a>
+            </li>
+          </ul>
         </div>
         <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-</nav>
+      </div>
+      <!-- /.container -->
+    </nav>
 
-<div class="container-fluid" id="banner">
-    <img/>
-    <div class="row text-center banner__info">
+    <div class="container-fluid" id="banner">
+      <img />
+      <div class="row text-center banner__info">
         <div class="col-xs-12">
-            <div class="banner__info--first">
-                Creative Template
-            </div>
-            <div class="banner__info--second">
-                Welcome <br/> to mogo
-            </div>
-            <span class="banner__info__bar"></span></br>
-            <button type="button" class="banner__info__button btn-default">Learn more</button>
+          <div class="banner__info--first">
+            Creative Template
+          </div>
+          <div class="banner__info--second">
+            Welcome <br /> to mogo
+          </div>
+          <span class="banner__info__bar"></span></br>
+          <button type="button" class="banner__info__button btn-default">Learn more</button>
         </div>
+      </div>
+      <div class="row text-center banner__slider">
+        <div class="col-sm-3 col-xs-6">
+          <div class="row banner__slider__slide active-slide">
+            <div class="col-xs-12 slide__bar">
+
+            </div>
+            <div class="col-xs-12 slide__text">
+              <span>01</span> Intro
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="row banner__slider__slide">
+            <div class="col-xs-12 slide__bar">
+
+            </div>
+            <div class="col-xs-12 slide__text">
+              <span>02</span> Work
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="row banner__slider__slide">
+            <div class="col-xs-12 slide__bar">
+
+            </div>
+            <div class="col-xs-12 slide__text">
+              <span>03</span> About
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3 col-xs-6">
+          <div class="row banner__slider__slide">
+            <div class="col-xs-12 slide__bar">
+
+            </div>
+            <div class="col-xs-12 slide__text">
+              <span>04</span> Contact
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="row text-center banner__slider">
+
+    <div class="container-fluid" id="about">
+      <div class="row text-center about__info">
+        <div class="col-xs-12">
+          <div class="about__info--first">
+            What we do
+          </div>
+          <div class="about__info--second">
+            Story about us
+          </div>
+          <span class="about__info__bar"></span></br>
+          <div class="about__info--text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
+      </div>
+      <div class="row text-center about__gallery">
+
+        <div class="col-xs-12 col-sm-4 wrapper">
+          <div class="about__gallery--bg">
+
+          </div>
+          <div class="about__gallery--top">
+            <div class="row">
+              <img class="img-responsive" src="./img/pictograms/aboutus_pic1_icon.png" alt="">
+              <span>Super team</span>
+            </div>
+          </div>
+          <div class="about__gallery__img about__gallery__img--1">
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 wrapper">
+          <div class="about__gallery--bg">
+          </div>
+          <div class="about__gallery--top">
+            <div class="row">
+              <img class="img-responsive" src="./img/pictograms/aboutus_pic1_icon.png" alt="">
+              <span>Super team</span>
+            </div>
+          </div>
+          <div class="about__gallery__img about__gallery__img--2">
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 wrapper">
+          <div class="about__gallery--bg">
+
+          </div>
+          <div class="about__gallery--top">
+            <div class="row">
+              <img class="img-responsive" src="./img/pictograms/aboutus_pic1_icon.png" alt="">
+              <span>Super team</span>
+            </div>
+          </div>
+          <div class="about__gallery__img about__gallery__img--3">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="numbers">
+      <div class="row">
+        <div class="numbers__div col-xs-2 text-center">
+          <span class="numbers__div__count"> 42 </span>
+          <span class="numbers__div__description"> Web design projects </span>
+        </div>
+
+        <div class="numbers__div col-xs-2 text-center">
+          <span class="numbers__div__count"> 123 </span>
+          <span class="numbers__div__description"> Happy client </span>
+        </div>
+
+        <div class="numbers__div col-xs-2 text-center">
+          <span class="numbers__div__count"> 15 </span>
+          <span class="numbers__div__description"> Award winner </span>
+        </div>
+
+        <div class="numbers__div col-xs-2 text-center">
+          <span class="numbers__div__count"> 99 </span>
+          <span class="numbers__div__description"> Cup of coffe </span>
+        </div>
+
+        <div class="numbers__div col-xs-2 text-center">
+          <span class="numbers__div__count"> 24 </span>
+          <span class="numbers__div__description"> Members </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="services">
+      <div class="row text-center services__intro">
+        <div class="col-xs-12">
+          <div class="services__intro__text--first">
+            We work with
+          </div>
+          <div class="services__intro__text--second">
+            Amazing services
+          </div>
+          <span class="services__intro__bar"></span></br>
+        </div>
+      </div>
+      <div class="services__gallery">
+        <div class="row">
+          <div class="col-xs-12 row row--first">
+            <div class="col-xs-12 col-sm-4 row services__gallery__block left">
+              <div class="col-xs-2 services__gallery__block__pic">
+                <img src="img/pictograms/service_img1.png" />
+              </div>
+              <div class="col-xs-10 services__gallery__block__text">
+                <span class="title">Photography</span><br /><br />
+                <span class="decription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 row services__gallery__block middle">
+              <div class="col-xs-2 services__gallery__block__pic">
+                <img src="img/pictograms/service_img2.png" />
+              </div>
+              <div class="col-xs-10 services__gallery__block__text">
+                <span class="title">Web design</span><br /><br />
+                <span class="decription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 row services__gallery__block right">
+              <div class="col-xs-2 services__gallery__block__pic">
+                <img src="img/pictograms/service_img3.png" />
+              </div>
+              <div class="col-xs-10 services__gallery__block__text">
+                <span class="title">Creativity</span><br /><br />
+                <span class="decription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              </div>
+            </div>
+          </div>
+          <span class="middle-bar hidden-xs"></span>
+          <div class="col-xs-12 row row--second">
+            <div class="col-xs-12 col-sm-4 row services__gallery__block left">
+              <div class="col-xs-2 services__gallery__block__pic">
+                <img src="img/pictograms/service_img4.png" />
+              </div>
+              <div class="col-xs-10 services__gallery__block__text">
+                <span class="title">CEO</span><br /><br />
+                <span class="decription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 row services__gallery__block middle">
+              <div class="col-xs-2 services__gallery__block__pic">
+                <img src="img/pictograms/service_img5.png" />
+              </div>
+              <div class="col-xs-10 services__gallery__block__text">
+                <span class="title">CSS/HTML</span><br /><br />
+                <span class="decription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4 row services__gallery__block right">
+              <div class="col-xs-2 services__gallery__block__pic">
+                <img src="img/pictograms/service_img6.png" />
+              </div>
+              <div class="col-xs-10 services__gallery__block__text">
+                <span class="title">Digital</span><br /><br />
+                <span class="decription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="design">
+      <div class="row text-center design__intro">
         <div class="col-xs-12">
 
+          <img class="design__bg" />
+          <div class="design__intro__text--first">
+            For all devices
+          </div>
+          <div class="design__intro__text--second">
+            Unique design
+          </div>
+          <span class="design__intro__bar"></span></br>
+          <div class="design__intro__image row">
+            <div class="col-xs-12 tablet">
+              <img src="img/feature_tablet.png" class="img-responsive" alt="">
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="row design__phone">
+        <div class="col-xs-12 design__phone__img">
+          <img src="img/feature_phone.png" class="img-responsive" alt="">
+        </div>
+      </div>
     </div>
-</div>
 
-<div class="container-fluid" id="about">
-    <div class="row text-center about__info">
+    <div class="container-fluid" id="service">
+      <div class="row text-center service__info">
         <div class="col-xs-12">
-            <div class="about__info--first">
-                What we do
+          <div class="service__info--first">
+            Service
+          </div>
+          <div class="service__info--second">
+            What we do
+          </div>
+          <span class="service__info__bar"></span></br>
+          <div class="service__info--text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
+      </div>
+      <div class="row service__details">
+        <div class="col-xs-12 col-sm-12 col-md-6 service__details__photo">
+          <img src="img/service2_img.png" class="img-responsive" alt="">
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 service__details__accordion">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <img src="img/pictograms/service2_pic1.png" alt="">Photography
+                            </a>
+                        </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis sodales sapien, a ornare quam feugiat eu. In hac habitasse platea dictumst. Curabitur sed vehicula justo, eget mollis odio. Phasellus sagittis pulvinar lorem, non malesuada ligula
+                  scelerisque ut. Vestibulum iaculis nunc eu purus mattis tincidunt. Integer suscipit ipsum laoreet ex commodo egestas. In tellus nisi, rhoncus porttitor felis id, molestie placerat mi. In non dolor erat. Etiam scelerisque enim ac lectus
+                  cursus, et eleifend justo tempor.
+                </div>
+              </div>
             </div>
-            <div class="about__info--second">
-                Story about us
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <img src="img/pictograms/service2_pic2.png" alt="">Creativity
+                            </a>
+                        </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis sodales sapien, a ornare quam feugiat eu. In hac habitasse platea dictumst. Curabitur sed vehicula justo, eget mollis odio. Phasellus sagittis pulvinar lorem, non malesuada ligula
+                  scelerisque ut. Vestibulum iaculis nunc eu purus mattis tincidunt. Integer suscipit ipsum laoreet ex commodo egestas. In tellus nisi, rhoncus porttitor felis id, molestie placerat mi. In non dolor erat. Etiam scelerisque enim ac lectus
+                  cursus, et eleifend justo tempor.
+                </div>
+              </div>
             </div>
-            <span class="about__info__bar"></span></br>
-            <div class="about__info--text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <img src="img/pictograms/service2_pic3.png" alt="">Web design
+                            </a>
+                        </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis sodales sapien, a ornare quam feugiat eu. In hac habitasse platea dictumst. Curabitur sed vehicula justo, eget mollis odio. Phasellus sagittis pulvinar lorem, non malesuada ligula
+                  scelerisque ut. Vestibulum iaculis nunc eu purus mattis tincidunt. Integer suscipit ipsum laoreet ex commodo egestas. In tellus nisi, rhoncus porttitor felis id, molestie placerat mi. In non dolor erat. Etiam scelerisque enim ac lectus
+                  cursus, et eleifend justo tempor.
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <div class="row text-center about__gallery">
-        <div class="col-xs-12 col-sm-4">
-            <div class="about__gallery--first text-center img">
-                <img class="about__gallery__img--bg"/>
-                <!--<img class="about__gallery__img--pic--1"/>
-                <div class="about__gallery__text">
-                  Super team
-                </div>-->
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-            <div class="about__gallery--second img">
-                <img class="about__gallery__img--bg"/>
-                <img class="about__gallery__img--pic--2"/>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-            <div class="about__gallery--third img">
-                <img class="about__gallery__img--bg"/>
-                <img class="about__gallery__img--pic--3"/>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container-fluid" id="numbers">
-    <div class="row">
-        <div class="numbers__div col-xs-2 text-center">
-            <span class="numbers__div__count"> 42 </span>
-            <span class="numbers__div__description"> Web design projects </span>
+          </div>
         </div>
 
-        <div class="numbers__div col-xs-2 text-center">
-            <span class="numbers__div__count"> 123 </span>
-            <span class="numbers__div__description"> Happy client </span>
-        </div>
+      </div>
 
-        <div class="numbers__div col-xs-2 text-center">
-            <span class="numbers__div__count"> 15 </span>
-            <span class="numbers__div__description"> Award winner </span>
-        </div>
-
-        <div class="numbers__div col-xs-2 text-center">
-            <span class="numbers__div__count"> 99 </span>
-            <span class="numbers__div__description"> Cup of coffe </span>
-        </div>
-
-        <div class="numbers__div col-xs-2 text-center">
-            <span class="numbers__div__count"> 24 </span>
-            <span class="numbers__div__description"> Members </span>
-        </div>
-    </div>
-</div>
-
-
-<div class="container meet">
-    <p class="meet__title__top">Who we are</p>
-    <p class="meet__title__middle">MEET OUR TEAM</p>
-    <div class="row">
-        <img class="meet__rectangle" src="img/pictograms/meet_rectangle.png"/>
     </div>
 
-    <div class="row">
+
+
+
+    <div class="container-fluid" id="carousel1">
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="carousel__slide">
+              <div class="col-xs-1 col-sm-4"></div>
+              <div class="col-xs-2 col-sm-1 carousel__slide--img">
+                <img src="img/pictograms/quote_pic.png" />
+              </div>
+              <div class="col-xs-8 col-sm-3">
+                <div class="row carousel__slide--text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboer et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                </div>
+                <div class="row carousel__slide--name">
+                  <img src="img/pictograms/meet_rectangle.png" />
+                  <span class="name">John Doe</span>
+                </div>
+              </div>
+              <div class="col-xs-1 col-sm-4"></div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="carousel__slide">
+              <div class="col-xs-4"></div>
+              <div class="col-xs-1 carousel__slide--img">
+                <img src="img/pictograms/quote_pic.png" />
+              </div>
+              <div class="col-xs-3">
+                <div class="row carousel__slide--text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboer et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                </div>
+                <div class="row carousel__slide--name">
+                  <img src="img/pictograms/meet_rectangle.png" />
+                  <span class="name">John Doe</span>
+                </div>
+              </div>
+              <div class="col-xs-4"></div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="carousel__slide">
+              <div class="col-xs-4"></div>
+              <div class="col-xs-1 carousel__slide--img">
+                <img src="img/pictograms/quote_pic.png" />
+              </div>
+              <div class="col-xs-3">
+                <div class="row carousel__slide--text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboer et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+                </div>
+                <div class="row carousel__slide--name">
+                  <img src="img/pictograms/meet_rectangle.png" />
+                  <span class="name">John Doe</span>
+                </div>
+              </div>
+              <div class="col-xs-4"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <img src="img/pictograms/testimontial_arrowleft.png" />
+
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <img src="img/pictograms/testimontial_arrowright.png" />
+
+        </a>
+      </div>
+    </div>
+
+
+
+
+    <div class="container meet">
+      <p class="meet__title__top">Who we are</p>
+      <p class="meet__title__middle">MEET OUR TEAM</p>
+      <div class="row">
+        <img class="meet__rectangle" src="img/pictograms/meet_rectangle.png" />
+      </div>
+
+      <div class="row">
         <span class="meet__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </br>veniam, quis
             nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-    </div>
+      </div>
 
     <div class="row meet__team">
         <div class="col-sm-4 col-xs-12">
@@ -253,6 +575,7 @@
 </div>
 
 
+
 <div class="container-fluid logos">
     <div class="container">
         <div class="row logos__row">
@@ -290,7 +613,7 @@
                 Ut enim ad minim</br>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commondo consequat.</span>
     </div>
 
-    <div class="row work__picture">
+      <div class="row work__picture">
         <div class="col-sm-3 col-xs-6">
 
 
@@ -449,60 +772,7 @@
 
 
 
-    <!--<div class="row testimontial__slider">
-        <div class="col-xs-2 testimontial__slider--left" onclick="plus(-1)">
-            <img src="img/pictograms/testimontial_arrowleft.png"/>
-        </div>
-        <div class="testimontial__slider--page">
-            <div class="col-sm-2 col-xs-10 testimontial__slider--page--img">
-                <img src="img/testimontial_1.png"/>
-            </div>
-            <div class="col-sm-7 col-xs-10">
-                <div class="row testimontial__slider--page--text">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboer
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
-                </div>
-                <div class="row testimontial__slider--page--name">
-                    <img src="img/pictograms/meet_rectangle.png"/>
-                    <span class="testimontial__slider--page--name--name">Joshua Earle</span>
-                </div>
-            </div>
-        </div>
-        <div class="testimontial__slider--page">
-            <div class="col-sm-2 col-xs-10 testimontial__slider--page--img">
-                <img src="img/testimontial_1.png"/>
-            </div>
-            <div class="col-sm-7 col-xs-10">
-                <div class="row testimontial__slider--page--text">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce venenatis ullamcorper malesuada.
-                    Aliquam non lorem a sapien malesuada venenatis. Ut a metus velit. Quisque viverra augue."
-                </div>
-                <div class="row testimontial__slider--page--name">
-                    <img src="img/pictograms/meet_rectangle.png"/>
-                    <span class="testimontial__slider--page--name--name">Joshua Earle 2</span>
-                </div>
-            </div>
-        </div>
-        <div class="testimontial__slider--page">
-            <div class="col-sm-2 col-xs-10 testimontial__slider--page--img">
-                <img src="img/testimontial_1.png"/>
-            </div>
-            <div class="col-sm-7 col-xs-10">
-                <div class="row testimontial__slider--page--text">
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum condimentum iaculis.
-                    Vestibulum sed purus suscipit, suscipit massa vitae, rutrum quam. Vivamus vehicula ornare tincidunt.
-                    Mauris dictum rutrum."
-                </div>
-                <div class="row testimontial__slider--page--name">
-                    <img src="img/pictograms/meet_rectangle.png"/>
-                    <span class="testimontial__slider--page--name--name">Joshua Earle 3</span>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-1 testimontial__slider--right" onclick="plus(1)">
-            <img src="img/pictograms/testimontial_arrowright.png"/>
-        </div>
-    </div>-->
+
 </div>
 
 <div class="container-fluid say">
@@ -659,8 +929,8 @@
                 <span>98</span>
             </div>
         </div>
+      </div>
     </div>
-</div>
 
 <div class="container-fluid map">
     <img class="map--back"/>
@@ -770,12 +1040,14 @@
 </footer>
 
 
-<script src="jquery/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/scrollingNav.js"></script>
-<script src="js/counters.js"></script>
-<!--<script src="js/slider.js"></script>-->
+    <script src="jquery/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrollingNav.js"></script>
+    <script src="js/counters.js"></script>
+    <script src="js/accordion.js"></script>
 
-</body>
+
+  </body>
+
 </html>
