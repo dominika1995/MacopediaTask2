@@ -1188,17 +1188,13 @@
 }
 .carousel-control.left img,
 .carousel-control.right img {
-  margin-top: 5%;
+  margin-top: 30%;
 }
 @media only screen and (max-width: 768px) {
   .carousel-control.left img,
   .carousel-control.right img {
     padding-top: 100%;
   }
-}
-
-.right {
-  background-color: #1b6d85;
 }
 
 #services {
