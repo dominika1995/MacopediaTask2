@@ -32,7 +32,7 @@
   }
   &__client{
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
     &--name{
       font-family: 'Montserrat', sans-serif;
       font-size: 1em;
@@ -61,7 +61,7 @@
     &--img{
       text-align: left;
       img{
-        width: 100%;
+        width: 90%;
         padding-right: 5%;
         @media #{$sm-screen}{
           width: 40%;

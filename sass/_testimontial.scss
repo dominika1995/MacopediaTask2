@@ -71,11 +71,12 @@
 .carousel-control.left,
 .carousel-control.right{
   background-image: none;
+  height: 50px;
+  margin-top: 0%;
   img{
-    margin-top: 30%;
     @media #{$xs-screen}
     {
-      padding-top: 100%;
+      margin-top: 10%;
     }
   }
 
