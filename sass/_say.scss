@@ -39,6 +39,10 @@
       padding-top: 1%;
       padding-bottom: 1%;
       padding-left: 5%;
+      @media #{$sm-screen}
+      {
+        margin-top: 8%;
+      }
     }
     &--job{
       font-family:'Roboto',sans-serif;
@@ -46,16 +50,28 @@
       font-size: 1em;
       padding-bottom: 1%;
       padding-left: 5%;
+      @media #{$sm-screen}
+      {
+        padding-bottom: -4%;
+      }
     }
     &--text{
       color: $color-grey-dark;
       padding-top: 1%;
       padding-left: 5%;
+      @media #{$sm-screen}
+      {
+        padding-bottom: 5%;
+      }
     }
     div{
       img{
         padding-left: 5%;
         margin-top: 5%;
+        @media #{$sm-screen}
+        {
+          margin-top: 1%;
+        }
       }
     }
     &--img{
@@ -64,11 +80,17 @@
         width: 90%;
         padding-right: 5%;
         @media #{$sm-screen}{
-          width: 40%;
+          //width: 80%;
+          padding-top: 22%;
         }
         @media #{$xs-screen}{
-          width: 60%;
+          //width: 80%;
+          padding-top: 25%;
         }
+        @media screen and (max-width:600px)
+      {
+          padding-top: 55%;
+      }
       }
     }
   }

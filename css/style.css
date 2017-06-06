@@ -819,6 +819,11 @@
   padding-bottom: 1%;
   padding-left: 5%;
 }
+@media only screen and (max-width: 992px) {
+  .say__client--name {
+    margin-top: 8%;
+  }
+}
 .say__client--job {
   font-family: 'Roboto',sans-serif;
   font-style: italic;
@@ -826,14 +831,29 @@
   padding-bottom: 1%;
   padding-left: 5%;
 }
+@media only screen and (max-width: 992px) {
+  .say__client--job {
+    padding-bottom: -4%;
+  }
+}
 .say__client--text {
   color: #999999;
   padding-top: 1%;
   padding-left: 5%;
 }
+@media only screen and (max-width: 992px) {
+  .say__client--text {
+    padding-bottom: 5%;
+  }
+}
 .say__client div img {
   padding-left: 5%;
   margin-top: 5%;
+}
+@media only screen and (max-width: 992px) {
+  .say__client div img {
+    margin-top: 1%;
+  }
 }
 .say__client--img {
   text-align: left;
@@ -844,12 +864,17 @@
 }
 @media only screen and (max-width: 992px) {
   .say__client--img img {
-    width: 40%;
+    padding-top: 22%;
   }
 }
 @media only screen and (max-width: 768px) {
   .say__client--img img {
-    width: 60%;
+    padding-top: 25%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .say__client--img img {
+    padding-top: 55%;
   }
 }
 
