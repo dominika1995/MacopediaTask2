@@ -39,7 +39,19 @@
 }
 @media only screen and (max-width: 768px) {
   .meet div .col-xs-12 {
-    padding-left: 10%;
+    padding-left: 28%;
+    padding-top: 5%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .meet div .col-xs-12 {
+    padding-left: 20%;
+    padding-top: 5%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .meet div .col-xs-12 {
+    padding-left: 15%;
     padding-top: 5%;
   }
 }
@@ -117,81 +129,90 @@
     height: 350px;
   }
 }
-.meet div .col-xs-12 .meet__team--top {
-  width: 360px;
-  height: 450px;
+.meet div .col-xs-12 .meet__team--background {
   opacity: 0;
-  z-index: 400;
   position: absolute;
   background: linear-gradient(#f38181, #fce38a);
-}
-.meet div .col-xs-12 .meet__team--top--1 {
-  background-color: #f38181;
-  margin-top: 45%;
-  padding: 10px 15px 10px 15px;
-  margin-left: 0px;
-  margin-right: -2px;
-}
-@media only screen and (max-width: 992px) {
-  .meet div .col-xs-12 .meet__team--top--1 {
-    padding: 5px 10px 5px 10px;
-  }
-}
-.meet div .col-xs-12 .meet__team--top--2 {
-  background-color: #fce38a;
-  margin-top: 45%;
-  padding: 12px 15px 12px 15px;
-  margin-left: -2px;
-  margin-right: -2px;
-}
-@media only screen and (max-width: 992px) {
-  .meet div .col-xs-12 .meet__team--top--2 {
-    padding: 7px 10px 7px 10px;
-  }
-}
-.meet div .col-xs-12 .meet__team--top--3 {
-  background-color: #fce38a;
-  margin-top: 45%;
-  padding: 10px 15px 10px 15px;
-  margin-left: -2px;
-  margin-right: -2px;
-}
-@media only screen and (max-width: 992px) {
-  .meet div .col-xs-12 .meet__team--top--3 {
-    padding: 5px 10px 5px 10px;
-  }
+  width: 360px;
+  z-index: 400;
+  height: 450px;
+  margin-top: 0%;
 }
 @media only screen and (max-width: 1200px) {
-  .meet div .col-xs-12 .meet__team--top {
+  .meet div .col-xs-12 .meet__team--background {
     width: 300px;
     height: 400px;
   }
 }
 @media only screen and (max-width: 992px) {
-  .meet div .col-xs-12 .meet__team--top {
+  .meet div .col-xs-12 .meet__team--background {
     width: 200px;
     height: 300px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .meet div .col-xs-12 .meet__team--top {
+  .meet div .col-xs-12 .meet__team--background {
     width: 360px;
     height: 450px;
   }
 }
 @media only screen and (max-width: 500px) {
-  .meet div .col-xs-12 .meet__team--top {
+  .meet div .col-xs-12 .meet__team--background {
     width: 250px;
     height: 350px;
   }
 }
-.meet div .col-xs-12 .meet__team--top:hover {
+.meet div .col-xs-12 .meet__team--imgs {
+  position: absolute;
+  margin-left: 20%;
+  z-index: 300;
+  margin-top: 50%;
+}
+.meet div .col-xs-12 .meet__team--imgs .meet__team--img {
+  margin-top: 50%;
+  position: relative;
+  margin-left: -5px;
+  padding: 15px 15px 15px 15px;
+  background-color: #fce38a;
+}
+.meet div .col-xs-12 .meet__team--imgs .meet__team--img:first-child {
+  background-color: #f38181;
+  margin-top: 50%;
+}
+.meet div .col-xs-12 .meet__team--imgs .meet__team--img:last-child img {
+  margin-right: 10px;
+}
+@media only screen and (max-width: 992px) {
+  .meet div .col-xs-12 .meet__team--imgs {
+    margin-left: 10%;
+  }
+  .meet div .col-xs-12 .meet__team--imgs .meet__team--img {
+    padding: 10px 10px 10px 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .meet div .col-xs-12 .meet__team--imgs {
+    margin-left: 20%;
+  }
+  .meet div .col-xs-12 .meet__team--imgs .meet__team--img {
+    padding: 15px 15px 15px 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .meet div .col-xs-12 .meet__team--imgs {
+    margin-left: 15%;
+  }
+  .meet div .col-xs-12 .meet__team--imgs .meet__team--img {
+    padding: 10px 10px 10px 10px;
+  }
+}
+.meet div .col-xs-12 .meet__team--background:hover {
   opacity: 0.8;
   margin-top: -20px;
   margin-left: -20px;
   margin-bottom: 20px;
 }
-.meet div .col-xs-12 .meet__team--top:hover + .meet__team--people {
+.meet div .col-xs-12 .meet__team--background:hover + .meet__team--people {
   margin-bottom: 20px;
   margin-top: -20px;
   margin-left: -20px;
@@ -209,8 +230,7 @@
   }
 }
 .meet__name div {
-  padding-top: 5%;
-  padding-left: 15%;
+  padding-top: 3%;
 }
 .meet__name div .meet__name--name {
   font-weight: bold;
@@ -229,7 +249,7 @@
   .meet__name--xs {
     position: relative;
     opacity: 1;
-    margin-left: -40%;
+    margin-left: -30%;
   }
   .meet__name--xs--name {
     font-weight: bold;
@@ -1612,6 +1632,21 @@
   .carousel-control {
     margin-top: 30%;
   }
+}
+
+.page-title__main {
+  font-family: Kaushan Script;
+}
+.page-title__subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+.page-title__bar {
+  display: inline-block;
+  border: 2px solid #f38181;
+  width: 50px;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
 }
 
 /*# sourceMappingURL=style.css.map */

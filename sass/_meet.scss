@@ -34,7 +34,15 @@
       padding-top: 3%;
       @media #{$xs-screen}
       {
-        padding-left: 10%;
+        padding-left: 28%;
+        padding-top: 5%;
+      }
+      @media only screen and (max-width: 600px) {
+        padding-left: 20%;
+        padding-top: 5%;
+      }
+      @media only screen and (max-width: 400px) {
+        padding-left: 15%;
         padding-top: 5%;
       }
       .meet__team {
@@ -58,8 +66,7 @@
             width: 360px;
             height: 450px;
           }
-          @media only screen and (max-width: 500px)
-          {
+          @media only screen and (max-width: 500px) {
             width: 250px;
             height: 350px;
           }
@@ -99,49 +106,19 @@
             width: 360px;
             height: 450px;
           }
-          @media only screen and (max-width: 500px)
-          {
+          @media only screen and (max-width: 500px) {
             width: 250px;
             height: 350px;
           }
         }
-        &--top {
-          width: 360px;
-          height: 450px;
+        &--background{
           opacity: 0;
-          z-index: 400;
           position: absolute;
-          background: linear-gradient($color-red,$color-yellow);
-          &--1 {
-            background-color: $color-red;
-            margin-top: 45%;
-            padding: 10px 15px 10px 15px;
-            margin-left: 0px;
-            margin-right: -2px;
-            @media #{$sm-screen}{
-              padding: 5px 10px 5px 10px;
-            }
-          }
-          &--2 {
-            background-color: $color-yellow;
-            margin-top: 45%;
-            padding: 12px 15px 12px 15px;
-            margin-left: -2px;
-            margin-right: -2px;
-            @media #{$sm-screen}{
-              padding: 7px 10px 7px 10px;
-            }
-          }
-          &--3 {
-            background-color: $color-yellow;
-            margin-top: 45%;
-            padding: 10px 15px 10px 15px;
-            margin-left: -2px;
-            margin-right: -2px;
-            @media #{$sm-screen}{
-              padding: 5px 10px 5px 10px;
-            }
-          }
+          background: linear-gradient($color-red, $color-yellow);
+          width: 360px;
+          z-index: 400;
+          height: 450px;
+          margin-top: 0%;
           @media #{$md-screen}
           {
             width: 300px;
@@ -157,25 +134,62 @@
             width: 360px;
             height: 450px;
           }
-          @media only screen and (max-width: 500px)
-          {
+          @media only screen and (max-width: 500px) {
             width: 250px;
             height: 350px;
           }
         }
-        &--top:hover {
+        &--imgs {
+          position: absolute;
+          margin-left: 20%;
+          z-index: 300;
+          margin-top: 50%;
+          .meet__team--img {
+            margin-top: 50%;
+            position: relative;
+            margin-left: -5px;
+            padding: 15px 15px 15px 15px;
+            background-color: $color-yellow;
+          }
+          .meet__team--img:first-child {
+            background-color: $color-red;
+            margin-top: 50%;
+          }
+          .meet__team--img:last-child {
+            img {
+              margin-right: 10px;
+            }
+          }
+          @media #{$sm-screen} {
+            margin-left: 10%;
+            .meet__team--img {
+              padding: 10px 10px 10px 10px;
+            }
+          }
+          @media #{$xs-screen}{
+            margin-left: 20%;
+            .meet__team--img {
+              padding: 15px 15px 15px 15px;
+            }
+          }
+          @media only screen and (max-width: 500px){
+            margin-left: 15%;
+            .meet__team--img {
+              padding: 10px 10px 10px 10px;
+            }
+          }
+        }
+        &--background:hover {
           opacity: 0.8;
           margin-top: -20px;
           margin-left: -20px;
           margin-bottom: 20px;
         }
-        &--top:hover + .meet__team--people {
+        &--background:hover + .meet__team--people {
           margin-bottom: 20px;
           margin-top: -20px;
           margin-left: -20px;
         }
-
-
       }
     }
   }
@@ -190,8 +204,7 @@
       margin-top: -100px;
     }
     div {
-      padding-top: 5%;
-      padding-left: 15%;
+      padding-top: 3%;
       .meet__name--name {
         font-weight: bold;
         font-size: 1.1em;
@@ -207,11 +220,10 @@
       @media #{$xs-screen}{
         position: relative;
         opacity: 1;
-        margin-left: -40%;
+        margin-left: -30%;
         &--name {
           font-weight: bold;
           font-size: 1.1em;
-
         }
         &--work {
           color: $color-grey-middle;
@@ -224,3 +236,7 @@
     }
   }
 }
+
+
+
+
