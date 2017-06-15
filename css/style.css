@@ -300,23 +300,11 @@
   }
 }
 
-.work--top {
+.work {
   margin-top: 5%;
-  font-family: Kaushan Script;
-  text-align: center;
-  font-size: 2em;
-}
-.work--middle {
-  text-align: center;
-  font-size: 2em;
-  font-weight: bold;
 }
 .work__center {
   text-align: center;
-}
-.work__center--rectangle {
-  padding-bottom: 3%;
-  padding-top: 1%;
 }
 .work__center--text {
   color: #d9d9d9;
@@ -821,37 +809,20 @@
 }
 
 .say {
+  padding-top: 5%;
   position: relative;
   overflow: hidden;
   background-color: #f8f8f8;
   height: 100%;
   width: 100%;
 }
-.say--back {
+.say__background {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   opacity: 0.2;
-}
-.say__title {
-  padding-top: 5%;
-  text-align: center;
-  z-index: 3;
-}
-.say__title--top {
-  font-family: Kaushan Script;
-  font-size: 2em;
-}
-.say__title--middle {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-.say__title--rectangle {
-  padding-bottom: 3%;
-  padding-top: 1%;
 }
 .say__client {
   padding-top: 2%;
@@ -909,17 +880,20 @@
 }
 @media only screen and (max-width: 992px) {
   .say__client--img img {
+    width: 60%;
     padding-top: 22%;
   }
 }
 @media only screen and (max-width: 768px) {
   .say__client--img img {
+    width: 70%;
     padding-top: 25%;
   }
 }
 @media screen and (max-width: 600px) {
   .say__client--img img {
-    padding-top: 55%;
+    padding-top: 40%;
+    padding-left: 5%;
   }
 }
 
@@ -1659,6 +1633,9 @@
   }
 }
 
+.page-title {
+  text-align: center;
+}
 .page-title__main {
   font-family: Kaushan Script;
 }

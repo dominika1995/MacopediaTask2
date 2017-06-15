@@ -1,21 +1,7 @@
 .work {
-  &--top {
-    margin-top: 5%;
-    font-family: Kaushan Script;
-    text-align: center;
-    font-size: 2em;
-  }
-  &--middle {
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-  }
+  margin-top: 5%;
   &__center {
     text-align: center;
-    &--rectangle {
-      padding-bottom: 3%;
-      padding-top: 1%;
-    }
     &--text {
       color: $color-grey-light;
       font-size: 1em;

@@ -1,10 +1,11 @@
 .say {
+  padding-top: 5%;
   position:relative;
   overflow: hidden;
   background-color: $color-grey;
   height: 100%;
   width: 100%;
-   &--back{
+   &__background{
      position: absolute;
      left: 0;
      top: 0;
@@ -12,24 +13,7 @@
      height: 100%;
      opacity: 0.2;
     }
-  &__title {
-    padding-top: 5%;
-    text-align: center;
-    z-index: 3;
-    &--top {
-      font-family: Kaushan Script;
-      font-size: 2em;
-    }
-    &--middle {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.5em;
-      font-weight: bold;
-    }
-    &--rectangle {
-      padding-bottom: 3%;
-      padding-top: 1%;
-    }
-  }
+
   &__client{
     padding-top: 2%;
     padding-bottom: 5%;
@@ -80,16 +64,17 @@
         width: 90%;
         padding-right: 5%;
         @media #{$sm-screen}{
-          //width: 80%;
+          width: 60%;
           padding-top: 22%;
         }
         @media #{$xs-screen}{
-          //width: 80%;
+          width:70%;
           padding-top: 25%;
         }
         @media screen and (max-width:600px)
       {
-          padding-top: 55%;
+          padding-top: 40%;
+          padding-left: 5%;
       }
       }
     }
