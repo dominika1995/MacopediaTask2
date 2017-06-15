@@ -2,10 +2,15 @@
   text-align: center;
   &__main{
     font-family: Kaushan Script;
+    font-size: 20px;
+    margin-top: 5%;
   }
   &__subtitle{
+    text-transform: uppercase;
+    font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
+    margin-top: 0;
   }
   &__bar{
     display: inline-block;
@@ -13,5 +18,13 @@
     width: 50px;
     margin-top: 1.5%;
     margin-bottom: 1.5%;
+  }
+  &__text{
+     margin-left: 20%;
+     margin-right: 20%;
+     margin-top: 1.5%;
+     width: 60%;
+    color: $color-grey-light;
+
   }
 }

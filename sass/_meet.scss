@@ -1,34 +1,4 @@
 .meet {
-  text-align: center;
-  .meet__title__top {
-    font-family: Kaushan Script;
-    text-align: center;
-    font-size: 2em;
-    padding-top: 3%;
-  }
-  .meet__title__middle {
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-  }
-  div {
-    text-align: center;
-    .meet__rectangle {
-      padding-bottom: 3%;
-      padding-top: 1%;
-    }
-    .meet__text {
-      color: $color-grey-light;
-      font-size: 1em;
-      margin-bottom: 5%;
-      @media only screen and (max-width: $sm) {
-        font-size: 0.8em;
-      }
-      @media only screen and (max-width: $xs) {
-        font-size: 1em;
-      }
-    }
-  }
   div {
     .col-xs-12 {
       padding-top: 3%;
