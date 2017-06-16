@@ -1,85 +1,140 @@
 .blog{
-  &__img{
-    &--top{
+  &__news{
+    @media #{$xs-screen}{
+      text-align: center;
+    }
+    &--title{
       padding-top: 4%;
       font-family: 'Montserrat', sans-serif;
-      margin-left: -4%;
       font-weight: 600;
+      @media #{$xs-screen}{
+        margin-left: 20%;
+        text-align: left;
+      }
     }
-    &--middle{
+    &--text{
       padding-top: 2%;
       color: $color-grey-dark;
       padding-left: -2%;
-      margin-left: -4%;
+      @media #{$xs-screen}{
+        margin-left: 20%;
+        text-align: left;
+        width: 50%;
+      }
+      @media only screen and (max-width: 600px){
+        width: 60%;
+      }
     }
     &--line{
-      width:120%;
-      margin-left: -10%;
-      @media #{$xs-screen}
-      {
-        width:100%;
+      display: inline-block;
+      border: 1px solid $color-grey-middle;
+      width: 100%;
+      margin-top: 1.5%;
+      margin-bottom: 1.5%;
+      @media #{$xs-screen}{
+        width: 60%;
+      }
+      @media only screen and (max-width: 600px){
+        width: 70%;
       }
     }
     &--pictograms{
       padding-top: 2%;
       padding-bottom: 10%;
       opacity: 0.8;
+      margin-left: 0px;
       span{
         margin-left: 2%;
         margin-right: 2%;
       }
-    }
-  &--img{
-    text-align: center;
-    figcaption{
-      background-color: $color-blue;
-      position: absolute;
-      top:35%;
-      left:-3%;
-      right: 84%;
-      text-align: center;
-      color: white;
-      @media #{$md-screen}
-      {
-        top:30%;
-      }
-      @media #{$sm-screen}
-      {
-        top:20%;
-      }
-      @media #{$xs-screen}
-      {
-        top:35%;
+      @media #{$xs-screen}{
+        width: 60%;
       }
     }
-    &--1{
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.1em;
-      font-weight: bold;
-      padding-top: 1%;
-      padding-bottom: 0px;
-      margin-bottom: 0px;
-      @media #{$xs-screen}
-      {
-        font-size: 1.5em;
+    figure {
+      img{
+        padding-left: 5%;
+        padding-right: 5%;
+        @media #{$xs-screen}
+        {
+          margin: 0 auto;
+          padding-left: 0%;
+          padding-right: 0%;
+        }
       }
     }
-    &--2{
-      font-family: 'Roboto', sans-serif;
-      font-style: italic;
-      font-size: 0.9em;
-      padding-top: 0px;
-      margin-top: 0px;
-      margin-bottom: 3px;
-      @media #{$sm-screen}
-      {
+      figcaption {
+        background-color: $color-blue;
+        position: absolute;
+        top: 35%;
+        left: 3%;
+        right: 82%;
+        text-align: center;
+        color: white;
+        @media #{$md-screen}
+        {
+          top: 30%;
+        }
+        @media #{$xs-screen}
+        {
+          top: 35%;
+          left: 20%;
+          right: 65%;
+        }
+        @media only screen and (max-width: 670px){
+        left: 15%;
+      }
+        @media only screen and (max-width: 600px){
+          left: 10%;
+        }
+        @media only screen and (max-width: 500px){
+          right: 70%;
+          left: -5%;
+        }
+      }
+      &--day {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+        padding-top: 1%;
+        padding-bottom: 0px;
         margin-bottom: 0px;
+        @media #{$md-screen}
+        {
+          font-size: 1.7em;
+        }
+        @media #{$sm-screen}
+        {
+          font-size: 1.2em;
+        }
+        @media #{$xs-screen}
+        {
+          font-size: 2em;
+        }
       }
-      @media #{$xs-screen}
-      {
+      &--month {
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        font-size: 1em;
+        padding-top: 0px;
+        margin-top: 0px;
         margin-bottom: 3px;
+        margin-left: -4%;
+        @media #{$md-screen}
+        {
+          font-size: 0.9em;
+        }
+        @media #{$sm-screen}
+        {
+          margin-bottom: 0px;
+          font-size: 0.8em;
+        }
+        @media #{$xs-screen}
+        {
+          margin-bottom: 3px;
+          font-size: 1em;
+        }
       }
-    }
-  }
+
   }
 }

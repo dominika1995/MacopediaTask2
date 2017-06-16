@@ -1,3 +1,6 @@
+.meet {
+  text-align: center;
+}
 .meet div .col-xs-12 {
   padding-top: 3%;
 }
@@ -850,92 +853,166 @@
   }
 }
 
-.blog__img--top {
+@media only screen and (max-width: 768px) {
+  .blog__news {
+    text-align: center;
+  }
+}
+.blog__news--title {
   padding-top: 4%;
   font-family: 'Montserrat', sans-serif;
-  margin-left: -4%;
   font-weight: 600;
 }
-.blog__img--middle {
+@media only screen and (max-width: 768px) {
+  .blog__news--title {
+    margin-left: 20%;
+    text-align: left;
+  }
+}
+.blog__news--text {
   padding-top: 2%;
   color: #999999;
   padding-left: -2%;
-  margin-left: -4%;
-}
-.blog__img--line {
-  width: 120%;
-  margin-left: -10%;
 }
 @media only screen and (max-width: 768px) {
-  .blog__img--line {
-    width: 100%;
+  .blog__news--text {
+    margin-left: 20%;
+    text-align: left;
+    width: 50%;
   }
 }
-.blog__img--pictograms {
+@media only screen and (max-width: 600px) {
+  .blog__news--text {
+    width: 60%;
+  }
+}
+.blog__news--line {
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  margin-top: 1.5%;
+  margin-bottom: 1.5%;
+}
+@media only screen and (max-width: 768px) {
+  .blog__news--line {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .blog__news--line {
+    width: 70%;
+  }
+}
+.blog__news--pictograms {
   padding-top: 2%;
   padding-bottom: 10%;
   opacity: 0.8;
+  margin-left: 0px;
 }
-.blog__img--pictograms span {
+.blog__news--pictograms span {
   margin-left: 2%;
   margin-right: 2%;
 }
-.blog__img--img {
-  text-align: center;
+@media only screen and (max-width: 768px) {
+  .blog__news--pictograms {
+    width: 60%;
+  }
 }
-.blog__img--img figcaption {
+.blog__news figure img {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+@media only screen and (max-width: 768px) {
+  .blog__news figure img {
+    margin: 0 auto;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+}
+.blog__news figcaption {
   background-color: #95e1d3;
   position: absolute;
   top: 35%;
-  left: -3%;
-  right: 84%;
+  left: 3%;
+  right: 82%;
   text-align: center;
   color: white;
 }
 @media only screen and (max-width: 1200px) {
-  .blog__img--img figcaption {
+  .blog__news figcaption {
     top: 30%;
   }
 }
-@media only screen and (max-width: 992px) {
-  .blog__img--img figcaption {
-    top: 20%;
-  }
-}
 @media only screen and (max-width: 768px) {
-  .blog__img--img figcaption {
+  .blog__news figcaption {
     top: 35%;
+    left: 20%;
+    right: 65%;
   }
 }
-.blog__img--img--1 {
+@media only screen and (max-width: 670px) {
+  .blog__news figcaption {
+    left: 15%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .blog__news figcaption {
+    left: 10%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .blog__news figcaption {
+    right: 70%;
+    left: -5%;
+  }
+}
+.blog__news--day {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.1em;
+  font-size: 2em;
   font-weight: bold;
   padding-top: 1%;
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
-@media only screen and (max-width: 768px) {
-  .blog__img--img--1 {
-    font-size: 1.5em;
+@media only screen and (max-width: 1200px) {
+  .blog__news--day {
+    font-size: 1.7em;
   }
 }
-.blog__img--img--2 {
+@media only screen and (max-width: 992px) {
+  .blog__news--day {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .blog__news--day {
+    font-size: 2em;
+  }
+}
+.blog__news--month {
   font-family: 'Roboto', sans-serif;
   font-style: italic;
-  font-size: 0.9em;
+  font-size: 1em;
   padding-top: 0px;
   margin-top: 0px;
   margin-bottom: 3px;
+  margin-left: -4%;
+}
+@media only screen and (max-width: 1200px) {
+  .blog__news--month {
+    font-size: 0.9em;
+  }
 }
 @media only screen and (max-width: 992px) {
-  .blog__img--img--2 {
+  .blog__news--month {
     margin-bottom: 0px;
+    font-size: 0.8em;
   }
 }
 @media only screen and (max-width: 768px) {
-  .blog__img--img--2 {
+  .blog__news--month {
     margin-bottom: 3px;
+    font-size: 1em;
   }
 }
 
@@ -968,9 +1045,17 @@
   font-weight: bold;
   color: #f38181;
 }
+.map__inside--text {
+  color: #f38181;
+  animation-name: example;
+  animation-duration: 4s;
+}
 .map__inside--rectangle {
   width: 5%;
   padding-bottom: 3%;
+}
+.map a:hover {
+  text-decoration: none;
 }
 
 .foot {
