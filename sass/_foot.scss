@@ -58,8 +58,10 @@
         border: 1px solid $color-grey-middle;
         box-sizing: border-box;
         margin-top: 5%;
+        @media only screen and (max-width: 500px){
+          width: 40%;
+        }
       }
-
       input[type=submit] {
         width: 40%;
         background-color: $color-blue;
@@ -71,6 +73,9 @@
         cursor: pointer;
         margin-top: 5%;
         margin-left: -1.2%;
+        @media only screen and (max-width: 500px){
+          padding-left: 10px;
+        }
       }
     }
   }
