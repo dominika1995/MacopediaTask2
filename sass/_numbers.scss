@@ -1,39 +1,47 @@
 #numbers{
   background-color: $color-blue;
-  .numbers__div{
-    height:180px;
-    border-right: 1px solid white;
-    width:12.5%;
-    &:nth-child(1){
-        border-left: 1px solid white;
-        margin-left: 18.75%;
-      }
-      @media(max-width:$xs){
-        width:20%;
-        &:nth-child(1){
-            border-left: 1px solid white;
-            margin:0;
-          }
-      }
-    span{
-      display:block;
-      margin: 0 auto;
-      clear: left;
-      font-weight: 400 !important;
-      color: white;
+  .row{
+    width:100%;
+    margin-left:18%;
+    @media(max-width:$xs){
+      margin-left: 0;
     }
-    span.numbers__div__count{
-      font-family: 'Montserrat', sans-serif;
-      margin-top: 30%;
-      font-size: 50px;
-      @media(max-width:$md){
-        font-size: 40px;
+    .numbers__div{
+      height:180px;
+      border-right: 1px solid white;
+      width:12.5%;
+      &:nth-child(1){
+          border-left: 1px solid white;
+        }
+        @media(max-width:$xs){
+          width:20%;
+          &:nth-child(1){
+              border-left: 1px solid white;
+            }
+        }
+      span{
+        display:block;
+        margin: 0 auto;
+        clear: left;
+        font-weight: 400 !important;
+        color: white;
       }
-      @media(max-width:$sm){
-        font-size: 40px;
-      }
-      @media(max-width:$xs){
-        font-size: 40px;
+      span.numbers__div__count{
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 30%;
+        font-size: 50px;
+        @media(max-width:$md){
+          font-size: 40px;
+        }
+        @media(max-width:$sm){
+          font-size: 40px;
+        }
+        @media(max-width:$xs){
+          font-size: 40px;
+        }
+        @media(max-width:500px){
+          font-size: 30px;
+        }
       }
     }
   }
