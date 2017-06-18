@@ -1,26 +1,4 @@
 .work {
-  &--top {
-    margin-top: 5%;
-    font-family: Kaushan Script;
-    text-align: center;
-    font-size: 2em;
-  }
-  &--middle {
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-  }
-  &__center {
-    text-align: center;
-    &--rectangle {
-      padding-bottom: 3%;
-      padding-top: 1%;
-    }
-    &--text {
-      color: $color-grey-light;
-      font-size: 1em;
-    }
-  }
   &__picture {
     margin-top: 3%;
     div {
@@ -42,14 +20,14 @@
       height: 100%;
       top: 0;
       left: 0;
-      background: linear-gradient($color-red, $color-yellow);
+      background: linear-gradient($color-red-08, $color-yellow-08);
       opacity: 0;
       transition: all 1s;
       -webkit-transition: all 1s;
     }
     &--img:hover:after,
     &--img.hover:after {
-      opacity: 0.8;
+      opacity: 1;
     }
     .work__picture--overlay {
       position: absolute;
@@ -77,12 +55,12 @@
         margin-top: -85%;
       }
       &:hover {
-        opacity: 0.8;
+        opacity: 1;
       }
     }
-    .work__picture--img:hover:after + .work__picture--overlay--img,
-    .work__picture--img.hover:after + .work__picture--overlay--img {
-      opacity: 0.8;
+    .work__picture--img:hover:after + .work__picture--overlay,
+    .work__picture--img.hover:after + .work__picture--overlay {
+      opacity: 1;
     }
   }
 }
