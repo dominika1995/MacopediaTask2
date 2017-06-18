@@ -289,13 +289,13 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(#f38181, #fce38a);
+  background: linear-gradient(rgba(243, 129, 129, 0.8), rgba(252, 227, 138, 0.8));
   opacity: 0;
   transition: all 1s;
   -webkit-transition: all 1s;
 }
 .work__picture--img:hover:after, .work__picture--img.hover:after {
-  opacity: 0.8;
+  opacity: 1;
 }
 .work__picture .work__picture--overlay {
   position: absolute;
@@ -324,11 +324,11 @@
   margin-top: -85%;
 }
 .work__picture .work__picture--overlay:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
-.work__picture .work__picture--img:hover:after + .work__picture--overlay--img,
-.work__picture .work__picture--img.hover:after + .work__picture--overlay--img {
-  opacity: 0.8;
+.work__picture .work__picture--img:hover:after + .work__picture--overlay,
+.work__picture .work__picture--img.hover:after + .work__picture--overlay {
+  opacity: 1;
 }
 
 #banner {
