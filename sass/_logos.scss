@@ -3,11 +3,12 @@
   background-color: $color-grey;
   padding-top: 3%;
   padding-bottom: 3%;
-  text-align: center;
   div{
     .logos__row{
       div{
         img{
+          display: block;
+          margin: 0 auto;
           @media #{$sm-screen}
           {
             padding-top: 30px;

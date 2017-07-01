@@ -234,7 +234,10 @@
   background-color: #f8f8f8;
   padding-top: 3%;
   padding-bottom: 3%;
-  text-align: center;
+}
+.logos div .logos__row div img {
+  display: block;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 992px) {
   .logos div .logos__row div img {
