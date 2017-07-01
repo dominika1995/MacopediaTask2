@@ -1082,7 +1082,6 @@
   #services .services__gallery .left {
     margin-left: 5%; }
   #services .services__gallery__block {
-    width: 30%;
     border-color: #95e1d3;
     border-radius: 10px;
     -webkit-transition: all 500ms linear;
@@ -1090,6 +1089,10 @@
     -o-transition: all 500ms linear;
     -ms-transition: all 500ms linear;
     transition: all 500ms linear; }
+    @media (min-width: 768px) {
+      #services .services__gallery__block {
+        width: 30%;
+        margin-left: 1.5%; } }
     #services .services__gallery__block .title {
       font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
       font-size: 14px;
@@ -1108,10 +1111,6 @@
       -o-transition: all 500ms linear;
       -ms-transition: all 500ms linear;
       transition: all 500ms linear; }
-    @media (min-width: 1500px) {
-      #services .services__gallery__block {
-        width: 30%;
-        margin-left: 1.5%; } }
     #services .services__gallery__block__pic img {
       margin-top: 5px;
       width: 32px;
@@ -1135,12 +1134,6 @@
   -webkit-animation: moveFromBottom 500ms ease-in-out;
   -moz-animation: moveFromBottom 500ms ease-in-out;
   -ms-animation: moveFromBottom 500ms ease-in-out; }
-
-.services__gallery .services__gallery__block:hover {
-  border: 2px solid #95e1d3;
-  -webkit-box-shadow: 0px 2px 68px -1px #95e1d3;
-  -moz-box-shadow: 0px 2px 68px -1px #95e1d3;
-  box-shadow: 0px 2px 68px -1px #95e1d3; }
 
 @-webkit-keyframes moveFromBottom {
   from {
