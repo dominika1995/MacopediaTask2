@@ -32,7 +32,9 @@
     .work__picture--overlay {
       position: absolute;
       z-index: 50;
-      margin-top: -50%;
+      height: 100%;
+      margin-top: -80%;
+      padding-top: 25%;
       text-align: center;
       width: 100%;
       color: white;
@@ -52,7 +54,9 @@
         margin-top: -3%;
       }
       &--three {
-        margin-top: -85%;
+        margin-top: -160%;
+        height: 100%;
+        padding-top: 65%;
       }
       &:hover {
         opacity: 1;
