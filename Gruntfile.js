@@ -28,22 +28,22 @@ module.exports = function (grunt) {
     }]
       }
     },
-    //uglify: { // Begin JS Uglify Plugin
-    //  build: {
-    //    src: ['src/*.js'],
-    //    dest: 'js/script.min.js'
-    //  }
-    //},
+    uglify: { // Begin JS Uglify Plugin
+     build: {
+       src: ['js/*.js', '!*.min.js'],
+       dest: 'script.min.js'
+     }
+    },
     watch: { // Compile everything into one task with Watch Plugin
       css: {
         files: '**/*.scss',
         tasks: ['sass', 'cssmin']
       }
-      //,
-      //js: {
-      //  files: '**/*.js',
-      //  tasks: ['uglify']
-      //}
+      ,
+      js: {
+       files: '**/*.js',
+       tasks: ['uglify']
+      }
     }
   });
   // Load Grunt plugins
