@@ -8,6 +8,7 @@
     .logos__row{
       div{
         img{
+          text-align: center;
           @media #{$sm-screen}
           {
             padding-top: 30px;
