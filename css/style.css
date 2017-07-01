@@ -1184,11 +1184,41 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8em;
 }
+@media only screen and (max-width: 992px) {
+  .foot__2--row--text--long {
+    font-size: 1em;
+  }
+}
+@media all and (max-width: 600px) {
+  .foot__2--row--text--long {
+    font-size: 0.8em;
+  }
+}
 .foot__2--row--text--data {
   font-family: 'Roboto', sans-serif;
   font-size: 0.6em;
   font-style: italic;
   font-weight: 100;
+}
+@media only screen and (max-width: 992px) {
+  .foot__2--row--text--data {
+    font-size: 0.8em;
+  }
+}
+@media all and (max-width: 600px) {
+  .foot__2--row--text--data {
+    font-size: 0.6em;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .foot__2--row img {
+    width: 70%;
+  }
+}
+@media all and (max-width: 500px) {
+  .foot__2--row {
+    width: 100%;
+  }
 }
 .foot__3--title {
   font-family: 'Montserrat', sans-serif;
@@ -1206,6 +1236,11 @@
 }
 .foot__3--insta .row {
   margin-bottom: 2%;
+}
+@media all and (max-width: 365px) {
+  .foot__3--insta .row img {
+    width: 30%;
+  }
 }
 .foot__3--text {
   padding-top: 2%;
