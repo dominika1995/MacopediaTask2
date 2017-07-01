@@ -370,7 +370,8 @@
     padding: 0;
     background-color: #95e1d3; } }
 .navbar .navbar__img {
-  content: url("../img/MoGo.png"); }
+  z-index: 100;
+  display: block; }
 @media (max-width: 768px) {
   .navbar {
     background-color: transparent;
@@ -1183,7 +1184,6 @@
   display: flex;
   flex-direction: column; }
   #design img.design__bg {
-    content: url("../img/feature_bg.png");
     position: absolute;
     left: 0;
     top: 0;
