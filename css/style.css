@@ -246,6 +246,9 @@
 #banner {
   position: relative;
   overflow: hidden;
+  background: -webkit-linear-gradient(RGB(244, 140, 130), RGB(252, 226, 138));
+  background: -o-linear-gradient(RGB(244, 140, 130), RGB(252, 226, 138));
+  background: -moz-linear-gradient(RGB(244, 140, 130), RGB(252, 226, 138));
   background: linear-gradient(RGB(244, 140, 130), RGB(252, 226, 138)); }
   #banner img {
     content: url("../img/banner_bg.png");
@@ -580,6 +583,9 @@
     opacity: 0;
     z-index: 90;
     position: absolute;
+    background: -webkit-linear-gradient(rgba(243, 129, 129, 0.8), rgba(252, 227, 138, 0.8));
+    background: -o-linear-gradient(rgba(243, 129, 129, 0.8), rgba(252, 227, 138, 0.8));
+    background: -moz-linear-gradient(rgba(243, 129, 129, 0.8), rgba(252, 227, 138, 0.8));
     background: linear-gradient(rgba(243, 129, 129, 0.8), rgba(252, 227, 138, 0.8)); }
     #about .about__gallery--top img {
       display: block;
@@ -1250,28 +1256,6 @@
 
 #service {
   margin-bottom: 5%; }
-  #service .service__info--first {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 20px;
-    color: black;
-    margin-top: 5%; }
-  #service .service__info--second {
-    text-transform: uppercase;
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    margin-top: 0;
-    color: black; }
-  #service .service__info__bar {
-    display: inline-block;
-    border: 2px solid #f38181;
-    width: 50px;
-    margin-top: 1.5%; }
-  #service .service__info--text {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 1.5%;
-    width: 60%; }
   #service .service__details {
     margin-top: 5%;
     margin-bottom: 5%; }
