@@ -47,12 +47,13 @@
         font-family: 'Roboto', sans-serif;
         font-style: italic;
         width: 70%;
+
         @media #{$xs-screen}
         {
-          width: 90%;
+          width: 140%;
           margin-top: 50px;
-          padding-left: -30%;
-          margin-left: -20%;
+          margin-left: -40%;
+          margin-right: 10%;
         }
       }
       &--name {
