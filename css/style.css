@@ -133,7 +133,7 @@
   position: absolute;
   margin-left: 20%;
   z-index: 300;
-  margin-top: 50%;
+  margin-top: 20%;
 }
 .meet div .col-xs-12 .meet__team--imgs .meet__team--img {
   margin-top: 50%;
@@ -143,11 +143,33 @@
   background-color: #fce38a;
 }
 .meet div .col-xs-12 .meet__team--imgs .meet__team--img:first-child {
-  background-color: #f38181;
   margin-top: 50%;
+  content: url(../img/pictograms/meet_facebook.png);
+}
+.meet div .col-xs-12 .meet__team--imgs .meet__team--img:nth-child(2) {
+  content: url(../img/pictograms/meet_twitter.png);
+  padding-top: 19px;
+}
+.meet div .col-xs-12 .meet__team--imgs .meet__team--img:nth-child(2):hover {
+  content: url(../img/pictograms/meet_twitter_white.png);
+}
+.meet div .col-xs-12 .meet__team--imgs .meet__team--img:nth-child(3) {
+  content: url(../img/pictograms/meet_pinterest.png);
+}
+.meet div .col-xs-12 .meet__team--imgs .meet__team--img:nth-child(3):hover {
+  content: url(../img/pictograms/meet_pinterest_white.png);
+}
+.meet div .col-xs-12 .meet__team--imgs .meet__team--img:nth-child(4) {
+  content: url(../img/pictograms/meet_instagram.png);
+}
+.meet div .col-xs-12 .meet__team--imgs .meet__team--img:nth-child(4):hover {
+  content: url(../img/pictograms/meet_instagram_white.png);
 }
 .meet div .col-xs-12 .meet__team--imgs .meet__team--img:last-child img {
   margin-right: 10px;
+}
+.meet div .col-xs-12 .meet__team--imgs .meet__team--img:hover {
+  background-color: #f38181;
 }
 @media only screen and (max-width: 992px) {
   .meet div .col-xs-12 .meet__team--imgs {
