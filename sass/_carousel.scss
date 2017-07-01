@@ -1,4 +1,4 @@
-.testimontial0 {
+.carousel1 {
   background-color: $color-grey-middle;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -26,6 +26,7 @@
         padding-left: 35%
       }
       &--img {
+
         margin-left: 15%;
         margin-right: 5%;
         width: 100px !important;
@@ -36,7 +37,10 @@
           width: 63px !important;
           height: 61px!important;
         }
-
+        @media #{$xs-screen}
+        {
+          margin:auto;
+        }
       }
       &--text {
         color: $color-grey-dark;

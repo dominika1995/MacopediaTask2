@@ -1356,54 +1356,57 @@
     #service .service__details__accordion .panel-default > .panel-heading + .panel-collapse > .panel-body {
       border-top: 0 none; }
 
-.testimontial0 {
+.carousel1 {
   background-color: #e5e5e5;
   padding-top: 1%;
   padding-bottom: 1%; }
-  .testimontial0__slider--left {
+  .carousel1__slider--left {
     text-align: center;
     margin-top: 5%; }
     @media only screen and (max-width: 768px) {
-      .testimontial0__slider--left {
+      .carousel1__slider--left {
         margin-top: 25%; } }
-  .testimontial0__slider--right {
+  .carousel1__slider--right {
     text-align: center;
     margin-top: 3%; }
     @media only screen and (max-width: 768px) {
-      .testimontial0__slider--right {
+      .carousel1__slider--right {
         margin-top: 0%; } }
-  .testimontial0__slider--page {
+  .carousel1__slider--page {
     padding-top: 1%; }
     @media only screen and (max-width: 768px) {
-      .testimontial0__slider--page {
+      .carousel1__slider--page {
         padding-left: 35%; } }
-    .testimontial0__slider--page--img {
+    .carousel1__slider--page--img {
       margin-left: 15%;
       margin-right: 5%;
       width: 100px !important;
       height: 100px !important;
       border: 2px solid #95e1d3;
       padding: 18px; }
-      .testimontial0__slider--page--img img {
+      .carousel1__slider--page--img img {
         width: 63px !important;
         height: 61px !important; }
-    .testimontial0__slider--page--text {
+      @media only screen and (max-width: 768px) {
+        .carousel1__slider--page--img {
+          margin: auto; } }
+    .carousel1__slider--page--text {
       color: #999999;
       font-family: 'Roboto', sans-serif;
       font-style: italic;
       width: 70%; }
       @media only screen and (max-width: 768px) {
-        .testimontial0__slider--page--text {
+        .carousel1__slider--page--text {
           width: 90%;
           margin-top: 50px;
           padding-left: -30%;
           margin-left: -20%; } }
-    .testimontial0__slider--page--name {
+    .carousel1__slider--page--name {
       padding-top: 3%; }
       @media only screen and (max-width: 768px) {
-        .testimontial0__slider--page--name {
+        .carousel1__slider--page--name {
           margin-left: -20%; } }
-      .testimontial0__slider--page--name--name {
+      .carousel1__slider--page--name--name {
         font-family: 'Kaushan Script', cursive; }
 
 .carousel-control.left,
