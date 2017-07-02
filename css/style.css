@@ -421,6 +421,11 @@
   .nav li a:hover {
     color: #fce38a !important;
     border-bottom: 4px solid #fce38a; }
+  @media (max-width: 768px) {
+    .nav li a {
+      margin-top: 1%;
+      background: #95e1d3;
+      border-radius: 35px; } }
 .nav .navbar__pic--cart {
   content: url("../img/pictograms/banner_shopping-cart.png"); }
 .nav .navbar__pic--glass {
@@ -430,10 +435,12 @@
   .navbar {
     padding: 20px 0;
     background-color: transparent;
-    border: none;
+    border: none !important;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out,background-color .5s ease-in-out;
     -moz-transition: background .5s ease-in-out,padding .5s ease-in-out,background-color .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out,background-color .5s ease-in-out; }
+    .navbar-toggle {
+      background: transparent; }
 
   .top-nav-collapse {
     padding: 0;
@@ -507,6 +514,9 @@
     -moz-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg); }
+
+.navbar-ex1-collapse {
+  background: transparent !important; }
 
 #about .about__gallery {
   width: 90%;
@@ -1592,3 +1602,6 @@
     margin-top: 1.5%;
     width: 60%;
     color: #d9d9d9; }
+
+body {
+  overflow-x: hidden; }
