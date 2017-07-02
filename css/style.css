@@ -1149,6 +1149,7 @@
   font-size: 2em;
   font-weight: bold;
   color: #f38181;
+  z-index: 500;
 }
 .map__inside--text {
   color: #f38181;
@@ -1161,6 +1162,41 @@
 }
 .map a:hover {
   text-decoration: none;
+}
+.map__box {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.map__box--content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+.map__box--content--close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.map__box--content--close:hover, .map__box--content--closefocus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
 }
 
 .foot {

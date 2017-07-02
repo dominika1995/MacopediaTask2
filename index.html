@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
     <script src="js/respond.min.js"></script>
-    <!-- font-family: 'Kaushan Script', cursive; -->
 </head>
 
 <body>
@@ -939,15 +938,22 @@
 </div>
 
 <div class="container-fluid map">
-    <a href="https://goo.gl/maps/DHF47rwGPys">
+    <a id="myBtn">
         <img class="map--back" src="img/map_back.png"/>
         <div class="map__inside">
             <img class="map__inside--pictogram" src="img/pictograms/map_1.png"/>
-            <p class="map__inside--text">OPEN MAP</p>
+            <p  class="map__inside--text">OPEN MAP</p>
             <img class="map__inside--rectangle" src="img/pictograms/meet_rectangle.png"/>
         </div>
     </a>
+    <div id="box" class="map__box">
+         <div class="map__box--content">
+             <span class="map__box--content--close">&times;</span>
+             <div id="map"></div>
+         </div>
+     </div>
 </div>
+
 
 
 <footer class="container-fluid foot">
@@ -1046,14 +1052,18 @@
     </div>
 </footer>
 
-
 <script src="jquery/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/scrollingNav.js"></script>
 <script src="js/counters.js"></script>
 <script src="js/accordion.js"></script>
+<script src="js/map.js"></script>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5vPJd91DdZEZ2SGL9NvGUmD3kaeEB7a0&callback=initMap"
+        type="text/javascript">
 
+</script>
 
 </body>
 
