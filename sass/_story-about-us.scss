@@ -159,6 +159,9 @@
           opacity: 0;
           z-index: 90;
           position: absolute;
+          background: -webkit-linear-gradient($color-red-08, $color-yellow-08);
+          background: -o-linear-gradient($color-red-08, $color-yellow-08);
+          background: -moz-linear-gradient($color-red-08, $color-yellow-08);
           background: linear-gradient($color-red-08, $color-yellow-08);
           img{
 

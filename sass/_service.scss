@@ -1,32 +1,5 @@
 #service {
   margin-bottom: 5%;
-  .service__info--first {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 20px;
-    color: black;
-    margin-top: 5%;
-  }
-  .service__info--second {
-    text-transform: uppercase;
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    margin-top: 0;
-    color: black;
-  }
-  .service__info__bar {
-    display: inline-block;
-    border: 2px solid $color-red;
-    width: 50px;
-    margin-top: 1.5%;
-  }
-
-  .service__info--text {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 1.5%;
-    width: 60%;
-  }
 
   .service__details {
     margin-top: 5%;

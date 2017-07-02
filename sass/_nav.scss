@@ -36,7 +36,8 @@
 }
 .navbar{
   .navbar__img{
-    content:url("../img/MoGo.png");
+    z-index: 100;
+    display:block;
   }
   @media(max-width:$xs) {
     background-color: transparent;
