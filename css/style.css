@@ -1393,6 +1393,7 @@
       .carousel1__slider--right {
         margin-top: 0%; } }
   .carousel1__slider--page {
+    margin-left: 10%;
     padding-top: 1%; }
     @media only screen and (max-width: 768px) {
       .carousel1__slider--page {
