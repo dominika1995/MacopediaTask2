@@ -1,72 +1,80 @@
-#carousel1{
+.testimontial0 {
   background-color: $color-grey-middle;
-  margin-bottom: 5%;
-  .carousel-inner{
-    .item{
-      .carousel__slide{
-        padding-top: 60px;
-        padding-bottom: 60px;
-        margin-bottom: 5%;
-        &--img{
-          padding-right: 10%;
-          img{
-            display:block;
-            padding:15px;
-            border:3px solid $color-blue;
-            margin-right: 5%;
-          }
+  padding-top: 1%;
+  padding-bottom: 1%;
+  &__slider {
+    &--left {
+      text-align: center;
+      margin-top: 5%;
+      @media #{$xs-screen}
+      {
+        margin-top: 25%;
+      }
+    }
+    &--right {
+      text-align: center;
+      margin-top: 3%;
+      @media #{$xs-screen}
+      {
+        margin-top: 0%;
+      }
+    }
+    &--page {
+      padding-top: 1%;
+      @media #{$xs-screen}
+      {
+        padding-left: 35%
+      }
+      &--img {
+        margin-left: 15%;
+        margin-right: 5%;
+        width: 100px !important;
+        height: 100px!important;
+        border: 2px solid $color-blue;
+        padding:18px;
+        img {
+          width: 63px !important;
+          height: 61px!important;
         }
-        div{
-          .carousel__slide{
-            padding-left: 15%;
-            &--text{
-              color:$color-grey-dark;
-              font-size: 16px;
-            }
-            &--name{
-              span{
-                font-size: 16px;
-                font-family: 'Kaushan Script', cursive;
-              }
-            }
-          }
+
+      }
+      &--text {
+        color: $color-grey-dark;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        width: 70%;
+        @media #{$xs-screen}
+        {
+          width: 90%;
+          margin-top: 50px;
+          padding-left: -30%;
+          margin-left: -20%;
+        }
+      }
+      &--name {
+        padding-top: 3%;
+        @media #{$xs-screen}
+        {
+          margin-left: -20%;
+        }
+        &--name {
+          font-family: 'Kaushan Script', cursive;
         }
       }
     }
   }
-}
-
-
-
-.carousel-control.left{
-  background-image: none;
-  img{
-    display:block;
-    margin-top: 50%;
-    margin-left: 80%;
-    @media #{$xs-screen}
-    {
-      margin-top: 100%;
-    }
-  }
 
 }
+.carousel-control.left,
 .carousel-control.right{
   background-image: none;
+  height: 50px;
+  margin-top: 3%;
   img{
-    display:block;
-    margin-top: 50%;
     @media #{$xs-screen}
     {
       margin-top: 100%;
     }
   }
-}
-.carousel-control{
-  @media(max-width:1200px){
-    margin-top:40%;
-  }
-  @media(max-width:1300px){
-    margin-top:30%;
-  }
+
 }
