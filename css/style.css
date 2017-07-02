@@ -689,10 +689,10 @@
         @media (max-width: 500px) {
           #numbers .row .numbers__div span.numbers__div__count {
             font-size: 20px; } }
-        @media (max-width: 450px) {
-          #numbers .row .numbers__div span.numbers__div__count {
-            padding-left: 5px !important;
-            padding-right: 5px !important; } }
+      @media (max-width: 450px) {
+        #numbers .row .numbers__div {
+          padding-left: 1px;
+          padding-right: 1px; } }
 
 .say {
   position: relative;
@@ -1397,13 +1397,14 @@
       .carousel1__slider--right {
         margin-top: 0%; } }
   .carousel1__slider--page {
-    margin-left: 10%;
+    margin-left: 15%;
     padding-top: 1%; }
     @media only screen and (max-width: 768px) {
       .carousel1__slider--page {
+        margin-left: 8%;
         padding-left: 35%; } }
     .carousel1__slider--page--img {
-      margin-left: 15%;
+      margin-left: 12%;
       margin-right: 5%;
       width: 100px !important;
       height: 100px !important;
@@ -1412,9 +1413,15 @@
       .carousel1__slider--page--img img {
         width: 63px !important;
         height: 61px !important; }
+        @media only screen and (max-width: 768px) {
+          .carousel1__slider--page--img img {
+            margin: auto; } }
       @media only screen and (max-width: 768px) {
         .carousel1__slider--page--img {
           margin: auto; } }
+      @media (max-width: 600px) {
+        .carousel1__slider--page--img {
+          margin-left: -5%; } }
     .carousel1__slider--page--text {
       color: #999999;
       font-family: 'Roboto', sans-serif;
@@ -1425,12 +1432,12 @@
           width: 90%;
           margin-top: 50px;
           padding-left: -30%;
-          margin-left: -20%; } }
+          margin-left: -30%; } }
     .carousel1__slider--page--name {
       padding-top: 3%; }
       @media only screen and (max-width: 768px) {
         .carousel1__slider--page--name {
-          margin-left: -20%; } }
+          margin-left: -30%; } }
       .carousel1__slider--page--name--name {
         font-family: 'Kaushan Script', cursive; }
 
