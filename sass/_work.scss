@@ -20,6 +20,10 @@
       height: 100%;
       top: 0;
       left: 0;
+      background: $color-red-08;
+      background: -webkit-linear-gradient($color-red-08, $color-yellow-08);
+      background: -o-linear-gradient($color-red-08, $color-yellow-08);
+      background: -moz-linear-gradient($color-red-08, $color-yellow-08);
       background: linear-gradient($color-red-08, $color-yellow-08);
       opacity: 0;
       transition: all 1s;
@@ -39,6 +43,7 @@
       width: 100%;
       color: white;
       opacity: 0;
+
       &--img {
         width: 10%;
       }
