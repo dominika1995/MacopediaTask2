@@ -966,7 +966,8 @@
       width: 5%;
       padding-bottom: 3%; }
   .map a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: pointer; }
   .map__box {
     display: none;
     position: fixed;
