@@ -20,6 +20,10 @@
       height: 100%;
       top: 0;
       left: 0;
+      background: $color-red-08;
+      background: -webkit-linear-gradient($color-red-08, $color-yellow-08);
+      background: -o-linear-gradient($color-red-08, $color-yellow-08);
+      background: -moz-linear-gradient($color-red-08, $color-yellow-08);
       background: linear-gradient($color-red-08, $color-yellow-08);
       opacity: 0;
       transition: all 1s;
@@ -32,11 +36,14 @@
     .work__picture--overlay {
       position: absolute;
       z-index: 50;
-      margin-top: -50%;
+      height: 100%;
+      margin-top: -80%;
+      padding-top: 25%;
       text-align: center;
       width: 100%;
       color: white;
       opacity: 0;
+
       &--img {
         width: 10%;
       }
@@ -52,7 +59,9 @@
         margin-top: -3%;
       }
       &--three {
-        margin-top: -85%;
+        margin-top: -160%;
+        height: 100%;
+        padding-top: 65%;
       }
       &:hover {
         opacity: 1;

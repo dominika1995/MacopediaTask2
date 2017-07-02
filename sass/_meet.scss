@@ -5,16 +5,13 @@
       padding-top: 3%;
       @media #{$xs-screen}
       {
-        padding-left: 28%;
-        padding-top: 5%;
+        padding: 5% 0 0 28%;
       }
       @media only screen and (max-width: 600px) {
-        padding-left: 20%;
-        padding-top: 5%;
+        padding: 5% 0 0 20%;
       }
       @media only screen and (max-width: 400px) {
-        padding-left: 15%;
-        padding-top: 5%;
+        padding: 5% 0 0 15%;
       }
       .meet__team {
         &--people {
@@ -82,9 +79,13 @@
             height: 350px;
           }
         }
-        &--background{
+        &--background {
           opacity: 0;
           position: absolute;
+          background: $color-red-08;
+          background: -webkit-linear-gradient($color-red-08, $color-yellow-08);
+          background: -o-linear-gradient($color-red-08, $color-yellow-08);
+          background: -moz-linear-gradient($color-red-08, $color-yellow-08);
           background: linear-gradient($color-red-08, $color-yellow-08);
           width: 360px;
           z-index: 400;
@@ -112,24 +113,91 @@
         }
         &--imgs {
           position: absolute;
-          margin-left: 20%;
           z-index: 300;
-          margin-top: 50%;
+          margin: 20% 0 0 20%;
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            margin: 50% 0 0 20%;
+          }
+          @-moz-document url-prefix() {
+            margin: 50% 0 0 20%;
+          }
           .meet__team--img {
-            margin-top: 50%;
             position: relative;
-            margin-left: -5px;
             padding: 15px 15px 15px 15px;
+            margin: 50% 0 0 -5px;
             background-color: $color-yellow;
           }
           .meet__team--img:first-child {
-            background-color: $color-red;
             margin-top: 50%;
+            content: url(../img/pictograms/meet_facebook.png);
+          }
+          .meet__team--img:nth-child(2) {
+            content: url(../img/pictograms/meet_twitter.png);
+            padding-top: 19px;
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+              padding-top: 15px;
+            }
+            @-moz-document url-prefix() {
+              padding-top: 15px;
+            }
+            @media#{$md-screen}
+            {
+              padding-top: 14px;
+              @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                padding-top: 15px;
+              }
+              @-moz-document url-prefix() {
+                padding-top: 15px;
+              }
+            }
+            @media only screen and (max-width: 1000px) {
+              @-moz-document url-prefix() {
+                padding-top: 10px;
+              }
+            }
+            @media#{$xs-screen}
+            {
+              padding-top: 19px;
+              @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                padding-top: 15px;
+              }
+              @-moz-document url-prefix() {
+                padding-top: 15px;
+              }
+            }
+            @media only screen and (max-width: 500px) {
+              padding-top: 14px;
+              @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+                padding-top: 10px;
+              }
+              @-moz-document url-prefix() {
+                padding-top: 10px;
+              }
+            }
+          }
+
+          .meet__team--img:nth-child(2):hover {
+            content: url(../img/pictograms/meet_twitter_white.png);
+          }
+          .meet__team--img:nth-child(3) {
+            content: url(../img/pictograms/meet_pinterest.png);
+          }
+          .meet__team--img:nth-child(3):hover {
+            content: url(../img/pictograms/meet_pinterest_white.png);
+          }
+          .meet__team--img:nth-child(4) {
+            content: url(../img/pictograms/meet_instagram.png);
+          }
+          .meet__team--img:nth-child(4):hover {
+            content: url(../img/pictograms/meet_instagram_white.png);
           }
           .meet__team--img:last-child {
             img {
               margin-right: 10px;
             }
+          }
+          .meet__team--img:hover {
+            background-color: $color-red;
           }
           @media #{$sm-screen} {
             margin-left: 10%;
@@ -143,7 +211,7 @@
               padding: 15px 15px 15px 15px;
             }
           }
-          @media only screen and (max-width: 500px){
+          @media only screen and (max-width: 500px) {
             margin-left: 15%;
             .meet__team--img {
               padding: 10px 10px 10px 10px;
@@ -152,14 +220,10 @@
         }
         &--background:hover {
           opacity: 1;
-          margin-top: -20px;
-          margin-left: -20px;
-          margin-bottom: 20px;
+          margin: -20px 0 20px -20px;
         }
         &--background:hover + .meet__team--people {
-          margin-bottom: 20px;
-          margin-top: -20px;
-          margin-left: -20px;
+          margin: -20px 0 20px -20px;
         }
       }
     }
@@ -207,6 +271,7 @@
     }
   }
 }
+
 
 
 

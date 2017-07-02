@@ -93,13 +93,33 @@
         &--long {
           font-family: 'Montserrat', sans-serif;
           font-size: 0.8em;
+          @media#{$sm-screen}{
+            font-size: 1em;
+          }
+          @media all and(max-width:600px){
+            font-size: 0.8em;
+          }
         }
         &--data {
           font-family: 'Roboto', sans-serif;
           font-size: 0.6em;
           font-style: italic;
           font-weight: 100;
+          @media#{$sm-screen}{
+            font-size:0.8em;
+          }
+          @media all and(max-width:600px){
+            font-size: 0.6em;
+          }
         }
+      }
+      @media#{$md-screen}{
+        img {
+          width: 70%;
+        }
+      }
+      @media all and(max-width:500px){
+        width: 100%;
       }
     }
   }
@@ -119,6 +139,13 @@
       .row {
         margin-bottom: 2%;
       }
+      @media all and(max-width:365px){
+        .row{
+          img{
+            width: 30%;
+          }
+        }
+      }
     }
     &--text {
       padding-top: 2%;
@@ -128,7 +155,6 @@
       }
     }
     &--line{
-      //margin-left: -5%;
       width: 100%;
     }
     &--foot{

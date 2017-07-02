@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
     <script src="js/respond.min.js"></script>
-    <!-- font-family: 'Kaushan Script', cursive; -->
 </head>
 
 
@@ -507,11 +506,11 @@
                     <a class="meet__team--img" href="http://www.facebook.com"><img
                             src="img/pictograms/meet_facebook.png"/></a>
                     <a class="meet__team--img" href="http://twitter.com"><img
-                            src="img/pictograms/meet_twitter.png"/></a>
+                            src="img/pictograms/meet_twitter_white.png"/></a>
                     <a class="meet__team--img" href="http://www.pinterest.com"><img
-                            src="img/pictograms/meet_pinterest.png"/></a>
+                            src="img/pictograms/meet_pinterest_white.png"/></a>
                     <a class="meet__team--img" href="http://www.instagram.com"><img
-                            src="img/pictograms/meet_instagram.png"/></a>
+                            src="img/pictograms/meet_instagram_white.png"/></a>
                 </div>
             </div>
             <div class="meet__team--people meet__team--people--1">
@@ -521,7 +520,6 @@
                 <div class="row meet__name--xs--work">Graphic Design</div>
             </div>
         </div>
-
         <div class="col-sm-4 col-xs-12">
             <div class="meet__team--back"></div>
             <div class="meet__team--background">
@@ -529,11 +527,11 @@
                     <a class="meet__team--img" href="http://www.facebook.com"><img
                             src="img/pictograms/meet_facebook.png"/></a>
                     <a class="meet__team--img" href="http://twitter.com"><img
-                            src="img/pictograms/meet_twitter.png"/></a>
+                            src="img/pictograms/meet_twitter_white.png"/></a>
                     <a class="meet__team--img" href="http://www.pinterest.com"><img
-                            src="img/pictograms/meet_pinterest.png"/></a>
+                            src="img/pictograms/meet_pinterest_white.png"/></a>
                     <a class="meet__team--img" href="http://www.instagram.com"><img
-                            src="img/pictograms/meet_instagram.png"/></a>
+                            src="img/pictograms/meet_instagram_white.png"/></a>
                 </div>
             </div>
             <div class="meet__team--people meet__team--people--2">
@@ -553,11 +551,11 @@
                     <a class="meet__team--img" href="http://www.facebook.com"><img
                             src="img/pictograms/meet_facebook.png"/></a>
                     <a class="meet__team--img" href="http://twitter.com"><img
-                            src="img/pictograms/meet_twitter.png"/></a>
+                            src="img/pictograms/meet_twitter_white.png"/></a>
                     <a class="meet__team--img" href="http://www.pinterest.com"><img
-                            src="img/pictograms/meet_pinterest.png"/></a>
+                            src="img/pictograms/meet_pinterest_white.png"/></a>
                     <a class="meet__team--img" href="http://www.instagram.com"><img
-                            src="img/pictograms/meet_instagram.png"/></a>
+                            src="img/pictograms/meet_instagram_white.png"/></a>
                 </div>
             </div>
             <div class="meet__team--people meet__team--people--3">
@@ -617,8 +615,10 @@
         <h2 class="page-title__subtitle">SOME OF OUR WORK</h2>
         <span class="page-title__bar"></span>
         <p class="page-title__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim</br>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commondo consequat.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            Ut enim ad minim</br>veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commondo
+            consequat.
         </p>
     </div>
     <div class="row work__picture">
@@ -697,7 +697,6 @@
 <div class="container testimontial">
 
     <div id="carousel-1" class="carousel slide" data-ride="carousel">
-        <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
                 <div class="testimontial__slider--page">
@@ -757,14 +756,12 @@
             </div>
         </div>
 
-        <!-- Left and right controls -->
         <a class="left carousel-control" href="#carousel-1" data-slide="prev">
             <img src="img/pictograms/testimontial_arrowleft.png"/>
-
         </a>
+
         <a class="right carousel-control" href="#carousel-1" data-slide="next">
             <img src="img/pictograms/testimontial_arrowright.png"/>
-
         </a>
     </div>
 
@@ -928,15 +925,22 @@
 </div>
 
 <div class="container-fluid map">
-    <a href="https://goo.gl/maps/DHF47rwGPys">
-    <img class="map--back"/>
-    <div class="map__inside">
-        <img class="map__inside--pictogram" src="img/pictograms/map_1.png"/>
-        <p class="map__inside--text">OPEN MAP</p>
-        <img class="map__inside--rectangle" src="img/pictograms/meet_rectangle.png"/>
-    </div>
+    <a id="myBtn">
+        <img class="map--back" src="img/map_back.png"/>
+        <div class="map__inside">
+            <img class="map__inside--pictogram" src="img/pictograms/map_1.png"/>
+            <p  class="map__inside--text">OPEN MAP</p>
+            <img class="map__inside--rectangle" src="img/pictograms/meet_rectangle.png"/>
+        </div>
     </a>
+    <div id="box" class="map__box">
+         <div class="map__box--content">
+             <span class="map__box--content--close">&times;</span>
+             <div id="map"></div>
+         </div>
+     </div>
 </div>
+
 
 
 <footer class="container-fluid foot">
@@ -1035,14 +1039,18 @@
     </div>
 </footer>
 
-
 <script src="jquery/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/scrollingNav.js"></script>
 <script src="js/counters.js"></script>
 <script src="js/accordion.js"></script>
+<script src="js/map.js"></script>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5vPJd91DdZEZ2SGL9NvGUmD3kaeEB7a0&callback=initMap"
+        type="text/javascript">
 
+</script>
 
 </body>
 
