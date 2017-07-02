@@ -184,9 +184,13 @@
             padding: 10px 10px 10px 10px; } }
     .meet div .col-xs-12 .meet__team--background:hover {
       opacity: 1;
-      margin: -20px 0 20px -20px; }
+      margin: -20px 0 20px -20px;
+      transition: all 1s;
+      -webkit-transition: all 1s; }
     .meet div .col-xs-12 .meet__team--background:hover + .meet__team--people {
-      margin: -20px 0 20px -20px; }
+      margin: -20px 0 20px -20px;
+      transition: all 1s;
+      -webkit-transition: all 1s; }
   .meet__name {
     text-align: center;
     position: relative; }
@@ -983,7 +987,8 @@
       width: 5%;
       padding-bottom: 3%; }
   .map a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    cursor: pointer; }
   .map__box {
     display: none;
     position: fixed;
