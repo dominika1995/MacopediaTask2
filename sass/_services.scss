@@ -38,6 +38,9 @@
         -o-transition: all 500ms linear;
         -ms-transition: all 500ms linear;
         transition: all 500ms linear;
+        @media(max-width:350px){
+          padding-left:5%;
+        }
       }
       .description{
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -47,6 +50,9 @@
         -o-transition: all 500ms linear;
         -ms-transition: all 500ms linear;
         transition: all 500ms linear;
+        @media(max-width:350px){
+          padding-left:5%;
+        }
       }
       &__pic{
         -webkit-transition-property: -webkit-transform;
@@ -55,6 +61,7 @@
         -moz-transition-duration: 500ms;
         transition-property: transform;
         transition-duration: 500ms;
+
         img{
           margin-top: 5px;
           width: 32px;

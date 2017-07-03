@@ -1,4 +1,7 @@
 #service {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    margin-top:-20%;
+  }
   margin-bottom: 5%;
 
   .service__details {
@@ -62,6 +65,7 @@
         }
 
         &:after {
+          //gora
           content: "\2303";
           font-family: FontAwesome;
           color: $color-grey-dark;
@@ -71,6 +75,8 @@
           font-size: 48px;
           @media #{$xs-screen} {
             font-size: 30px;
+            top: 32px;
+
           }
         }
 
@@ -81,10 +87,11 @@
             color: $color-grey-dark;
             position: absolute;
             right: 15px;
-            top: 5px;
+            top: -3px;
             font-size: 48px;
             @media #{$xs-screen} {
               font-size: 30px;
+              top:13px;
             }
           }
           &:hover {
