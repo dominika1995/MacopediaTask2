@@ -1,6 +1,10 @@
 .testimontial {
   padding-top: 4%;
   padding-bottom: 5%;
+  height: 250px;
+  @media #{$xs-screen} {
+    height: 400px;
+  }
   &__slider {
     &--left {
       text-align: center;

@@ -1254,7 +1254,11 @@
 
 .testimontial {
   padding-top: 4%;
-  padding-bottom: 5%; }
+  padding-bottom: 5%;
+  height: 250px; }
+  @media only screen and (max-width: 768px) {
+    .testimontial {
+      height: 400px; } }
   .testimontial__slider--left {
     text-align: center;
     margin-top: 5%; }
