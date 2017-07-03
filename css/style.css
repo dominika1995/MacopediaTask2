@@ -1059,7 +1059,14 @@
       font-family: 'Roboto', sans-serif;
       font-style: italic;
       color: #d9d9d9;
-      padding-right: 4%; }
+      padding-right: 4%;
+      margin-left: -10%; }
+      @media only screen and (max-width: 992px) {
+        .foot__1--site--text {
+          margin-left: -5%; } }
+      @media only screen and (max-width: 768px) {
+        .foot__1--site--text {
+          margin-left: -50px; } }
     .foot__1--site img {
       padding-right: 1.5%; }
       @media only screen and (max-width: 992px) {
@@ -1089,7 +1096,9 @@
     margin-left: -1.2%; }
     @media only screen and (max-width: 500px) {
       .foot__1 form input[type=submit] {
-        padding-left: 10px; } }
+        font-size: 0.8em;
+        margin-top: -5%;
+        padding: 13px 5px; } }
   .foot__2--title {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3em;
@@ -1119,10 +1128,14 @@
           font-size: 0.6em; } }
     @media only screen and (max-width: 1200px) {
       .foot__2--row img {
-        width: 70%; } }
-    @media all and (max-width: 500px) {
-      .foot__2--row {
+        width: 80%; } }
+    @media only screen and (max-width: 768px) {
+      .foot__2--row img {
         width: 100%; } }
+    @media all and (max-width: 400px) {
+      .foot__2--row img {
+        margin-top: 5%;
+        width: 150%; } }
   .foot__3--title {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3em;
@@ -1154,6 +1167,84 @@
     margin-bottom: 2%; }
     .foot__3--foot--color {
       color: #f38181; }
+
+#foot__1--site--sprite {
+  position: relative; }
+
+#foot__1--site--sprite li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: -5px; }
+
+#foot__1--site--sprite li, #foot__1--site--sprite a {
+  height: 30px;
+  display: block; }
+
+#dribble {
+  left: 90px;
+  width: 25px;
+  background: url("../img/pictograms/spritesheet.png") 0 0; }
+  @media only screen and (max-width: 768px) {
+    #dribble {
+      left: 60px; } }
+
+#facebook {
+  left: 113px;
+  width: 25px;
+  background: url("../img/pictograms/spritesheet.png") -25px 0; }
+  @media only screen and (max-width: 768px) {
+    #facebook {
+      left: 83px; } }
+
+#google {
+  left: 140px;
+  width: 25px;
+  background: url("../img/pictograms/spritesheet.png") -50px 0; }
+  @media only screen and (max-width: 768px) {
+    #google {
+      left: 110px; } }
+
+#instagram {
+  left: 164px;
+  width: 25px;
+  background: url("../img/pictograms/spritesheet.png") -75px 0; }
+  @media only screen and (max-width: 768px) {
+    #instagram {
+      left: 134px; } }
+
+#pinterest {
+  left: 190px;
+  width: 25px;
+  background: url("../img/pictograms/spritesheet.png") -100px 0; }
+  @media only screen and (max-width: 768px) {
+    #pinterest {
+      left: 160px; } }
+
+#tumblr {
+  left: 215px;
+  width: 25px;
+  background: url("../img/pictograms/spritesheet.png") -125px 0; }
+  @media only screen and (max-width: 768px) {
+    #tumblr {
+      left: 185px; } }
+
+#twitter {
+  left: 243px;
+  width: 25px;
+  background: url("../img/pictograms/spritesheet.png") -150px 0; }
+  @media only screen and (max-width: 768px) {
+    #twitter {
+      left: 213px; } }
+
+#youtube {
+  left: 273px;
+  width: 25px;
+  background: url("../img/pictograms/spritesheet.png") -175px 0; }
+  @media only screen and (max-width: 768px) {
+    #youtube {
+      left: 243px; } }
 
 .testimontial {
   padding-top: 4%;
