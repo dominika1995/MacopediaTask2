@@ -1570,15 +1570,15 @@
       width: 70%; }
       @media only screen and (max-width: 768px) {
         .carousel1__slider--page--text {
-          width: 90%;
+          width: 150%;
           margin-top: 50px;
           padding-left: -30%;
-          margin-left: -30%; } }
+          margin-left: -60%; } }
     .carousel1__slider--page--name {
       padding-top: 3%; }
       @media only screen and (max-width: 768px) {
         .carousel1__slider--page--name {
-          margin-left: -30%; } }
+          margin-left: -60%; } }
       .carousel1__slider--page--name--name {
         font-family: 'Kaushan Script', cursive; }
 
@@ -1591,6 +1591,18 @@
     .carousel-control.left img,
     .carousel-control.right img {
       margin-top: 100%; } }
+  @media (max-width: 640px) {
+    .carousel-control.left img,
+    .carousel-control.right img {
+      margin-top: 120%; } }
+  @media (max-width: 480px) {
+    .carousel-control.left img,
+    .carousel-control.right img {
+      margin-top: 200%; } }
+  @media (max-width: 420px) {
+    .carousel-control.left img,
+    .carousel-control.right img {
+      margin-top: 250%; } }
 
 .page-title {
   text-align: center; }
