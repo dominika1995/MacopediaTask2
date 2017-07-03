@@ -121,7 +121,7 @@
     padding-top: 15px; } }
         @media only screen and (max-width: 1200px) {
           .meet div .col-xs-12 .meet__team--imgs .meet__team--img:nth-child(2) {
-            padding-top: 14px; } }
+            padding-top: 19px; } }
   @media only screen and (max-width: 1200px) and (-ms-high-contrast: active), only screen and (max-width: 1200px) and (-ms-high-contrast: none) {
     .meet div .col-xs-12 .meet__team--imgs .meet__team--img:nth-child(2) {
       padding-top: 15px; } }
@@ -130,6 +130,12 @@
             .meet div .col-xs-12 .meet__team--imgs .meet__team--img:nth-child(2) {
               padding-top: 15px; } } }
         @media only screen and (max-width: 1000px) {
+          @-moz-document url-prefix() {
+            .meet div .col-xs-12 .meet__team--imgs .meet__team--img:nth-child(2) {
+              padding-top: 10px; } } }
+        @media only screen and (max-width: 992px) {
+          .meet div .col-xs-12 .meet__team--imgs .meet__team--img:nth-child(2) {
+            padding-top: 14px; }
           @-moz-document url-prefix() {
             .meet div .col-xs-12 .meet__team--imgs .meet__team--img:nth-child(2) {
               padding-top: 10px; } } }
@@ -229,13 +235,13 @@
   margin-top: 3%;
   background-color: #f8f8f8;
   padding-top: 3%;
-  padding-bottom: 3%;
-  text-align: center; }
-  .logos div .logos__row div img {
+  padding-bottom: 3%; }
+  .logos div .logos__row div {
     text-align: center; }
     @media only screen and (max-width: 992px) {
       .logos div .logos__row div img {
-        padding-top: 30px; } }
+        padding-top: 30px;
+        margin-left: 20%; } }
     @media only screen and (max-width: 480px) {
       .logos div .logos__row div img {
         width: 70%; } }

@@ -3,15 +3,16 @@
   background-color: $color-grey;
   padding-top: 3%;
   padding-bottom: 3%;
-  text-align: center;
   div{
     .logos__row{
       div{
+        text-align: center;
         img{
-          text-align: center;
+
           @media #{$sm-screen}
           {
             padding-top: 30px;
+            margin-left: 20%;
           }
           @media only screen and (max-width: 480px){
             width: 70%;
