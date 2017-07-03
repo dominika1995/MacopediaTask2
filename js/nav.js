@@ -6,20 +6,17 @@ $(document).ready(function(){
             //$(".collapsed-blue").removeClass("navbar-arrow");
         }
         else{
-            //$(".navbar").removeClass("navbar-xs");
             $(".navbar").addClass("navbar-xs");
-            //$(".collapsed").removeClass("navbar-toggle");
-            //$(".collapsed").addClass("navbar-arrow");
+            //$(".collapsed-blue").removeClass("navbar-toggle");
+            //$(".collapsed-blue").addClass("navbar-arrow");
         }
     });
-
-
-
 
     $('.navbar-collapse a').click(function(){
         $(".navbar-collapse").collapse('hide');
     });
 
 });
+
 
 
