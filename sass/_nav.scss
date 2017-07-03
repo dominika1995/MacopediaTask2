@@ -147,7 +147,13 @@ $translateX: 0;
 
 
 .nav-control{
-  background: $color-blue;
+  background: transparent;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  &.scrolled{
+    background: $color-blue;
+  }
   //margin-left:15px !important;
   //margin-right:15px !important;
   width:100%;
@@ -162,12 +168,21 @@ $translateX: 0;
     .logo{
       height:100%;
       padding-top:13px;
+      opacity: 0;
+      -webkit-transition: all .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out;
+      transition: all .5s ease-in-out;
+      &.scrolled{
+        opacity: 1;
+      }
     }
     .button{
       height:100%;
       padding-left:40%;
       padding-top:10px;
-
+      @media(max-width:500px){
+        padding-left:35%;
+      }
       img{
         margin: 0;
       }
@@ -176,10 +191,9 @@ $translateX: 0;
   .wrapper{
     display: none;
     z-index:100;
-    margin-left:82.5%;
-    width:20%;
-    padding-top:5px;
-    margin-top:2.15%;
+    margin-right:-15px;
+    width:130px;
+    margin-top:14px;
     border:1px solid white;
     border-top: none;
     background: $color-blue;
