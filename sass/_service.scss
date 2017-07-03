@@ -1,4 +1,7 @@
 #service {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    margin-top:-20%;
+  }
   margin-bottom: 5%;
 
   .service__details {

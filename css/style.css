@@ -1246,6 +1246,9 @@
       -o-transition: all 500ms linear;
       -ms-transition: all 500ms linear;
       transition: all 500ms linear; }
+      @media (max-width: 350px) {
+        #services .services__gallery__block .title {
+          padding-left: 5%; } }
     #services .services__gallery__block .description {
       font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
       font-size: 14px;
@@ -1254,6 +1257,9 @@
       -o-transition: all 500ms linear;
       -ms-transition: all 500ms linear;
       transition: all 500ms linear; }
+      @media (max-width: 350px) {
+        #services .services__gallery__block .description {
+          padding-left: 5%; } }
     #services .services__gallery__block__pic {
       -webkit-transition-property: -webkit-transform;
       -webkit-transition-duration: 500ms;
@@ -1428,6 +1434,9 @@
 
 #service {
   margin-bottom: 5%; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #service {
+      margin-top: -20%; } }
   #service .service__details {
     margin-top: 5%;
     margin-bottom: 5%; }
