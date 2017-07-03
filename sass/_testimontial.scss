@@ -19,13 +19,16 @@
       }
     }
     &--page {
+      text-align: center;
+      margin-left:15%;
       padding-top: 1%;
       @media #{$xs-screen}
       {
+        margin-left:8%;
         padding-left: 35%
       }
       &--img {
-        margin-left: 20%;
+        margin-left: 10%;
         img {
           width: 80%;
           @media #{$md-screen}
@@ -40,19 +43,17 @@
             text-align: center;
           }
         }
-
       }
       &--text {
         color: $color-grey-dark;
         font-family: 'Roboto', sans-serif;
         font-style: italic;
         width: 70%;
-
         @media #{$xs-screen}
         {
           width: 140%;
           margin-top: 50px;
-          margin-left: -40%;
+          margin-left: -45%;
           margin-right: 10%;
         }
       }
@@ -60,7 +61,7 @@
         padding-top: 3%;
         @media #{$xs-screen}
         {
-          margin-left: -20%;
+          margin-left: -25%;
         }
         &--name {
           font-family: 'Kaushan Script', cursive;

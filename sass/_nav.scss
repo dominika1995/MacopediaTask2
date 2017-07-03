@@ -10,6 +10,11 @@
         border-bottom: 4px solid $color-yellow;
 
       }
+      @media(max-width:$xs) {
+        margin-top:1%;
+        background: $color-blue;
+        border-radius:35px;
+      }
     }
   }
   .navbar__pic--cart{
@@ -23,10 +28,15 @@
     .navbar {
         padding: 20px 0;
         background-color: transparent;
-        border: none;
+        border: none !important;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out,background-color .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out,background-color .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out,background-color .5s ease-in-out;
+      &-toggle{
+        background: transparent;
+
+      }
+
     }
 
     .top-nav-collapse {
@@ -36,7 +46,8 @@
 }
 .navbar{
   .navbar__img{
-    content:url("../img/MoGo.png");
+    z-index: 100;
+    display:block;
   }
   @media(max-width:$xs) {
     background-color: transparent;
@@ -120,4 +131,7 @@
       transform: rotate(-135deg);
     }
   }
+}
+.navbar-ex1-collapse{
+  background: transparent !important;
 }

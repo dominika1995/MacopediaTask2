@@ -1,6 +1,9 @@
 #banner{
   position:relative;
   overflow: hidden;
+  background: -webkit-linear-gradient($gradient-top, $gradient-bottom);
+  background: -o-linear-gradient($gradient-top, $gradient-bottom);
+  background: -moz-linear-gradient($gradient-top, $gradient-bottom);
   background: linear-gradient($gradient-top, $gradient-bottom);
   img{
     content:url("../img/banner_bg.png");
