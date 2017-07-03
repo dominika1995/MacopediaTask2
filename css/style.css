@@ -1165,12 +1165,15 @@
       .testimontial__slider--right {
         margin-top: 0%; } }
   .testimontial__slider--page {
+    text-align: center;
+    margin-left: 15%;
     padding-top: 1%; }
     @media only screen and (max-width: 768px) {
       .testimontial__slider--page {
+        margin-left: 8%;
         padding-left: 35%; } }
     .testimontial__slider--page--img {
-      margin-left: 20%; }
+      margin-left: 10%; }
       .testimontial__slider--page--img img {
         width: 80%; }
         @media only screen and (max-width: 1200px) {
@@ -1191,13 +1194,13 @@
         .testimontial__slider--page--text {
           width: 140%;
           margin-top: 50px;
-          margin-left: -40%;
+          margin-left: -45%;
           margin-right: 10%; } }
     .testimontial__slider--page--name {
       padding-top: 3%; }
       @media only screen and (max-width: 768px) {
         .testimontial__slider--page--name {
-          margin-left: -20%; } }
+          margin-left: -25%; } }
       .testimontial__slider--page--name--name {
         font-family: 'Kaushan Script', cursive; }
 
