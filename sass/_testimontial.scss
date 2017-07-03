@@ -2,7 +2,14 @@
   padding-top: 4%;
   padding-bottom: 5%;
   height: 250px;
+
   @media #{$xs-screen} {
+    height: 400px;
+  }
+  @media only screen and (max-width: 650px){
+    height: 350px;
+  }
+  @media only screen and (max-width: 300px){
     height: 400px;
   }
   &__slider {
@@ -55,9 +62,9 @@
         width: 70%;
         @media #{$xs-screen}
         {
-          width: 140%;
+          width: 200%;
           margin-top: 50px;
-          margin-left: -45%;
+          margin-left: -85%;
           margin-right: 10%;
         }
       }
@@ -65,7 +72,7 @@
         padding-top: 3%;
         @media #{$xs-screen}
         {
-          margin-left: -25%;
+          margin-left: -85%;
         }
         &--name {
           font-family: 'Kaushan Script', cursive;
