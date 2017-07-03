@@ -321,7 +321,6 @@
   background: -moz-linear-gradient(RGB(244, 140, 130), RGB(252, 226, 138));
   background: linear-gradient(RGB(244, 140, 130), RGB(252, 226, 138)); }
   #banner img {
-    content: url("../img/banner_bg.png");
     position: absolute;
     left: 0;
     top: 0;
@@ -1494,18 +1493,20 @@
         font-size: 48px; }
         @media only screen and (max-width: 768px) {
           #service .service__details__accordion .panel-title > a:after {
-            font-size: 30px; } }
+            font-size: 30px;
+            top: 32px; } }
       #service .service__details__accordion .panel-title > a.collapsed:after {
         content: "\2304";
         font-family: FontAwesome;
         color: #999999;
         position: absolute;
         right: 15px;
-        top: 5px;
+        top: -3px;
         font-size: 48px; }
         @media only screen and (max-width: 768px) {
           #service .service__details__accordion .panel-title > a.collapsed:after {
-            font-size: 30px; } }
+            font-size: 30px;
+            top: 13px; } }
       #service .service__details__accordion .panel-title > a img {
         margin-right: 3%; }
     #service .service__details__accordion .panel-body {
