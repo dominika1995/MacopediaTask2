@@ -1440,6 +1440,9 @@
     margin: auto; }
     #services .services__gallery .row--first {
       margin-bottom: 5%; }
+      @media only screen and (max-width: 768px) {
+        #services .services__gallery .row--first {
+          margin-bottom: 0; } }
     #services .services__gallery .row--second {
       margin-bottom: 5%; }
       @media (min-width: 992px) {
@@ -1798,12 +1801,12 @@
           width: 150%;
           margin-top: 50px;
           padding-left: -30%;
-          margin-left: -60%; } }
+          margin-left: -65%; } }
     .carousel1__slider--page--name {
       padding-top: 3%; }
       @media only screen and (max-width: 768px) {
         .carousel1__slider--page--name {
-          margin-left: -60%; } }
+          margin-left: -65%; } }
       .carousel1__slider--page--name--name {
         font-family: 'Kaushan Script', cursive; }
 
