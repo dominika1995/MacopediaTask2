@@ -7,9 +7,15 @@
       margin-left: 0;
     }
     .numbers__div{
-      height:180px;
+      height:140px;
       border-right: 1px solid white;
       width:12.5%;
+      @media(max-width:$xs){
+        height:130px;
+      }
+      @media(max-width:420px){
+        height: 110px;
+      }
       &:nth-child(1){
           border-left: 1px solid white;
         }
