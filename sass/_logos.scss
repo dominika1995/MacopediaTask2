@@ -6,9 +6,8 @@
   div{
     .logos__row{
       div{
-        text-align: center;
         img{
-
+          margin-left: 15%;
           @media #{$sm-screen}
           {
             padding-top: 30px;
@@ -22,6 +21,16 @@
       div:nth-child(4) {
         padding-top: 10px;
       }
+
+      div:nth-child(6){
+        @media only screen and (max-width: 499px){
+          margin-top: -150px;
+        }
+        @media only screen and (max-width: 375px) {
+          margin-left: 33%;
+        }
+      }
+
       div:nth-child(5),
       div:nth-child(6) {
         @media #{$xs-screen}
@@ -29,15 +38,9 @@
           padding-top: -20px;
         }
         @media only screen and (max-width: 480px){
-          margin-top: -90px;
-        }
-      }
-      div:nth-child(6){
-        @media only screen and (max-width: 387px) {
-          margin-left: 35%;
+          margin-top: -80px;
         }
       }
     }
-
   }
 }
