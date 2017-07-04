@@ -968,7 +968,12 @@
         @media screen and (max-width: 600px) {
           .say__client--img img {
             padding-top: 40%;
-            padding-left: 5%; } }
+            padding-left: 5%;
+            width: 100%; } }
+        @media screen and (max-width: 450px) {
+          .say__client--img img {
+            width: 140%;
+            padding-left: 0%; } }
 
 @media only screen and (max-width: 768px) {
   .blog__news {

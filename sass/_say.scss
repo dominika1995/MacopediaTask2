@@ -72,10 +72,16 @@
           padding-top: 25%;
         }
         @media screen and (max-width:600px)
-      {
+        {
           padding-top: 40%;
           padding-left: 5%;
-      }
+          width: 100%;
+        }
+        @media screen and (max-width:450px)
+        {
+          width: 140%;
+          padding-left: 0%;
+        }
       }
     }
   }
