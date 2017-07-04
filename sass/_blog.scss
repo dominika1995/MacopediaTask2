@@ -66,35 +66,49 @@
       figcaption {
         background-color: $color-blue;
         position: absolute;
-        top: 35%;
+        top: 30%;
         left: 3%;
         right: 82%;
         text-align: center;
         color: white;
         @media #{$md-screen}
         {
-          top: 30%;
+          top: 28%;
+        }
+        @media #{$sm-screen}
+        {
+          top: 22%;
         }
         @media #{$xs-screen}
         {
-          top: 35%;
+          top: 33%;
           left: 20%;
           right: 65%;
         }
-        @media only screen and (max-width: 670px){
+        @media only screen and (max-width: 700px){
         left: 15%;
         }
-        @media only screen and (max-width: 600px){
+        @media only screen and (max-width: 610px){
           left: 10%;
         }
-        @media only screen and (max-width: 500px){
+        @media only screen and (max-width: 550px){
           right: 70%;
-          left: -5%;
+          left: 5%;
         }
-        @media only screen and (max-width: 360px){
+        @media only screen and (max-width: 490px){
           right: 70%;
-          left: -5%;
-          top: 30%;
+          left: 1%;
+        }
+        @media only screen and (max-width: 400px){
+        right: 70%;
+        left: -5%;
+        top: 28%;
+      }
+        @media only screen and (max-width: 380px){
+          top: 25%;
+        }
+        @media only screen and (max-width: 350px){
+          top: 20%;
         }
       }
       &--day {

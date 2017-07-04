@@ -1032,34 +1032,47 @@
 .blog__news figcaption {
   background-color: #95e1d3;
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 3%;
   right: 82%;
   text-align: center;
   color: white; }
   @media only screen and (max-width: 1200px) {
     .blog__news figcaption {
-      top: 30%; } }
+      top: 28%; } }
+  @media only screen and (max-width: 992px) {
+    .blog__news figcaption {
+      top: 22%; } }
   @media only screen and (max-width: 768px) {
     .blog__news figcaption {
-      top: 35%;
+      top: 33%;
       left: 20%;
       right: 65%; } }
-  @media only screen and (max-width: 670px) {
+  @media only screen and (max-width: 700px) {
     .blog__news figcaption {
       left: 15%; } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 610px) {
     .blog__news figcaption {
       left: 10%; } }
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 550px) {
     .blog__news figcaption {
       right: 70%;
-      left: -5%; } }
-  @media only screen and (max-width: 360px) {
+      left: 5%; } }
+  @media only screen and (max-width: 490px) {
+    .blog__news figcaption {
+      right: 70%;
+      left: 1%; } }
+  @media only screen and (max-width: 400px) {
     .blog__news figcaption {
       right: 70%;
       left: -5%;
-      top: 30%; } }
+      top: 28%; } }
+  @media only screen and (max-width: 380px) {
+    .blog__news figcaption {
+      top: 25%; } }
+  @media only screen and (max-width: 350px) {
+    .blog__news figcaption {
+      top: 20%; } }
 .blog__news--day {
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
