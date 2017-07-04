@@ -525,6 +525,8 @@
     transform: rotate(-135deg); }
 
 .nav-control {
+  padding-left: 0;
+  padding-right: 0;
   background: transparent;
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
@@ -588,19 +590,11 @@
         .nav-control .wrapper .nav__navbar__links .link a {
           font-size: 20px;
           color: white;
-          text-decoration: none; }
-          .nav-control .wrapper .nav__navbar__links .link a:before {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 10px;
-            height: 2px;
-            background: white;
-            transform: translateX(-50%);
-            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
-          .nav-control .wrapper .nav__navbar__links .link a:hover:before {
-            width: 20%; }
+          text-decoration: none;
+          border-bottom: 4px solid #95e1d3; }
+          .nav-control .wrapper .nav__navbar__links .link a:hover {
+            color: #fce38a;
+            border-bottom: 4px solid #fce38a; }
 
 #hamburger-icon {
   width: 50px;
