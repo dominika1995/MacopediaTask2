@@ -1,4 +1,4 @@
-.foot{
+.foot {
   background-color: $color-grey;
   &__1 {
     &--logo {
@@ -15,12 +15,9 @@
       font-size: 1em;
       margin-left: -4%;
     }
-    &--line{
+    &--line {
       margin-left: -5%;
-      @media #{$md-screen}
-      {
-        width: 100%;
-      }
+      width: 105%;
     }
     &--users {
       padding-top: 7%;
@@ -35,23 +32,44 @@
     }
     &--site {
       padding-top: 2%;
+      display: inline-flex;
+      ul {
+        padding-left: -40px;
+        margin-left: 0px;
+        -webkit-padding-start: 0px;
+      }
+      &--sprite {
+        display: inline-flex;
+        flex-flow: row wrap;
+        li {
+          height: 30px;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          width: 25px;
+          a {
+            width: 25px;
+            height: 30px;
+            display: inline-block;
+          }
+        }
+      }
       &--text {
         font-family: 'Roboto', sans-serif;
         font-style: italic;
+        white-space: nowrap;
         color: $color-grey-light;
-        padding-right: 4%;
-        margin-left: -10%;
-        @media#{$md-screen}{
-
-        }
+        margin-top: 5px;
+        margin-left: -5px;
+        padding-right: 5px;
         @media#{$sm-screen}{
           margin-left: -5%;
         }
         @media#{$xs-screen}{
-          margin-left: -50px;
+          margin-left: 0px;
         }
       }
-      img{
+      img {
         padding-right: 1.5%;
         @media #{$sm-screen}
         {
@@ -62,14 +80,15 @@
     form {
       input[type=text] {
         width: 50%;
-        margin-left: -5%;
+        margin-left: -1%;
         padding: 10px 5px 10px 5px;
         display: inline-block;
         border: 1px solid $color-grey-middle;
         box-sizing: border-box;
         margin-top: 5%;
-        @media only screen and (max-width: 500px){
-          width: 40%;
+        @media#{$xs-screen}{
+          width: 100%;
+          margin-left: 0%;
         }
       }
       input[type=submit] {
@@ -77,28 +96,31 @@
         background-color: $color-blue;
         color: white;
         font-family: 'Montserrat', sans-serif;
-        padding: 10px 20px;
-        margin: 0;
+        padding: 11px 20px;
         border: none;
         cursor: pointer;
         margin-top: 5%;
         margin-left: -1.2%;
-        @media only screen and (max-width: 500px){
+        @media#{$xs-screen}{
+          width: 100%;
+          margin-left: 0%;
+          margin-top: 0%;
+        }
+        @media only screen and (max-width: 500px) {
           font-size: 0.8em;
-          margin-top: -5%;
+          margin-top: 0%;
           padding: 13px 5px;
         }
       }
     }
   }
   &__2 {
-      &--title {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.3em;
-        padding-top: 15%;
-        font-weight: bold;
-        //margin-left: 5%;
-      }
+    &--title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3em;
+      padding-top: 15%;
+      font-weight: bold;
+    }
     &--row {
       margin-top: 5%;
       &--text {
@@ -108,7 +130,7 @@
           @media#{$sm-screen}{
             font-size: 1em;
           }
-          @media all and(max-width:600px){
+          @media all and(max-width: 600px) {
             font-size: 0.8em;
           }
         }
@@ -118,9 +140,9 @@
           font-style: italic;
           font-weight: 100;
           @media#{$sm-screen}{
-            font-size:0.8em;
+            font-size: 0.8em;
           }
-          @media all and(max-width:600px){
+          @media all and(max-width: 600px) {
             font-size: 0.6em;
           }
         }
@@ -135,7 +157,7 @@
           width: 100%;
         }
       }
-      @media all and(max-width:400px){
+      @media all and(max-width: 400px) {
         img {
           margin-top: 5%;
           width: 150%;
@@ -157,11 +179,28 @@
         margin-left: 5%;
       }
       .row {
-        margin-bottom: 2%;
+        margin-bottom: 1%;
+        img{
+          margin-left: 0%;
+        }
       }
-      @media all and(max-width:365px){
-        .row{
-          img{
+      @media#{$md-screen} {
+        .row {
+          img {
+            width: 30%;
+          }
+        }
+      }
+      @media#{$sm-screen} {
+        .row {
+          img {
+            width: 20%;
+          }
+        }
+      }
+      @media all and(max-width: 500px) {
+        .row {
+          img {
             width: 30%;
           }
         }
@@ -174,99 +213,51 @@
         text-align: center;
       }
     }
-    &--line{
+    &--line {
       width: 100%;
     }
-    &--foot{
+    &--foot {
       text-align: center;
       font-family: 'Montserrat', sans-serif;
+
       font-weight: bold;
       margin-top: 2%;
       margin-bottom: 2%;
-      &--color{
+      &--color {
         color: $color-red;
       }
     }
   }
 }
 
-#foot__1--site--sprite{
-  position: relative;
-}
-#foot__1--site--sprite li{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: absolute;
-  top:-5px;
-}
-#foot__1--site--sprite li,#foot__1--site--sprite a{
-  height: 30px;
-  display: block;
+#dribble {
+  background: url('../img/pictograms/spritesheet.png') 0 0;
 }
 
-#dribble{
-left: 90px;
-width: 25px;
-background: url('../img/pictograms/spritesheet.png') 0 0;
-@media #{$xs-screen}{
-  left: 60px;
-}
-
-}
-
-#facebook{
-  left: 113px;
-  width: 25px;
+#facebook {
   background: url('../img/pictograms/spritesheet.png') -25px 0;
-  @media #{$xs-screen}{
-    left: 83px;
-  }}
+}
 
-#google{
-  left: 140px;
-  width: 25px;
+#google {
   background: url('../img/pictograms/spritesheet.png') -50px 0;
-  @media #{$xs-screen}{
-    left: 110px;
-  }}
+}
 
-#instagram{
-  left: 164px;
-  width: 25px;
+#instagram {
   background: url('../img/pictograms/spritesheet.png') -75px 0;
-  @media #{$xs-screen}{
-    left: 134px;
-  }}
+}
 
-#pinterest{
-  left: 190px;
-  width: 25px;
+#pinterest {
   background: url('../img/pictograms/spritesheet.png') -100px 0;
-  @media #{$xs-screen}{
-    left: 160px;
-  }}
+}
 
-#tumblr{
-  left: 215px;
-  width: 25px;
+#tumblr {
   background: url('../img/pictograms/spritesheet.png') -125px 0;
-  @media #{$xs-screen}{
-    left: 185px;
-  }}
+}
 
-#twitter{
-  left: 243px;
-  width: 25px;
+#twitter {
   background: url('../img/pictograms/spritesheet.png') -150px 0;
-  @media #{$xs-screen}{
-    left: 213px;
-  }}
+}
 
-#youtube{
-  left: 273px;
-  width: 25px;
+#youtube {
   background: url('../img/pictograms/spritesheet.png') -175px 0;
-  @media #{$xs-screen}{
-    left: 243px;
-  }}
+}
