@@ -17,8 +17,10 @@ $(document).ready(function(){
 
     $(document).on('click', 'a.page-scroll', function(event) {
         var $anchor = $(this);
+        var top = $($anchor.attr('href')).offset().top;
+        console.log(top);
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+            scrollTop: top-48,
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
