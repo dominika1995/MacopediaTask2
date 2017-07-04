@@ -1546,9 +1546,9 @@
       -o-transition: all 500ms linear;
       -ms-transition: all 500ms linear;
       transition: all 500ms linear; }
-      @media (max-width: 350px) {
+      @media (max-width: 400px) {
         #services .services__gallery__block .title {
-          padding-left: 5%; } }
+          padding-left: 10%; } }
     #services .services__gallery__block .description {
       font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
       font-size: 14px;
@@ -1557,9 +1557,9 @@
       -o-transition: all 500ms linear;
       -ms-transition: all 500ms linear;
       transition: all 500ms linear; }
-      @media (max-width: 350px) {
+      @media (max-width: 400px) {
         #services .services__gallery__block .description {
-          padding-left: 5%; } }
+          padding-left: 10%; } }
     #services .services__gallery__block__pic {
       -webkit-transition-property: -webkit-transform;
       -webkit-transition-duration: 500ms;
@@ -1567,6 +1567,13 @@
       -moz-transition-duration: 500ms;
       transition-property: transform;
       transition-duration: 500ms; }
+      @media only screen and (max-width: 992px) {
+        #services .services__gallery__block__pic {
+          margin-left: 20%; } }
+      @media only screen and (max-width: 768px) {
+        #services .services__gallery__block__pic {
+          margin-left: 0;
+          margin-top: 2%; } }
       #services .services__gallery__block__pic img {
         margin-top: 5px;
         width: 32px;

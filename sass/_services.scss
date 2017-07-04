@@ -42,8 +42,8 @@
         -o-transition: all 500ms linear;
         -ms-transition: all 500ms linear;
         transition: all 500ms linear;
-        @media(max-width:350px){
-          padding-left:5%;
+        @media(max-width:400px){
+          padding-left:10%;
         }
       }
       .description{
@@ -54,8 +54,8 @@
         -o-transition: all 500ms linear;
         -ms-transition: all 500ms linear;
         transition: all 500ms linear;
-        @media(max-width:350px){
-          padding-left:5%;
+        @media(max-width:400px){
+          padding-left:10%;
         }
       }
       &__pic{
@@ -65,11 +65,18 @@
         -moz-transition-duration: 500ms;
         transition-property: transform;
         transition-duration: 500ms;
-
+        @media #{$sm-screen} {
+          margin-left:20%;
+        }
+        @media #{$xs-screen} {
+          margin-left:0;
+          margin-top:2%;
+        }
         img{
           margin-top: 5px;
           width: 32px;
           height: 31px;
+
 
         }
       }
