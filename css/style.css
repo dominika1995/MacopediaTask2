@@ -1165,10 +1165,8 @@
     font-size: 1em;
     margin-left: -4%; }
   .foot__1--line {
-    margin-left: -5%; }
-    @media only screen and (max-width: 1200px) {
-      .foot__1--line {
-        width: 100%; } }
+    margin-left: -5%;
+    width: 105%; }
   .foot__1--users {
     padding-top: 7%; }
     .foot__1--users--number {
@@ -1178,19 +1176,39 @@
     .foot__1--users--user {
       font-family: 'Montserrat', sans-serif; }
   .foot__1--site {
-    padding-top: 2%; }
+    padding-top: 2%;
+    display: inline-flex; }
+    .foot__1--site ul {
+      padding-left: -40px;
+      margin-left: 0px;
+      -webkit-padding-start: 0px; }
+    .foot__1--site--sprite {
+      display: inline-flex;
+      flex-flow: row wrap; }
+      .foot__1--site--sprite li {
+        height: 30px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 25px; }
+        .foot__1--site--sprite li a {
+          width: 25px;
+          height: 30px;
+          display: inline-block; }
     .foot__1--site--text {
       font-family: 'Roboto', sans-serif;
       font-style: italic;
+      white-space: nowrap;
       color: #d9d9d9;
-      padding-right: 4%;
-      margin-left: -10%; }
+      margin-top: 5px;
+      margin-left: -5px;
+      padding-right: 5px; }
       @media only screen and (max-width: 992px) {
         .foot__1--site--text {
           margin-left: -5%; } }
       @media only screen and (max-width: 768px) {
         .foot__1--site--text {
-          margin-left: -50px; } }
+          margin-left: 0px; } }
     .foot__1--site img {
       padding-right: 1.5%; }
       @media only screen and (max-width: 992px) {
@@ -1198,30 +1216,35 @@
           padding-right: 3%; } }
   .foot__1 form input[type=text] {
     width: 50%;
-    margin-left: -5%;
+    margin-left: -1%;
     padding: 10px 5px 10px 5px;
     display: inline-block;
     border: 1px solid #e5e5e5;
     box-sizing: border-box;
     margin-top: 5%; }
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 768px) {
       .foot__1 form input[type=text] {
-        width: 40%; } }
+        width: 100%;
+        margin-left: 0%; } }
   .foot__1 form input[type=submit] {
     width: 40%;
     background-color: #95e1d3;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    padding: 10px 20px;
-    margin: 0;
+    padding: 11px 20px;
     border: none;
     cursor: pointer;
     margin-top: 5%;
     margin-left: -1.2%; }
+    @media only screen and (max-width: 768px) {
+      .foot__1 form input[type=submit] {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 0%; } }
     @media only screen and (max-width: 500px) {
       .foot__1 form input[type=submit] {
         font-size: 0.8em;
-        margin-top: -5%;
+        margin-top: 0%;
         padding: 13px 5px; } }
   .foot__2--title {
     font-family: 'Montserrat', sans-serif;
@@ -1292,83 +1315,29 @@
     .foot__3--foot--color {
       color: #f38181; }
 
-#foot__1--site--sprite {
-  position: relative; }
-
-#foot__1--site--sprite li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: absolute;
-  top: -5px; }
-
-#foot__1--site--sprite li, #foot__1--site--sprite a {
-  height: 30px;
-  display: block; }
-
 #dribble {
-  left: 90px;
-  width: 25px;
   background: url("../img/pictograms/spritesheet.png") 0 0; }
-  @media only screen and (max-width: 768px) {
-    #dribble {
-      left: 60px; } }
 
 #facebook {
-  left: 113px;
-  width: 25px;
   background: url("../img/pictograms/spritesheet.png") -25px 0; }
-  @media only screen and (max-width: 768px) {
-    #facebook {
-      left: 83px; } }
 
 #google {
-  left: 140px;
-  width: 25px;
   background: url("../img/pictograms/spritesheet.png") -50px 0; }
-  @media only screen and (max-width: 768px) {
-    #google {
-      left: 110px; } }
 
 #instagram {
-  left: 164px;
-  width: 25px;
   background: url("../img/pictograms/spritesheet.png") -75px 0; }
-  @media only screen and (max-width: 768px) {
-    #instagram {
-      left: 134px; } }
 
 #pinterest {
-  left: 190px;
-  width: 25px;
   background: url("../img/pictograms/spritesheet.png") -100px 0; }
-  @media only screen and (max-width: 768px) {
-    #pinterest {
-      left: 160px; } }
 
 #tumblr {
-  left: 215px;
-  width: 25px;
   background: url("../img/pictograms/spritesheet.png") -125px 0; }
-  @media only screen and (max-width: 768px) {
-    #tumblr {
-      left: 185px; } }
 
 #twitter {
-  left: 243px;
-  width: 25px;
   background: url("../img/pictograms/spritesheet.png") -150px 0; }
-  @media only screen and (max-width: 768px) {
-    #twitter {
-      left: 213px; } }
 
 #youtube {
-  left: 273px;
-  width: 25px;
   background: url("../img/pictograms/spritesheet.png") -175px 0; }
-  @media only screen and (max-width: 768px) {
-    #youtube {
-      left: 243px; } }
 
 .testimontial {
   padding-top: 4%;
