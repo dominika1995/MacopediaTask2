@@ -104,6 +104,12 @@
           @media #{$xs-screen} {
             margin-top:2%;
           }
+          @media(max-width:500px){
+            margin-top: 2.5%;
+          }
+          @media(max-width:440px){
+            margin-top: 4%;
+          }
 
         }
       }

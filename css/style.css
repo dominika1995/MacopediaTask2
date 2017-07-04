@@ -1765,6 +1765,12 @@
         @media only screen and (max-width: 768px) {
           #service .service__details__accordion .panel-title > a p {
             margin-top: 2%; } }
+        @media (max-width: 500px) {
+          #service .service__details__accordion .panel-title > a p {
+            margin-top: 2.5%; } }
+        @media (max-width: 440px) {
+          #service .service__details__accordion .panel-title > a p {
+            margin-top: 4%; } }
     #service .service__details__accordion .panel-body {
       background: #fff;
       color: #888;
