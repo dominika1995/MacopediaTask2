@@ -1760,6 +1760,11 @@
             top: 13px; } }
       #service .service__details__accordion .panel-title > a img {
         margin-right: 3%; }
+      #service .service__details__accordion .panel-title > a p {
+        display: inline-block; }
+        @media only screen and (max-width: 768px) {
+          #service .service__details__accordion .panel-title > a p {
+            margin-top: 2%; } }
     #service .service__details__accordion .panel-body {
       background: #fff;
       color: #888;

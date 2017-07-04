@@ -76,7 +76,6 @@
           @media #{$xs-screen} {
             font-size: 30px;
             top: 32px;
-
           }
         }
 
@@ -99,6 +98,13 @@
         }
         img{
           margin-right: 3%;
+        }
+        p{
+          display: inline-block;
+          @media #{$xs-screen} {
+            margin-top:2%;
+          }
+
         }
       }
 
