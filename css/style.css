@@ -1297,8 +1297,16 @@
       .foot__3--insta {
         margin-left: 5%; } }
     .foot__3--insta .row {
-      margin-bottom: 2%; }
-    @media all and (max-width: 365px) {
+      margin-bottom: 1%; }
+      .foot__3--insta .row img {
+        margin-left: 0%; }
+    @media only screen and (max-width: 1200px) {
+      .foot__3--insta .row img {
+        width: 30%; } }
+    @media only screen and (max-width: 992px) {
+      .foot__3--insta .row img {
+        width: 20%; } }
+    @media all and (max-width: 500px) {
       .foot__3--insta .row img {
         width: 30%; } }
   .foot__3--text {

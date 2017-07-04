@@ -179,9 +179,26 @@
         margin-left: 5%;
       }
       .row {
-        margin-bottom: 2%;
+        margin-bottom: 1%;
+        img{
+          margin-left: 0%;
+        }
       }
-      @media all and(max-width: 365px) {
+      @media#{$md-screen} {
+        .row {
+          img {
+            width: 30%;
+          }
+        }
+      }
+      @media#{$sm-screen} {
+        .row {
+          img {
+            width: 20%;
+          }
+        }
+      }
+      @media all and(max-width: 500px) {
         .row {
           img {
             width: 30%;
