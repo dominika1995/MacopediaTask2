@@ -579,7 +579,7 @@
   .nav-control .wrapper {
     display: none;
     z-index: 100;
-    margin-right: 3px;
+    margin-right: 0px;
     width: 130px;
     margin-top: 14px;
     border: 1px solid white;
