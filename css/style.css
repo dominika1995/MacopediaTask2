@@ -914,9 +914,18 @@
       #numbers .row {
         margin-left: 0; } }
     #numbers .row .numbers__div {
-      height: 140px;
+      height: 190px;
       border-right: 1px solid white;
       width: 12.5%; }
+      @media (max-width: 1300px) {
+        #numbers .row .numbers__div {
+          height: 170px; } }
+      @media (max-width: 1150px) {
+        #numbers .row .numbers__div {
+          height: 170px; } }
+      @media (max-width: 1000px) {
+        #numbers .row .numbers__div {
+          height: 150px; } }
       @media (max-width: 768px) {
         #numbers .row .numbers__div {
           height: 130px; } }
