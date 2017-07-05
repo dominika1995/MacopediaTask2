@@ -45,6 +45,9 @@ body {
   .logo{
     position: relative;
     left:20px;
+    @media(min-width:$xs){
+      left: 100px;
+    }
   }
   @media(max-width:$xs){
     background-color: $color-blue;
@@ -63,6 +66,9 @@ body {
 /* MENU */
 .menu {
   float: right;
+  @media(min-width:$xs){
+    margin-right: 80px;
+  }
 
   .page-scroll {
     color: white;
