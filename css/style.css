@@ -272,31 +272,28 @@
   background-color: #f8f8f8;
   padding-top: 3%;
   padding-bottom: 3%; }
-  .logos div .logos__row div img {
-    margin-left: 15%; }
-    @media only screen and (max-width: 992px) {
-      .logos div .logos__row div img {
-        padding-top: 30px;
-        margin-left: 20%; } }
-    @media only screen and (max-width: 480px) {
-      .logos div .logos__row div img {
-        width: 70%; } }
-  .logos div .logos__row div:nth-child(4) {
-    padding-top: 10px; }
-  @media only screen and (max-width: 499px) {
-    .logos div .logos__row div:nth-child(6) {
-      margin-top: -150px; } }
-  @media only screen and (max-width: 375px) {
-    .logos div .logos__row div:nth-child(6) {
-      margin-left: 33%; } }
-  @media only screen and (max-width: 768px) {
-    .logos div .logos__row div:nth-child(5),
-    .logos div .logos__row div:nth-child(6) {
-      padding-top: -20px; } }
-  @media only screen and (max-width: 480px) {
-    .logos div .logos__row div:nth-child(5),
-    .logos div .logos__row div:nth-child(6) {
-      margin-top: -80px; } }
+  .logos div .logos__conteiner {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%; }
+    .logos div .logos__conteiner--item {
+      height: 100px;
+      vertical-align: middle;
+      margin: 0 auto; }
+      @media only screen and (max-width: 992px) {
+        .logos div .logos__conteiner--item {
+          height: 80px; } }
+      @media only screen and (max-width: 768px) {
+        .logos div .logos__conteiner--item {
+          flex-grow: 1;
+          width: 33%;
+          padding-top: 10px;
+          text-align: center; } }
+      .logos div .logos__conteiner--item img {
+        height: 100%;
+        vertical-align: middle; }
 
 .work {
   padding-left: 0px;
