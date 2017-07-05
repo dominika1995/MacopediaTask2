@@ -1,6 +1,6 @@
 .meet {
   text-align: center;
-  div {
+  article {
     .col-xs-12 {
       padding-top: 3%;
       @media #{$xs-screen}
@@ -177,6 +177,9 @@
             {
               padding-top: 14px;
               @-moz-document url-prefix() {
+                padding-top: 10px;
+              }
+              @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
                 padding-top: 10px;
               }
             }
