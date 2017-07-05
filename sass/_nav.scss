@@ -83,6 +83,7 @@ body {
     }
     &.active{
       color: $color-yellow;
+      border-bottom:4px solid $color-yellow;
     }
   }
 
