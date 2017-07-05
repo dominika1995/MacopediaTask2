@@ -606,23 +606,33 @@ body {
     #hamburger-icon .line.line-3 {
       top: 100%; }
   #hamburger-icon:hover .line-1, #hamburger-icon:focus .line-1 {
-    transform: translateY(-3px);
-    -webkit-transform: translateY(-3px);
-    -moz-transform: translateY(-3px); }
+    transform: translateX(0) rotate(40deg) translateY(26.75px);
+    -webkit-transform: translateX(0) rotate(40deg) translateY(26.75px);
+    -moz-transform: translateX(0) rotate(40deg) translateY(26.75px);
+    height: 9px;
+    width: 33.33333px; }
+  #hamburger-icon:hover .line-2, #hamburger-icon:focus .line-2 {
+    opacity: 0; }
   #hamburger-icon:hover .line-3, #hamburger-icon:focus .line-3 {
-    transform: translateY(3px);
-    -webkit-transform: translateY(3px);
-    -moz-transform: translateY(3px); }
+    transform: translateX(0) rotate(-40deg) translateY(-26.75px);
+    -webkit-transform: translateX(0) rotate(-40deg) translateY(-26.75px);
+    -moz-transform: translateX(0) rotate(-40deg) translateY(-26.75px);
+    height: 9px;
+    width: 33.33333px; }
   #hamburger-icon.active .line-1 {
-    transform: translateY(12.5px) translateX(0) rotate(45deg);
-    -webkit-transform: translateY(12.5px) translateX(0) rotate(45deg);
-    -moz-transform: translateY(12.5px) translateX(0) rotate(45deg); }
+    transform: translateX(0) rotate(-40deg) translateY(26.75px);
+    -webkit-transform: translateX(0) rotate(-40deg) translateY(26.75px);
+    -moz-transform: translateX(0) rotate(-40deg) translateY(26.75px);
+    height: 9px;
+    width: 33.33333px; }
   #hamburger-icon.active .line-2 {
     opacity: 0; }
   #hamburger-icon.active .line-3 {
-    transform: translateY(-12.5px) translateX(0) rotate(-45deg);
-    -webkit-transform: translateY(-12.5px) translateX(0) rotate(-45deg);
-    -moz-transform: translateY(-12.5px) translateX(0) rotate(-45deg); }
+    transform: translateX(0) rotate(40deg) translateY(-26.75px);
+    -webkit-transform: translateX(0) rotate(40deg) translateY(-26.75px);
+    -moz-transform: translateX(0) rotate(40deg) translateY(-26.75px);
+    height: 9px;
+    width: 33.33333px; }
 
 #about .about__gallery {
   width: 90%;
