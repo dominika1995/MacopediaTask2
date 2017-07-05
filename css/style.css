@@ -1411,7 +1411,8 @@ body {
       .foot__3--text {
         text-align: center; } }
   .foot__3--line {
-    width: 100%; }
+    width: 100%;
+    margin-left: -2%; }
   .foot__3--foot {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
