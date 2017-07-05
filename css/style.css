@@ -574,7 +574,7 @@ body {
   display: none;
   float: right;
   top: 20px;
-  right: 20px; }
+  right: 30px; }
   @media only screen and (max-width: 768px) {
     #hamburger-icon {
       display: block; } }
@@ -845,7 +845,7 @@ body {
           height: 110px; } }
       #numbers .row .numbers__div:nth-child(1) {
         border-left: 1px solid white; }
-        @media (max-width: 1500px) {
+        @media (max-width: 1700px) {
           #numbers .row .numbers__div:nth-child(1) {
             margin-left: 17%; } }
         @media (max-width: 768px) {
