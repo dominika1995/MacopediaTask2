@@ -823,8 +823,7 @@ body {
 #numbers {
   background-color: #95e1d3; }
   #numbers .row {
-    width: 90%;
-    margin: 0 auto; }
+    width: 100%; }
     #numbers .row .numbers__div {
       height: 190px;
       border-right: 1px solid white;
@@ -846,6 +845,12 @@ body {
           height: 110px; } }
       #numbers .row .numbers__div:nth-child(1) {
         border-left: 1px solid white; }
+        @media (max-width: 1500px) {
+          #numbers .row .numbers__div:nth-child(1) {
+            margin-left: 17%; } }
+        @media (max-width: 768px) {
+          #numbers .row .numbers__div:nth-child(1) {
+            margin-left: -3%; } }
       @media (max-width: 768px) {
         #numbers .row .numbers__div {
           width: 20%; }

@@ -1,12 +1,13 @@
 #numbers{
   background-color: $color-blue;
   .row{
-    width:90%;
-    margin: 0 auto;
+    width:100%;
+
     .numbers__div{
       height:190px;
       border-right: 1px solid white;
       width:12.5%;
+
       @media(max-width:1300px){
         height: 170px;
       }
@@ -24,6 +25,12 @@
       }
       &:nth-child(1){
           border-left: 1px solid white;
+          @media(max-width:1500px){
+            margin-left:17%;
+          }
+          @media(max-width:$xs){
+            margin-left:-3%;
+          }
         }
         @media(max-width:$xs){
           width:20%;
