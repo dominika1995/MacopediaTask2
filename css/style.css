@@ -1340,6 +1340,9 @@
     font-size: 1.3em;
     padding-top: 15%;
     font-weight: bold; }
+    @media only screen and (max-width: 768px) {
+      .foot__2--title {
+        margin-left: -3%; } }
   .foot__2--row {
     margin-top: 5%; }
     .foot__2--row--text--long {
@@ -1372,11 +1375,6 @@
       .foot__2--row img {
         margin-top: 5%;
         width: 150%; } }
-  .foot__3--title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3em;
-    padding-top: 15%;
-    font-weight: bold; }
   .foot__3--insta {
     text-align: center; }
     @media only screen and (max-width: 1200px) {
