@@ -1,9 +1,9 @@
 .blog{
-  &__news{
+  &__news {
     @media #{$xs-screen}{
       text-align: center;
     }
-    &--title{
+    &--title {
       padding-top: 4%;
       font-family: 'Montserrat', sans-serif;
       font-weight: 600;
@@ -11,58 +11,108 @@
         margin-left: 20%;
         text-align: left;
       }
+      @media only screen and (max-width: 700px) {
+        margin-left: 15%;
+      }
+      @media only screen and (max-width: 610px) {
+        margin-left: 10%;
+      }
+      @media only screen and (max-width: 550px) {
+        margin-left: 5%;
+      }
+      @media only screen and (max-width: 490px) {
+        margin-left: 3%;
+      }
     }
-    &--text{
+    &--text {
       padding-top: 2%;
       color: $color-grey-dark;
       padding-left: -2%;
       @media #{$xs-screen}{
         margin-left: 20%;
         text-align: left;
-        width: 50%;
+        width: 65%;
       }
-      @media only screen and (max-width: 600px){
-        width: 60%;
+      @media only screen and (max-width: 700px) {
+        width: 71%;
+        margin-left: 15%;
       }
-    }
-    &--line{
-      display: inline-block;
-      border: 1px solid $color-grey-middle;
-      width: 100%;
-      margin-top: 1.5%;
-      margin-bottom: 1.5%;
-      @media #{$xs-screen}{
-        width: 60%;
+      @media only screen and (max-width: 610px) {
+        width: 82%;
+        margin-left: 10%;
       }
-      @media only screen and (max-width: 600px){
-        width: 70%;
+      @media only screen and (max-width: 550px) {
+        width: 92%;
+        margin-left: 5%;
       }
-    }
-    &--pictograms{
-      padding-top: 2%;
-      padding-bottom: 10%;
-      opacity: 0.8;
-      margin-left: 0px;
-      span{
-        margin-left: 2%;
-        margin-right: 2%;
-      }
-      @media #{$xs-screen}{
-        width: 60%;
+      @media only screen and (max-width: 490px) {
+        width: 94%;
+        margin-left: 3%;
       }
     }
-    figure {
-      img{
-        padding-left: 5%;
-        padding-right: 5%;
-        @media #{$xs-screen}
-        {
-          margin: 0 auto;
-          padding-left: 0%;
-          padding-right: 0%;
+      &--line {
+        display: inline-block;
+        border: 1px solid $color-grey-middle;
+        width: 100%;
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+        @media #{$xs-screen}{
+          width: 65%;
+        }
+        @media only screen and (max-width: 600px) {
+          width: 70%;
+        }
+        @media only screen and (max-width: 700px) {
+          width: 73%;
+        }
+        @media only screen and (max-width: 610px) {
+          width: 85%;
+        }
+        @media only screen and (max-width: 550px) {
+          width: 95%;
+        }
+        @media only screen and (max-width: 490px) {
+          width: 100%;
         }
       }
-    }
+      &--pictograms {
+        padding-top: 2%;
+        padding-bottom: 10%;
+        opacity: 0.8;
+        margin-left: 0px;
+        span {
+          margin-left: 2%;
+          margin-right: 2%;
+        }
+        @media #{$xs-screen}{
+          margin-left: 20%;
+          text-align: left;
+        }
+        @media only screen and (max-width: 700px) {
+          margin-left: 15%;
+        }
+        @media only screen and (max-width: 610px) {
+          margin-left: 10%;
+        }
+        @media only screen and (max-width: 550px) {
+          margin-left: 5%;
+        }
+        @media only screen and (max-width: 490px) {
+          margin-left: 3%;
+        }
+      }
+      figure {
+        img {
+          padding-left: 5%;
+          padding-right: 5%;
+          @media #{$xs-screen}
+          {
+            margin: 0 auto;
+            padding-left: 0%;
+            padding-right: 0%;
+          }
+        }
+      }
       figcaption {
         background-color: $color-blue;
         position: absolute;
@@ -85,29 +135,29 @@
           left: 20%;
           right: 65%;
         }
-        @media only screen and (max-width: 700px){
-        left: 15%;
+        @media only screen and (max-width: 700px) {
+          left: 15%;
         }
-        @media only screen and (max-width: 610px){
+        @media only screen and (max-width: 610px) {
           left: 10%;
         }
-        @media only screen and (max-width: 550px){
+        @media only screen and (max-width: 550px) {
           right: 70%;
           left: 5%;
         }
-        @media only screen and (max-width: 490px){
+        @media only screen and (max-width: 490px) {
           right: 70%;
           left: 1%;
         }
-        @media only screen and (max-width: 400px){
-        right: 70%;
-        left: -5%;
-        top: 28%;
-      }
-        @media only screen and (max-width: 380px){
+        @media only screen and (max-width: 400px) {
+          right: 70%;
+          left: -5%;
+          top: 28%;
+        }
+        @media only screen and (max-width: 380px) {
           top: 25%;
         }
-        @media only screen and (max-width: 350px){
+        @media only screen and (max-width: 350px) {
           top: 20%;
         }
       }
@@ -155,5 +205,5 @@
         }
       }
 
+    }
   }
-}
