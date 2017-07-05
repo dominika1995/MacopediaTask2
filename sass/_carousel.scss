@@ -1,112 +1,119 @@
-.carousel1 {
-  background-color: $color-grey-middle;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  &__slider {
-    &--left {
-      text-align: center;
-      margin-top: 5%;
-      @media #{$xs-screen}
-      {
-        margin-top: 25%;
-      }
-    }
-    &--right {
-      text-align: center;
-      margin-top: 3%;
-      @media #{$xs-screen}
-      {
-        margin-top: 0%;
-      }
-    }
-    &--page {
-      margin-left:15%;
-      padding-top: 1%;
-      @media #{$xs-screen}
-      {
-        margin-left:8%;
-        padding-left: 35%
-      }
-      &--img {
+.carousel1{
+  padding-top: 4%;
+  padding-bottom: 4%;
+  &--background1{
+    background-color: $color-grey-middle;
+  }
+  &--background2{
+    height: 250px;
 
-        margin-left: 12%;
-        margin-right: 5%;
-        width: 100px !important;
-        height: 100px!important;
-        border: 2px solid $color-blue;
-        padding:18px;
-
-        img {
-          width: 63px !important;
-          height: 61px!important;
-          @media #{$xs-screen}
-          {
-            margin:auto;
-          }
-        }
-        @media #{$xs-screen}
-        {
-          margin:auto;
-        }
-        @media(max-width:600px){
-          margin-left:-5%;
-        }
-        @media(max-width:470px){
-          margin-left:-10%;
-        }
-        @media(max-width:400px){
-          margin-left:-15%;
-        }
-        @media(max-width:360px){
-          margin-left:-20%;
-        }
+    @media #{$xs-screen} {
+      height: 400px;
+    }
+    @media only screen and (max-width: 650px){
+      height: 350px;
+    }
+    @media only screen and (max-width: 300px){
+      height: 400px;
+    }
+  }
+&__slider{
+    margin-left:15%;
+    padding-top: 1%;
+    @media #{$xs-screen}
+    {
+      margin-left:8%;
+      padding-left: 35%
+    }
+  &--text{
+    display: block;
+    color: $color-grey-dark;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    width: 70%;
+    @media #{$xs-screen}
+    {
+      width: 140%;
+      margin-top: 50px;
+      margin-left: -60%;
+    }
+  }
+  &--name{
+    font-family: 'Kaushan Script', cursive;
+    padding-top: 3%;
+    @media #{$xs-screen}
+    {
+      margin-left: -60%;
+    }
+  }
+  &--icon{
+    margin-left: 12%;
+    margin-right: 5%;
+    width: 100px;
+    border: 2px solid $color-blue;
+    padding:18px;
+    @media #{$xs-screen}
+    {
+      margin:auto;
+      margin-bottom: -10%;
+    }
+    @media(max-width:500px){
+      margin-left:-10%;
+    }
+    @media(max-width:350px){
+      margin-left:-20%;
+    }
+  }
+  &--img {
+    margin-left: 10%;
+    img {
+      width: 80%;
+      @media #{$md-screen}
+      {
+        padding-top: 15%;
+        width: 80%;
       }
-      &--text {
-        color: $color-grey-dark;
-        font-family: 'Roboto', sans-serif;
-        font-style: italic;
-        width: 70%;
-        @media #{$xs-screen}
-        {
-          width: 150%;
-          margin-top: 50px;
-          padding-left: -30%;
-          margin-left: -65%;
-        }
+      @media #{$sm-screen}
+      {
+        padding-top: 15%;
+        width: 125%;
+        margin-left: -20%;
       }
-      &--name {
-        padding-top: 3%;
-        @media #{$xs-screen}
-        {
-          margin-left: -65%;
-        }
-        &--name {
-          font-family: 'Kaushan Script', cursive;
-        }
+      @media #{$xs-screen}
+      {
+        width: 50%;
+        margin-left: -20%;
+        text-align: center;
       }
     }
   }
-
+}
 }
 .carousel-control.left,
-.carousel-control.right{
+.carousel-control.right {
   background-image: none;
   height: 50px;
   margin-top: 3%;
-  img{
+  @media#{$md-screen}
+  {
+    margin-top: 5%;
+  }
+  img {
     @media #{$xs-screen}
     {
       margin-top: 100%;
     }
-    @media(max-width:640px){
-      margin-top:120%;
+    @media(max-width: 640px) {
+      margin-top: 120%;
     }
-    @media(max-width:480px){
-      margin-top:200%;
+    @media(max-width: 480px) {
+      margin-top: 200%;
     }
-    @media(max-width:420px){
-      margin-top:250%;
+    @media(max-width: 420px) {
+      margin-top: 250%;
     }
   }
-
 }
+
+
+

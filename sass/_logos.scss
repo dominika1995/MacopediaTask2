@@ -10,6 +10,19 @@
       flex-wrap: wrap;
       justify-content: center;
       width: 100%;
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+        margin-left: -20%;
+      }
+      @media#{$sm-screen}{
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+          margin-left: -15%;
+        }
+      }
+      @media#{$xs-screen}{
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+          margin-left: 0%;
+        }
+      }
       &--item {
         height: 100px;
         vertical-align: middle;
