@@ -1224,7 +1224,8 @@
           width: 75%; } }
       @media (max-width: 768px) {
         .map__box--content {
-          width: 90%; } }
+          width: 90%;
+          padding: 10px; } }
       .map__box--content--close {
         color: #aaaaaa;
         float: right;
@@ -1234,10 +1235,9 @@
           color: #000;
           text-decoration: none;
           cursor: pointer; }
-
-#map {
-  height: 400px;
-  width: 100%; }
+  .map #map {
+    height: 400px;
+    width: 100%; }
 
 .foot {
   background-color: #f8f8f8; }
