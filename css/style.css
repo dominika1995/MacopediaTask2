@@ -522,6 +522,8 @@ body {
     font-weight: 700; }
     .menu .page-scroll:hover {
       color: #fce38a; }
+    .menu .page-scroll.active {
+      color: #fce38a; }
 
 /* RESPONSIVE */
 @media only screen and (max-width: 768px) {
