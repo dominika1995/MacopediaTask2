@@ -909,10 +909,10 @@
   background-color: #95e1d3; }
   #numbers .row {
     width: 100%;
-    margin-left: 18%; }
+    padding-left: 27%; }
     @media (max-width: 768px) {
       #numbers .row {
-        margin-left: 0; } }
+        padding-left: 0; } }
     #numbers .row .numbers__div {
       height: 190px;
       border-right: 1px solid white;
