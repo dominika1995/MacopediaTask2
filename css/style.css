@@ -828,11 +828,18 @@ body {
 #numbers {
   background-color: #95e1d3; }
   #numbers .row {
-    width: 100%; }
+    width: 100%;
+    padding-left: 9.5%; }
+    @media (max-width: 800px) {
+      #numbers .row {
+        padding-left: 10.5%; } }
+    @media (max-width: 768px) {
+      #numbers .row {
+        padding-left: 5%; } }
     #numbers .row .numbers__div {
       height: 190px;
       border-right: 1px solid white;
-      width: 12.5%; }
+      width: 18.5%; }
       @media (max-width: 1300px) {
         #numbers .row .numbers__div {
           height: 170px; } }
@@ -844,18 +851,12 @@ body {
           height: 150px; } }
       @media (max-width: 768px) {
         #numbers .row .numbers__div {
-          height: 130px; } }
+          height: 140px; } }
       @media (max-width: 420px) {
         #numbers .row .numbers__div {
-          height: 110px; } }
+          height: 130px; } }
       #numbers .row .numbers__div:nth-child(1) {
         border-left: 1px solid white; }
-        @media (max-width: 1700px) {
-          #numbers .row .numbers__div:nth-child(1) {
-            margin-left: 17%; } }
-        @media (max-width: 768px) {
-          #numbers .row .numbers__div:nth-child(1) {
-            margin-left: -3%; } }
       @media (max-width: 768px) {
         #numbers .row .numbers__div {
           width: 20%; }

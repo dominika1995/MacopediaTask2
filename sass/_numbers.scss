@@ -2,12 +2,17 @@
   background-color: $color-blue;
   .row{
     width:100%;
-
+    padding-left:9.5%;
+    @media(max-width:800px){
+      padding-left:10.5%;
+    }
+    @media(max-width:$xs){
+      padding-left: 5%;
+    }
     .numbers__div{
       height:190px;
       border-right: 1px solid white;
-      width:12.5%;
-
+      width:18.5%;
       @media(max-width:1300px){
         height: 170px;
       }
@@ -18,26 +23,20 @@
         height: 150px;
       }
       @media(max-width:$xs){
-        height:130px;
+        height:140px;
       }
       @media(max-width:420px){
-        height: 110px;
+        height: 130px;
       }
       &:nth-child(1){
+        border-left: 1px solid white;
+      }
+      @media(max-width:$xs){
+        width:20%;
+        &:nth-child(1){
           border-left: 1px solid white;
-          @media(max-width:1700px){
-            margin-left:17%;
-          }
-          @media(max-width:$xs){
-            margin-left:-3%;
-          }
         }
-        @media(max-width:$xs){
-          width:20%;
-          &:nth-child(1){
-              border-left: 1px solid white;
-            }
-        }
+      }
       span{
         display:block;
         margin: 0 auto;
