@@ -412,8 +412,16 @@
       -moz-transition: all .5s ease-in-out;
       transition: all .5s ease-in-out; }
   #banner .banner__slider {
+    width: 90%;
+    margin: 0;
     text-align: left;
     text-transform: uppercase; }
+    @media (max-width: 1600px) {
+      #banner .banner__slider {
+        margin-left: 7%; } }
+    @media (max-width: 768px) {
+      #banner .banner__slider {
+        padding-left: 0%; } }
     #banner .banner__slider__slide {
       opacity: 0.6;
       color: white; }
@@ -473,9 +481,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0; }
-
-.container {
-  margin: 0 20px; }
 
 .site-content {
   padding-top: 0px; }
