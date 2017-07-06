@@ -876,16 +876,16 @@ body {
           height: 170px; } }
       @media (max-width: 1150px) {
         #numbers .row .numbers__div {
-          height: 170px; } }
+          height: 160px; } }
       @media (max-width: 1000px) {
         #numbers .row .numbers__div {
-          height: 150px; } }
+          height: 140px; } }
       @media (max-width: 768px) {
         #numbers .row .numbers__div {
-          height: 140px; } }
+          height: 130px; } }
       @media (max-width: 420px) {
         #numbers .row .numbers__div {
-          height: 130px; } }
+          height: 120px; } }
       #numbers .row .numbers__div:nth-child(1) {
         border-left: 1px solid white; }
       @media (max-width: 768px) {
@@ -901,7 +901,7 @@ body {
         color: white; }
       #numbers .row .numbers__div span.numbers__div__count {
         font-family: 'Montserrat', sans-serif;
-        margin-top: 30%;
+        margin-top: 20%;
         font-size: 50px; }
         @media (max-width: 1200px) {
           #numbers .row .numbers__div span.numbers__div__count {

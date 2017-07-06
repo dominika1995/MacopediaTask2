@@ -17,16 +17,16 @@
         height: 170px;
       }
       @media(max-width:1150px){
-        height: 170px;
+        height: 160px;
       }
       @media(max-width:1000px){
-        height: 150px;
+        height: 140px;
       }
       @media(max-width:$xs){
-        height:140px;
+        height:130px;
       }
       @media(max-width:420px){
-        height: 130px;
+        height: 120px;
       }
       &:nth-child(1){
         border-left: 1px solid white;
@@ -46,7 +46,7 @@
       }
       span.numbers__div__count{
         font-family: 'Montserrat', sans-serif;
-        margin-top: 30%;
+        margin-top: 20%;
         font-size: 50px;
         @media(max-width:$md){
           font-size: 40px;
