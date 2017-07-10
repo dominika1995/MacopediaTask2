@@ -150,7 +150,7 @@ $(document).ready(function(){
     $( window ).resize(function() {
         var height = $(".service__details__photo > img").height();
         var width = $(window).width();
-        if((width>992) && (width<1200)){
+        if((width>980) && (width<1300)){
             var maxHeight = height - 230;
             $('.panel-body').css('max-height', maxHeight + "px");
         }

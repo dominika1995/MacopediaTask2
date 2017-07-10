@@ -883,9 +883,9 @@ body {
       @media (max-width: 768px) {
         #numbers .row .numbers__div {
           height: 130px; } }
-      @media (max-width: 420px) {
+      @media (max-width: 400px) {
         #numbers .row .numbers__div {
-          height: 120px; } }
+          height: 100px; } }
       #numbers .row .numbers__div:nth-child(1) {
         border-left: 1px solid white; }
       @media (max-width: 768px) {
@@ -915,7 +915,13 @@ body {
         @media (max-width: 500px) {
           #numbers .row .numbers__div span.numbers__div__count {
             font-size: 20px; } }
-      @media (max-width: 450px) {
+        @media (max-width: 400px) {
+          #numbers .row .numbers__div span.numbers__div__count {
+            font-size: 15px; } }
+      @media (max-width: 400px) {
+        #numbers .row .numbers__div span.numbers__div__description {
+          font-size: 15px; } }
+      @media (max-width: 500px) {
         #numbers .row .numbers__div {
           padding-left: 1px;
           padding-right: 1px; } }
@@ -1697,8 +1703,14 @@ header, nav, main, aside, footer, article, section {
       right: 10px;
       margin-left: 10px;
       margin-bottom: 5%; }
+      @media (max-width: 1080px) {
+        #service .service__details__photo img {
+          width: 460px !important;
+          height: 290px !important; } }
       @media only screen and (max-width: 992px) {
         #service .service__details__photo img {
+          width: 570px !important;
+          height: 380px !important;
           position: relative;
           margin: 0 auto;
           right: 0;
@@ -1713,7 +1725,6 @@ header, nav, main, aside, footer, article, section {
           margin: 0 auto; } }
     #service .service__details__accordion .panel-default > .panel-heading {
       padding: 0;
-      border-radius: 0;
       background-color: white;
       border: 2px solid #e5e5e5;
       border-radius: 2px; }
