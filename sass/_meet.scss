@@ -1,264 +1,103 @@
 .meet {
   text-align: center;
+  padding-bottom: 5%;
+  img {
+    border: none;
+    max-width: 100%;
+  }
+  &__gallery {
+    text-align: center;
+    &__item {
+      background: #95e1d3;
+      display: inline-block;
+      &__overlay {
+        display: inline-block;
+        position: relative;
+        left: 0;
+        top: 0;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          -webkit-transition: all .3s ease-in-out;
+          -moz-transition: all .3s ease-in-out;
+          -o-transition: all .3s ease-in-out;
+          -ms-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
+          background: rgba(243, 129, 129, 0.9);
+
+          background: -webkit-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+          background: -o-linear-gradient(top, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+          background: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+
+        }
+        .content {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 100%;
+          z-index: 1;
+          opacity: 0;
+          text-align: center;
+          color: #fff;
+          text-transform: uppercase;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+      }
+      &:hover .meet__gallery__item__overlay {
+        left: -10px;
+        top: -10px;
+        &:before {
+          opacity: 1;
+        }
+      }
+      @media(max-width:$xs){
+        margin-bottom:2%;
+      }
+    }
+
+    .meet__gallery__item:hover .content {
+      opacity: 1;
+    }
+  }
+  .content {
+    font-weight: 700;
+    font-size: 20px;
+    a {
+      .icon {
+        display: inline-block;
+        margin: 0 auto;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    section {
+      padding: 45px 0;
+    }
+
+  }
+  @media (max-width: 768px) {
+    .meet__gallery .meet__gallery__item {
+      margin-bottom: 15px;
+    }
+  }
+
   article {
     .col-xs-12 {
       padding-top: 3%;
-      @media #{$xs-screen}
-      {
-        padding: 5% 0 0 22%;
-      }
-      @media only screen and (max-width: 650px) {
-        padding: 5% 0 0 18%;
-      }
-      @media only screen and (max-width: 600px) {
-        padding: 5% 0 0 15%;
-      }
-      @media only screen and (max-width: 550px) {
-        padding: 5% 0 0 13%;
-      }
-      @media only screen and (max-width: 500px) {
-        padding: 5% 0 0 20%;
-      }
-      @media only screen and (max-width: 450px) {
-        padding: 5% 0 0 15%;
-      }
-      @media only screen and (max-width: 400px) {
-        padding: 5% 0 0 12%;
-      }
-      @media only screen and (max-width: 350px) {
-        padding: 5% 0 0 7%;
-      }
-      @media only screen and (max-width: 310px) {
-        padding: 5% 0 0 2%;
-      }
-      .meet__team {
-        &--people {
-          width: 360px;
-          height: 450px;
-          opacity: 1;
-          z-index: 50;
-          @media #{$md-screen}
-          {
-            width: 300px;
-            height: 400px;
-          }
-          @media #{$sm-screen}
-          {
-            width: 200px;
-            height: 300px;
-          }
-          @media #{$xs-screen}
-          {
-            width: 360px;
-            height: 450px;
-          }
-          @media only screen and (max-width: 500px) {
-            width: 250px;
-            height: 350px;
-          }
-          &--1 {
-            background: url('../img/meet_img_1.png');
-            background-size: cover;
-          }
-          &--2 {
-            background: url('../img/meet_img_2.png');
-            background-size: cover;
-          }
-          &--3 {
-            background: url('../img/meet_img_3.png');
-            background-size: cover;
-          }
-        }
-
-        &--back {
-          width: 360px;
-          height: 450px;
-          opacity: 1;
-          z-index: -400;
-          position: absolute;
-          background-color: $color-blue;
-          @media #{$md-screen}
-          {
-            width: 300px;
-            height: 400px;
-          }
-          @media #{$sm-screen}
-          {
-            width: 200px;
-            height: 300px;
-          }
-          @media #{$xs-screen}
-          {
-            width: 360px;
-            height: 450px;
-          }
-          @media only screen and (max-width: 500px) {
-            width: 250px;
-            height: 350px;
-          }
-        }
-        &--background {
-          opacity: 0;
-          position: absolute;
-          background: $color-red-08;
-          background: -webkit-linear-gradient($color-red-08, $color-yellow-08);
-          background: -o-linear-gradient($color-red-08, $color-yellow-08);
-          background: -moz-linear-gradient($color-red-08, $color-yellow-08);
-          background: linear-gradient($color-red-08, $color-yellow-08);
-          width: 360px;
-          z-index: 400;
-          height: 450px;
-          margin-top: 0%;
-          @media #{$md-screen}
-          {
-            width: 300px;
-            height: 400px;
-          }
-          @media #{$sm-screen}
-          {
-            width: 200px;
-            height: 300px;
-          }
-          @media #{$xs-screen}
-          {
-            width: 360px;
-            height: 450px;
-          }
-          @media only screen and (max-width: 500px) {
-            width: 250px;
-            height: 350px;
-          }
-        }
-        &--imgs {
-          position: absolute;
-          z-index: 300;
-          margin: 20% 0 0 20%;
-          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-            margin: 50% 0 0 20%;
-          }
-          @-moz-document url-prefix() {
-            margin: 50% 0 0 20%;
-          }
-          .meet__team--img {
-            position: relative;
-            padding: 15px 15px 15px 15px;
-            margin: 50% 0 0 -5px;
-            background-color: $color-yellow;
-          }
-          .meet__team--img:first-child {
-            margin-top: 50%;
-            content: url(../img/pictograms/meet_facebook.png);
-          }
-          .meet__team--img:nth-child(2) {
-            content: url(../img/pictograms/meet_twitter.png);
-            padding-top: 19px;
-            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-              padding-top: 15px;
-            }
-            @-moz-document url-prefix() {
-              padding-top: 15px;
-            }
-            @media#{$md-screen}
-            {
-              padding-top: 19px;
-              @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-                padding-top: 15px;
-              }
-              @-moz-document url-prefix() {
-                padding-top: 15px;
-              }
-            }
-            @media only screen and (max-width: 1000px) {
-              @-moz-document url-prefix() {
-                padding-top: 10px;
-              }
-            }
-            @media#{$sm-screen}
-            {
-              padding-top: 14px;
-              @-moz-document url-prefix() {
-                padding-top: 10px;
-              }
-              @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-                padding-top: 10px;
-              }
-            }
-            @media#{$xs-screen}
-            {
-              padding-top: 19px;
-              @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-                padding-top: 15px;
-              }
-              @-moz-document url-prefix() {
-                padding-top: 15px;
-              }
-            }
-            @media only screen and (max-width: 500px) {
-              padding-top: 14px;
-              @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-                padding-top: 10px;
-              }
-              @-moz-document url-prefix() {
-                padding-top: 10px;
-              }
-            }
-          }
-
-          .meet__team--img:nth-child(2):hover {
-            content: url(../img/pictograms/meet_twitter_white.png);
-          }
-          .meet__team--img:nth-child(3) {
-            content: url(../img/pictograms/meet_pinterest.png);
-          }
-          .meet__team--img:nth-child(3):hover {
-            content: url(../img/pictograms/meet_pinterest_white.png);
-          }
-          .meet__team--img:nth-child(4) {
-            content: url(../img/pictograms/meet_instagram.png);
-          }
-          .meet__team--img:nth-child(4):hover {
-            content: url(../img/pictograms/meet_instagram_white.png);
-          }
-          .meet__team--img:last-child {
-            img {
-              margin-right: 10px;
-            }
-          }
-          .meet__team--img:hover {
-            background-color: $color-red;
-          }
-          @media #{$sm-screen} {
-            margin-left: 10%;
-            .meet__team--img {
-              padding: 10px 10px 10px 10px;
-            }
-          }
-          @media #{$xs-screen}{
-            margin-left: 23%;
-            .meet__team--img {
-              padding: 15px 15px 15px 15px;
-            }
-          }
-          @media only screen and (max-width: 500px) {
-            margin-left: 15%;
-            .meet__team--img {
-              padding: 10px 10px 10px 10px;
-            }
-          }
-        }
-        &--background:hover {
-          opacity: 1;
-          margin: -20px 0 20px -20px;
-          transition: all 1s;
-          -webkit-transition: all 1s;
-
-        }
-        &--background:hover + .meet__team--people {
-          margin: -20px 0 20px -20px;
-          transition: all 1s;
-          -webkit-transition: all 1s;
-        }
-      }
     }
   }
   &__name {
@@ -284,48 +123,72 @@
         font-size: 1em;
       }
     }
-
   }
-}
-@media#{$xs-screen}
-{
-  .center {
-    padding-left: 20%;
+  &__team--img {
+    padding: 15px 15px 15px 15px;
+    top:0;
+    margin: 0 0 0 -5px;
+    background-color: $color-yellow;
+
+    &:hover{
+      background-color: $color-red;
+    }
+
+    &:first-child {
+      content: url(../img/pictograms/meet_facebook.png);
+    }
+
+    &:first-child {
+      content: url(../img/pictograms/meet_facebook.png);
+    }
+
+    &:nth-child(2) {
+      content: url(../img/pictograms/meet_twitter.png);
+      &:hover {
+        content: url(../img/pictograms/meet_twitter_white.png);
+      }
+    }
+
+    &:nth-child(3) {
+      content: url(../img/pictograms/meet_pinterest.png);
+      &:hover{
+        content: url(../img/pictograms/meet_pinterest_white.png);
+      }
+    }
+
+    &:nth-child(4) {
+      content: url(../img/pictograms/meet_instagram.png);
+      &:hover{
+        content: url(../img/pictograms/meet_instagram_white.png);
+      }
+    }
+
   }
 }
 
 .meet__name--xs {
   text-align: center;
+  opacity: 0;
+  position: absolute;
   @media #{$xs-screen}{
     position: relative;
     opacity: 1;
-    margin-left: -30%;
-    @media only screen and (max-width: 650px) {
-      margin-left: -26%;
-    }
-
-    @media only screen and (max-width: 550px) {
-      margin-left: -20%;
-    }
-    @media only screen and (max-width: 350px) {
-      margin-left: -15%;
-    }
-    @media only screen and (max-width: 310px) {
-      margin-left: -10%;
-    }
-    &--name {
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-    &--work {
-      color: $color-grey-middle;
-      font-style: italic;
-      font-size: 1em;
-    }
-  }
-  opacity: 0;
-  position: absolute;
+       &--name {
+         font-weight: bold;
+         font-size: 1.1em;
+       }
+       &--work {
+         color: $color-grey-middle;
+         font-style: italic;
+         font-size: 1em;
+       }
+     }
 }
+
+
+
+
+
 
 
 
