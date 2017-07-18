@@ -531,18 +531,6 @@ body {
   @media (min-width: 768px) {
     .menu {
       margin-right: 80px; } }
-  .menu .page-scroll {
-    color: white;
-    text-decoration: none;
-    padding: 0 10px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700; }
-    .menu .page-scroll:hover {
-      color: #fce38a; }
-    .menu .page-scroll.active {
-      color: #fce38a;
-      border-bottom: 4px solid #fce38a; }
 
 /* RESPONSIVE */
 @media only screen and (max-width: 768px) {

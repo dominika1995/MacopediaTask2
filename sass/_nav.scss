@@ -69,23 +69,7 @@ body {
   @media(min-width:$xs){
     margin-right: 80px;
   }
-
-  .page-scroll {
-    color: white;
-    text-decoration: none;
-    padding: 0 10px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    &:hover {
-      color: $color-yellow;
-
-    }
-    &.active{
-      color: $color-yellow;
-      border-bottom:4px solid $color-yellow;
-    }
-  }
+  
 
 
 }
