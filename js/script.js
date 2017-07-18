@@ -18,7 +18,6 @@ $(document).ready(function(){
             $(".header").removeClass("scrolled");
         }
         var top = $(".header").offset().top;
-        console.log('top:  ' + top);
         for(var i = 2;i<7;i++){
             var $anchor = $(".page-scroll:nth-child(" + i +")");
             var topEl = $($anchor.attr('href')).offset().top;
@@ -26,7 +25,6 @@ $(document).ready(function(){
             $anchor.removeClass('active');
             if(((top+300)>topEl) && ((top+150)<bottomEl)){
                 $anchor.addClass('active');
-                console.log('added');
             }
         }
     });
@@ -44,7 +42,6 @@ $(document).ready(function(){
         var top = $($anchor.attr('href')).offset().top;
         if($(window).width()<768){
             setTimeout(function () {
-                console.log("animating");
 
                 $('html').stop().animate({
                     scrollTop: top-48,
